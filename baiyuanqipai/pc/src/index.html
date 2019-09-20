@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>百源棋牌</title>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/carousel.css"> -->
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+      <script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/float-min.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js" ></script>
+    <!-- <script src="js/carousel-min.js"></script> -->
+    <!-- <script src="js/swiper.min.js"></script> -->
+  <script type="text/javascript" src="js/md5-min.js"></script>
+  <script type="text/javascript" src="@CDN_url/online/20190430/public-min.js"></script>
+  <script type="" src="@CDN_url/online/20190430/poplar-min.js"></script>  
+</head>
+<body>
+    <div class="wrapper">
+      <div class="mainShow">
+        <div class="top-banner">
+            <div class="top">
+              <img class="pc" src="./images/logo.png"/>
+              <!-- <img class="phone" src="./images/phone-logo.png"/> -->
+            </div>
+            <div>
+               <img id="bannerpc" src="images/banner.jpg">
+               <img id="bannerH5" src="images/phone-banner.jpg">
+            </div>
+            <!-- <div class="swiper-container">
+                <div class="swiper-wrapper">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> -->
+            <a class="chat phone" href="" target="_banck" >
+                <img class="right" src="./images/phone-chat.png"/>
+            </a>
+        </div>
+        </div>
+        <div class="phone download">
+            <img class="phone light" src="./images/phone-liht.png"/>
+            <div class="titleBar">
+                <img class="pc" src="./images/down-center.png"/>
+            </div>
+            <p>
+              <img class="bt1 mohe_down" src="./images/download_app.png"/>
+              <!--<img class="bt2" src="./images/phone-adr.png" onclick="$public.h5android('android_new')"/>-->
+            </p>
+            <p id="shouxin" style="margin:3% 0"><a href="installindex.html">iOS如何授信？</a></p>
+            <a class="goGame bot goto" href="" target="_banck" style="display: none;"><img src="./images/phone-gogame.png"/></a>
+        </div>
+        <div class="main-content">
+            <div class="content_s">
+                 <div class="content_box">
+                      <div class="befTopMain">
+                          <div class="titleBar">
+                             <img class="pc" src="./images/scanText.png"/>
+                          </div>
+                          <div class="downPic">
+                            <img class="pc" src="./images/beforeDown.png"/>
+                            <div class="pvc">
+                              <strong id="codeImgpc"></strong>
+                            </div>
+                          </div>
+                      </div>
+       <!--                <div class="topMain">
+                          <div class="titleBar">
+                             <img class="pc" src="./images/top-text.png"/>
+                          </div>
+                          <div class="banner" id="middleSlide">
+                          </div>
+                      </div> -->
+                      <div class="bottomMain">
+                          <div class="titleBar">
+                             <img class="pc" src="./images/hotText.png"/>
+                          </div>
+                        <div class="main-center">
+                          <div href="" class="item-list" page="home">
+                            <img class="left" src="./images/game1.png"/>
+                          </div>
+                          <div href="" class="item-list" page="home">
+                            <img class="left" src="./images/game2.png"/>
+                          </div>
+                          <div href="" class="item-list">
+                            <img class="left" src="./images/game3.png"/>
+                          </div>
+                          <div href="" class="item-list">
+                            <img class="left" src="./images/game4.png"/>
+                          </div>
+                          <div href="" class="item-list">
+                            <img class="left" src="./images/game5.png"/>
+                          </div>
+                          <div href="" class="item-list">
+                            <img class="left" src="./images/game6.png"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="floatLoad pc">
+                          <a class="chat" href="" target="_banck"><img src="./images/chat.png"/></a>
+                          <div class="bntbox">
+                             <div class="leftewm">
+                                 <div class="pvc">
+                                     <strong id="codeImg"></strong>
+                                 </div>
+                             </div>
+                          </div>
+                          <div><img class="dbt" style="bottom:112px" src="./images/fixedRT.png"/></div>
+                          <a id="androidClick"  onclick="$public.pcios('pcios_new')"><img class="dbt" style="bottom:68px" src="./images/ios.png" onclick="postDown('ios')"/></a>
+                          <a id="iosClick" onclick="$public.h5android('android_new')"><img class="dbt" style="bottom:28px" src="./images/adr.png" onclick="postDown('and')"/></a>
+                          <a class="shutdown" onclick="shut_down()"><img src="images/button_Close.png"></a>
+                      </div>
+                 </div>
+                <div class="footer">
+                  <div class="bar-f">
+                    <img class="left pc" src="./images/bottomBar.png"/>
+                    <img class="left phone" src="./images/phone-bottomBar.png"/>
+                  </div>
+                 <!--  <center class="mailbox">
+                    <span>技术支持：</span>
+                    <a onclick="openMailbox()" target="_blank">WG平台</a>
+                  </center> -->
+                  <div class="text pc">
+                    <p>百源棋牌持有菲律宾政府PAGCOR (Philippine Amusement and Gaming Corporation)颁发的离岸博彩许可并受其监督</p>
+                    <p>Copyight © 百源棋牌 <span id="location_hef"></span> Reserved</p>
+                  </div>
+                </div>
+            </div>
+            <div class="phone bt-fixed mohe_down">
+                <!--<img src="./images/phone-btfixed.png" onclick="fastDown()"/>-->
+            </div>
+        </div>
+      </div> 
+    </div>
+</body>
+  <script type="" src="js/index-min.js"></script>
+<script type="text/javascript" src="https://js.users.51.la/19506922.js"></script>
+<script>
+  window.onload = function() {
+    // 阻止双击放大
+    var lastTouchEnd = 0;
+      document.addEventListener('touchstart', function(event) {
+          if (event.touches.length > 1) {
+              event.preventDefault();
+          }
+      });
+      document.addEventListener('touchend', function(event) {
+          var now = (new Date()).getTime();
+          if (now - lastTouchEnd <= 300) {
+              event.preventDefault();
+          }
+          lastTouchEnd = now;
+      }, false);
+
+    // 阻止双指放大
+      document.addEventListener('gesturestart', function(event) {
+          event.preventDefault();
+      });
+   }
+</script>
+</html>

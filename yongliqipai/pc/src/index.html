@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="aplus-waiting" content="MAN" />
+  <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="yes" name="apple-touch-fullscreen" />
+  <meta content="telephone=no,email=no" name="format-detection" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+  <meta charset="utf-8" />
+  <title>永利棋牌</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/detail.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.custom.min.css">
+  <script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script>
+  <script src="@CDN_url/online/jquery.min.js"></script>
+  <script type="text/javascript" src="js/swiper.custom.min.js"></script>
+  <script type="text/javascript" src="js/md5-min.js"></script>
+  <script src="./js/jquery.qrcode.min.js"></script>
+  <script src="./js/waprem.js"></script>
+  <script type="text/javascript" src="@CDN_url/online/20190430/public-min.js"></script>
+  <script type="" src="@CDN_url/online/20190430/poplar-min.js"></script>
+</head>
+
+<body>
+  <header>
+    <img class="pc" src="img/logo.png">
+    <a class="mohe_down">
+      <img class="mb" src="img/h5/header.png">
+    </a>
+  </header>
+  <div class="content_box">
+    <img class="pc" src="img/banner_01.jpg">
+    <img class="mb" src="img/h5/banner_01.jpg">
+    <div class="banner_top">
+      <a class="downlactv mohe_down"><img src="img/h5/download.png"></a>
+      <div class="content">
+        <div class="swiper-container swiper-top">
+          <div class="swiper-wrapper" id="swiper-wrap">
+            <li class="swiper-slide">
+              <img src="img/1.png">
+            </li>
+            <li class="swiper-slide">
+              <img src="img/2.png">
+            </li>
+            <li class="swiper-slide">
+              <img src="img/3.png">
+            </li>
+            <li class="swiper-slide">
+              <img src="img/4.png">
+            </li>
+            <li class="swiper-slide">
+              <img src="img/5.png">
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="img/banner_03.jpg">
+    <img src="img/banner_04.jpg">
+    <img src="img/banner_05.jpg">
+    <img src="img/banner_06.jpg">
+    <!--  <div class="mailbox">
+             <span>技术支持:</span>
+             <a onclick="openMailbox()" target="_blank">WG平台</a>
+        </div> -->
+    <img class="pc" src="img/banner_07.jpg">
+    <img class="mb" src="img/h5/footer.jpg">
+  </div>
+  <div class="flow">
+    <a id="serviceUrl" target="_blank"></a>
+    <div id="qrcodes"></div>
+    <a id="fixios" onclick="$public.pcios('#pcios_new')"></a>
+    <a id="fixandroid" onclick="$public.h5android('#android_new')"></a>
+    <div class="top"></div>
+    <a class="shutdown" onclick="shut_down()"><img src="img/button_Close.png"></a>
+  </div>
+
+  <script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: 3000,
+      slidesPerView: 5,
+      slidesPerGroup: 1,
+      autoplayDisableOnInteraction: false,
+    })
+    $(".flow").Float({
+      'floatRight': 1,
+      'topSide': 250,
+      'side': 0
+    });
+    GetIP().then(function (data) {
+      $public.geturl(JSON.parse(data).client)
+      $public.serviceUrl('#serviceUrl').then(function (c) {
+        $public.apiqr('#qrcodes', c);
+        setTimeoutsx()
+      })
+    })
+
+    function openMailbox() {
+      window.open("mail.html?mai=" + $public.consultMailbox)
+    }
+    // 回到顶部
+    $('.top').on('click', function () {
+      $('html,body').animate({
+        scrollTop: 0
+      }, 800)
+    })
+
+    function shut_down() {
+      $('.flow').addClass('swashOut').fadeOut(1600)
+    }
+    window.onload = function () {
+      // 阻止双击放大
+      var lastTouchEnd = 0;
+      document.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault();
+        }
+      });
+      document.addEventListener('touchend', function (event) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault();
+        }
+        lastTouchEnd = now;
+      }, false);
+
+      // 阻止双指放大
+      document.addEventListener('gesturestart', function (event) {
+        event.preventDefault();
+      });
+    }
+  </script>
+</body>
+
+</html>

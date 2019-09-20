@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="aplus-waiting" content="MAN">
+  <meta name="renderer" content=webkit>
+  <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+  <title>万隆棋牌</title>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="css/detail.css">
+  <script type="text/javascript" src="js/qrcode.min.js"></script>
+</head>
+
+<body>
+  <div class="PC">
+    <div class="code_box">
+      <div id="qrcode"></div>
+    </div>
+  </div>
+  <div class="H5">
+    <a class="mohe_down" style="display:block;"><img src="images/h5/H5.jpg"></a>
+    <a class="mohe_down mohe_downs" style="display:block;"><img src="images/h5/download@2x.png"></a>
+    <a id="shouxin" href="i.html">IOS授信教程</a>
+    <a class="mohe_down" style="display:block;"><img src="images/h5/1.jpg"></a>
+  </div>
+  <a id="leftFixB" href="https://sv85.saleprovide.com/chat/Hotline/channel.jsp?cid=5014870&cnfid=4502&j=2437880757&s=1"
+    target="_banck"><img src="images/kefu@2x.png"></a>
+</body>
+<script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script>
+<script type="" src="js/prplar-min.js"></script>
+<script src="js/index-min.js"></script>
+
+<script>
+  var qrcode = new QRCode(document.getElementById("qrcode"), {
+    text: window.location.href,
+    width: 200,
+    height: 200,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+  });
+  var ua = navigator.userAgent;
+  var isiOS = ua.indexOf('iPhone') > -1
+  if (isiOS) {
+    document.getElementById("shouxin").style.display = "block";
+  } else {
+    document.getElementById("shouxin").style.display = "none";
+  }
+  window.onload = function () {
+    // 阻止双击放大
+    var lastTouchEnd = 0;
+    document.addEventListener('touchstart', function (event) {
+      if (event.touches.length > 1) {
+        event.preventDefault();
+      }
+    });
+    document.addEventListener('touchend', function (event) {
+      var now = (new Date()).getTime();
+      if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
+
+    // 阻止双指放大
+    document.addEventListener('gesturestart', function (event) {
+      event.preventDefault();
+    });
+  }
+</script>
+<script type="text/javascript" src="//s5.cnzz.com/z_stat.php?id=1277646968&web_id=1277646968"></script>
+
+</html>

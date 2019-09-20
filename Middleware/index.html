@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>下载</title><script src="//img.aydlsm.com/online/20190430/md5.js"></script><script src="//img.aydlsm.com/online/20190430/jquery.min.js"></script></head><style type="text/css">*{width:100%;margin:0}</style><body><img id="imgid" src="//img.aydlsm.com/online/Middleware.jpg" style="display:none"><script type="text/javascript">var IPURL,timestamp,auth,pIdData={"www-45845.com":"//img.aydlsm.com/online/0628-1.jpg"},ByPurl=window.location,ua=navigator.userAgent.toLowerCase(),isWeixin=-1!=ua.indexOf("micromessenger"),isQQ=-1!=ua.indexOf("mqqbrowser");isWeixin||isQQ?alert(111):alert(2222)</script><script type="text/javascript">class Mx{
+        constructor(){
+            this.mapping = [2, 0, 3, 1];
+            this.remapping = [ 1, 3, 0, 2];
+            this.mov = this.mapping.length;
+        }
+         changeInt(a, encrypt) {
+            if (encrypt && a == 22369621) {
+                return 44739242;
+            } else if (!encrypt && a == 44739242) {
+                return 22369621;
+            }
+            var b = 0;
+            for (var i = 0, j = 26 - this.mov / 2; i < 26 / (this.mov / 2); ++i, j -= this.mov / 2) {
+                b |= (encrypt ? this.mapping[Math.abs(a % this.mov)] : this.remapping[Math.abs(a % this.mov)]) << j;
+                a >>>= this.mov / 2;
+            }
+            
+            return b;
+        }
+         cryptPwd(password,salt) {
+            var auth = password + ':' + salt;
+            var hash  = md5.create('md5');
+            var result = hash.update(auth).hex()
+            return result;
+        }
+    }</script></body></html>

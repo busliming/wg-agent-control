@@ -1,0 +1,32 @@
+1 引入 public-min.js
+
+<script type="text/javascript" src="@CDN_urlonline/public-min.js"></script>
+
+2 $public 对象包含 string function 两种类型
+
+$public.Android       string类型    //安卓请求地址
+
+$public.openAndroid   string类型    //安卓跳转地址
+
+$public.iosapi        string类型    //ios请求地址
+
+$public.openios       string类型    //ios跳转地址
+
+$public.IPURL         string类型    //ip地址
+
+$public.serviceUrl('#id')    function类型 ///获取客服连接    参数id 赋值到a标签href   不传默认id #serviceUrl
+
+$public.apiqr('#id','www.baidu.com')    function类型    //生成二维码图片  参数1=id， 参数2=二维码连接地址
+
+$public.apenurl(http,'#id')  function类型  //获取跳转到游戏大厅连接   参数1=当前http协议  参数2=跳转的id或者class  不传默认id #downloaddt
+
+$public.ISMobile       function类型    //底部判断ios 安卓手机下载的按钮   <a id="Mobile_don"  onclick="$public.ISMobile()"></a>
+
+$public.pcios         function类型    //pc端ios下载方法
+
+$public.h5android   function类型    //移动端安卓下载的方法 
+
+$public.h5ios    function类型    //移动端ios下载的方法 
+
+Getbaner.then(function(data){} function类型  //banner图回调
+

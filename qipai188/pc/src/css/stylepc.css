@@ -1,0 +1,451 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+  }
+  body {
+    font: 12px "Microsoft YaHei", "YouYuan", "SimSun";
+    background: #fff;
+    color: #333;
+    min-width: 320px;
+    margin: 0px auto;
+  }
+  div {
+    margin: 0px auto;
+  }
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  img {
+    border: 0 none;
+    display: inline-block;
+    vertical-align: top;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:link,
+  a:visited {
+    color: #b0b0b0;
+  }
+  a:hover {
+    color: #f60;
+  }
+  *:focus {
+    outline: none;
+    border: 0;
+  }
+  /* 头部样式 */
+  header {
+    width: 100%;
+  }
+  header .headerBox {
+    width: 100%;
+  }
+  header .headerBox .top {
+    width: 100%;
+    background: url(../images/logo_bg.png) no-repeat center center;
+    text-align: center;
+    background-size: 100% 100%;
+    z-index: 999;
+    position: absolute;
+  }
+  header .headerBox .top img {
+    padding: 10px;
+    width: 8%;
+  }
+  header .headerBox .botBox {
+    padding-top: 4.5%;
+  }
+  header .headerBox .botBox img {
+    width: 100%;
+    vertical-align: top;
+  }
+  header .headerBox .botBox #bannerh5 {
+    display: none;
+  }
+  /*main*/
+  .main {
+    background: url(../images/indexbg.jpg) no-repeat top center;
+    background-size: 100% 100%;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -5px;
+  }
+  .main .mainTopBar {
+    width: 1136px;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .main .mainTopBar img {
+    width: 100%;
+  }
+  .main .mianNav {
+    width: 1200px;
+    background: url(../images/main_top.png) no-repeat top center;
+    margin-top: -67px;
+    padding-top: 67px;
+    padding-bottom: 60px;
+  }
+  .main .mianNav .mainTile {
+    text-align: center;
+    width: 68%;
+    padding: 2% 0 1% 0;
+  }
+  .main .mianNav .mainTile img {
+    width: 100%;
+  }
+  .main .mianNav .mianNavPc {
+    background: url(../images/miannavbg.png) no-repeat left top;
+    width: 1173px;
+    height: 456px;
+    position: relative;
+  }
+  .main .mianNav .mianNavPc .mianNavPcCentent {
+    position: absolute;
+    width: 820px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    color: #fff;
+    line-height: 30px;
+  }
+  .main .mianNav .mianNavPc .centerP {
+    width: 319px;
+    float: right;
+    text-align: center;
+  }
+  .main .mianNav .mianNavPc .centerP .mainiosandroid em {
+    display: block;
+    color: #f60;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 60px;
+  }
+  .main .mianNav .mianNavPc .centerP strong {
+    background: url(../images/codebgpc.png) no-repeat left top;
+    width: 192px;
+    height: 257px;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding-top: 16px;
+  }
+  .main .mianNav .mianNavPc .centerP strong canvas {
+    display: block;
+    width: 145px;
+    height: 140px;
+    padding-left: 24px;
+  }
+  .main .mianNav .centerPB {
+    display: none;
+  }
+  .main .mainHot {
+    width: 1200px;
+    background: url(../images/main_bottom.png) no-repeat top center;
+    overflow: hidden;
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+  .main .mainHot .mainTile {
+    text-align: center;
+    width: 80%;
+    padding: 2% 0 2% 0;
+  }
+  .main .mainHot .mainTile img {
+    width: 100%;
+  }
+  .main .mainHot .mainTile .title_threeh5 {
+    display: none;
+  }
+  .main .mainHot .mainFooter {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .main .mainHot .mainFooter .game1 p {
+    width: 49%;
+    display: inline-block;
+    margin-left: 1%;
+  }
+  /*footer*/
+  .footer {
+    width: 100%;
+  }
+  .footer .footerT {
+    width: 100%;
+    background: #3949a5;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+  }
+  .footer .footerT p span {
+    display: inline-block;
+    margin-right: 1%;
+  }
+  .footer .footerT p span em {
+    font-style: normal;
+    font-size: 30px;
+    vertical-align: middle;
+  }
+  .footer .footerTh5 {
+    display: none;
+  }
+  .footer .footerB {
+    width: 100%;
+    background: #2e3d92;
+    color: #fff;
+    text-align: center;
+    padding: 1% 0;
+  }
+  .footer .footerB p {
+    line-height: 26px;
+    font-size: 14px;
+  }
+  .footer .footerB p i {
+    font-style: normal;
+  }
+  /*leftFix*/
+  .leftFix {
+    width: 194px;
+    height: 514px;
+    position: relative;
+    text-align: center;
+  }
+  .leftFix .leftFixB {
+    width: 100%;
+    height: 373px;
+    background: url(../images/left_fbg.png) no-repeat top center;
+    padding-bottom: 120px;
+  }
+  .leftFix .leftFixB span {
+    display: block;
+    padding-top: 143px;
+  }
+  .leftFix .leftFixB .androidBox {
+    padding-top: 20px;
+  }
+  .leftFix .leftFixB .androidBox .Androids {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px;
+  }
+  .leftFix .leftFixB .androidBox canvas {
+    margin-bottom: 10px;
+  }
+  .leftH5 {
+    display: none;
+  }
+  /*1080*/
+  @media only screen and (max-width: 1080px) {
+    .main {
+      width: 100%;
+    }
+    .main .mainTopBar {
+      display: none;
+    }
+    .main .mianNav {
+      width: 95%;
+      background: url(../images/mianbgtop.png) no-repeat top center;
+      background-size: 100% 100%;
+      margin-top: 0px;
+      padding: 4% 0;
+      text-align: center;
+    }
+    .main .mianNav .mainTile {
+      display: none;
+    }
+    .main .mianNav .mianNavPc {
+      display: none;
+    }
+    .main .mianNav .centerPB {
+      display: block;
+    }
+    .main .mianNav .centerPB img {
+      width: 80%;
+    }
+    .main .mainHot {
+      width: 95%;
+      background: url(../images/mainbgbot.png) no-repeat top center;
+      background-size: 100% 100%;
+      overflow: hidden;
+      padding-top: 3%;
+      padding-bottom: 2%;
+    }
+    .main .mainHot .mainTile {
+      text-align: center;
+      width: 80%;
+      padding: 2% 0 2% 0;
+    }
+    .main .mainHot .mainTile img {
+      width: 100%;
+    }
+    .main .mainHot .mainTile .title_threeh5 {
+      display: none;
+    }
+    .main .mainHot .mainFooter {
+      width: 95%;
+      margin: 0 auto;
+    }
+    .main .mainHot .mainFooter .game1 p {
+      width: 49%;
+      display: inline-block;
+      margin-left: 1%;
+    }
+    .main .mainHot .mainFooter .game1 p img {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    header .headerBox .top img {
+      padding: 10px;
+      width: 18%;
+    }
+    header .headerBox .botBox {
+      padding-top: 11%;
+    }
+    header .headerBox .botBox img {
+      width: 100%;
+      vertical-align: top;
+    }
+    header .headerBox .botBox #bannerpc {
+      display: none;
+    }
+    header .headerBox .botBox #bannerh5 {
+      display: block;
+    }
+    .main {
+      background: url(../images/h5indexbg.jpg) no-repeat left top;
+      background-size: 100%;
+    }
+    .main .mainHot .mainTile .title_threePc {
+      display: none;
+    }
+    .main .mainHot .mainTile .title_threeh5 {
+      display: block;
+    }
+    .main .mainHot .mainFooter {
+      width: 80%;
+    }
+    .main .mainHot .mainFooter .game1 p {
+      width: 100%;
+    }
+    .footer {
+      padding-bottom: 15%;
+    }
+    .footer .footerTpc {
+      display: none;
+    }
+    .footer .footerTh5 {
+      width: 100%;
+      display: block;
+      padding: 3% 0 5% 0;
+      text-align: center;
+    }
+    .footer .footerTh5 strong {
+      display: inline-block;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .footer .footerTh5 strong img {
+      width: 100%;
+    }
+    .footer .footerB {
+      display: none;
+    }
+    .mobileH5 a {
+      position: fixed;
+      width: 100%;
+      background: url(../images/downloadimg.png) no-repeat left bottom;
+      background-size: 100%;
+      bottom: 0;
+      height: 18%;
+    }
+    .leftFix {
+      display: none;
+    }
+    .leftH5 {
+      display: block;
+      position: absolute;
+      top: 28%;
+      width: 100%;
+      right: 0;
+      text-align: right;
+    }
+    .leftH5 img {
+      width: 25%;
+    }
+  }
+  @media only screen and (max-width: 414px) {
+    header .headerBox .top img {
+      padding: 5px;
+      width: 26%;
+    }
+    header .headerBox .botBox {
+      padding-top: 16%;
+    }
+    header .headerBox .botBox img {
+      width: 100%;
+      vertical-align: top;
+    }
+    header .headerBox .botBox #bannerpc {
+      display: none;
+    }
+    header .headerBox .botBox #bannerh5 {
+      display: block;
+    }
+    .main {
+      padding-top: 5px;
+    }
+    .main .mianNav {
+      padding: 6% 0;
+      text-align: center;
+    }
+    .main .mianNav .centerPB a {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .main .mainHot .mainTile .title_threePc {
+      display: none;
+    }
+    .main .mainHot .mainTile .title_threeh5 {
+      display: block;
+    }
+    .main .mainHot .mainFooter {
+      width: 80%;
+    }
+    .main .mainHot .mainFooter .game1 p {
+      width: 100%;
+    }
+    .footer {
+      padding-bottom: 9%;
+    }
+    .footer .footerTpc {
+      display: none;
+    }
+    .footer .footerTh5 {
+      width: 100%;
+      display: block;
+      padding: 3% 0 5% 0;
+      text-align: center;
+    }
+    .footer .footerTh5 strong {
+      display: inline-block;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .footer .footerTh5 strong img {
+      width: 100%;
+    }
+    .footer .footerB {
+      display: none;
+    }
+    .mobileH5 a {
+      height: 13%;
+    }
+  }
+  

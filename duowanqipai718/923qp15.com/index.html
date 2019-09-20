@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>481棋牌</title>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script>
+		<link rel="stylesheet" href="css/css.css">
+
+	</head>
+	<script>
+		(function(defaultFontSize, defaultScreenWidth) {
+			var htmlNode = document.getElementsByTagName('html')[0];
+			function resize() {
+				var screenWidth = document.body.offsetWidth;
+				var fontSize = (screenWidth / defaultScreenWidth) * defaultFontSize;
+				if (screenWidth > 750) fontSize = 100;
+				htmlNode.style.fontSize = fontSize + 'px';
+			}
+			document.addEventListener('DOMContentLoaded', function() {
+				resize();
+			});
+			window.addEventListener('resize', resize);
+		})(100, 750);
+	</script>
+
+<body>
+	<div class="zxkf move">
+	    <a style="opacity: 1;" href="//chat.liveneed.net/chat/Hotline/channel.jsp?cid=5001245&cnfid=840&j=8782442519&s=1" id="serviceUrl" target="_blank">
+	        <img src="./img/zxkf.png" width="100%">
+	    </a>
+	</div>		
+	<div class="main">
+		<p class="head">
+			<img src="images/head.png" />
+			<a href="#IOS_teach" id="ios_teach" class="ios_teach">IOS安装引导</a>
+			<span class="down span mohe_down" id="android">android下载</span>
+			<span class="down span mohe_down" id="ios">ios下载</span>
+		</p>
+
+		<div class="content">	
+			<img src="images/wap_01.jpg" />
+			<p>
+				<img src="images/wap_02.jpg" />
+				<span class="ljxz span mohe_down">立即下载</span>
+			</p>
+			<img src="images/wap_03.jpg" />
+			<img src="images/wap_04.jpg" />
+			<p>
+				<img src="images/wap_05.jpg" />
+				<span class="ios span mohe_down">ios下载</span>
+				<span class="android span mohe_down">android下载</span>
+			</p>
+			<img src="images/wap_06.jpg" />
+			<img src="images/wap_07.png" />
+			<img src="images/wap_08.png" />
+			<img src="images/wap_09.png" />
+			<img src="images/wap_10.png" />
+			<img src="images/wap_11.png" />
+			<img src="images/wap_12.png" />
+			<div class="main_teach" id="IOS">
+				<div class="content_teach" id="IOS_teach">
+					<div id="url">
+						<img src="images/teach_01.png" />
+						<span id="spanurl">spanurl</span>
+					</div>
+					<img src="images/teach_02.png" />
+					<img src="images/teach_03.png" />
+					<img src="images/teach_04.png" />
+					<img src="images/teach_05.png" />
+					<img src="images/teach_06.png" />
+					<img src="images/teach_07.png" />
+					<p>
+						<a class="span" href="js/Licaidi9188LotteryProfile1.mobileprovision" >去信任</a>
+						<img src="images/teach_08.png" />
+					</p>
+				</div>
+			</div>	
+		</div>
+		<div class="dw_propt mohe_down">
+			<div class="ppt_lt">
+				<span class="img">
+					<img src="images/kd_icon.png" alt="">
+				</span>
+				<div class="lt_t">
+					<h3 style="margin-top: 0.35rem;">注册免费送288元</h3>
+					<!-- <span>添加QQ免费领取8元</span> -->
+				</div>
+				<a class="ppt_dw mohe_down">立即下载</a>
+			</div>
+		</div>
+	</div>
+    
+</body>
+   <script src="js/poplar.js"></script> 
+	<script>
+	var ua = navigator.userAgent;
+    var isiOS = ua.indexOf('iPhone') > -1
+    if(isiOS){
+		 document.getElementById("ios_teach").style.display="block";
+		 document.getElementById("IOS_teach").style.display="block";
+    }else{
+		 document.getElementById("ios_teach").style.display="none";
+		 document.getElementById("IOS_teach").style.display="none";
+	}
+	var url = window.location.hostname;
+	// var urlDiv = document.getElementById('url')
+	var spanurl = document.getElementById('spanurl')
+	spanurl.innerHTML = url
+
+	
+	</script>
+</html>

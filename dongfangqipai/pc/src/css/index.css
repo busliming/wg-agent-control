@@ -1,0 +1,145 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:16px;
+  vertical-align:baseline;
+  background:transparent;
+}
+html,body{
+  height: 100%;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+h1,h2,h3,h4,h5,h6,em,i {
+  font-weight: 100;
+  font-style: normal
+}
+ul,ol,li {
+  list-style-type: none
+}
+img{width:100%;}
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0
+}
+a:hover {
+  text-decoration: none;
+}
+
+.slideLeftReturn {    //从左到右边
+  -webkit-animation: slideLeftReturn 1.5s ease-in-out;
+          animation: slideLeftReturn 1.5s ease-in-out;
+}
+@-webkit-keyframes slideLeftReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@keyframes slideLeftReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  }
+}
+
+.slideRightReturn {   //从右到左边 
+  -webkit-animation: slideRightReturn 1.5s ease-in-out;
+          animation: slideRightReturn 1.5s ease-in-out;
+}
+@-webkit-keyframes slideRightReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@keyframes slideRightReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.slideUpReturn {   //从上到下
+  -webkit-animation: slideUpReturn 1.5s ease-in-out;
+          animation: slideUpReturn 1.5s ease-in-out;
+}
+@-webkit-keyframes slideUpReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+@keyframes slideUpReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}

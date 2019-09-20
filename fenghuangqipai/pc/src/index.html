@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="aplus-waiting" content="MAN">
+  <meta name="renderer" content=webkit>
+  <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta charset="UTF-8">
+    <title>凤凰棋牌</title>
+    <link href="images/ico.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script>
+    <script src="js/float-min.js"></script> 
+</head>
+<body>
+<div id="FhH5">
+    <div class="FhH5_box">
+        <a   class="mohe_down" style="display:block;z-index: 99;">
+        </a>
+        <img src="images/fhqp2.jpg">
+        <img class="bnt_img" src="images/anniu.png">
+    </div>
+     <div class="leftH5" id="leftH5s">
+         <a href="https://rate.trimusco.com/chat/Hotline/channel.jsp?cid=5013706&cnfid=8353&j=7641159416&s=1" class="serviceUrls" target="_blank">
+             <img src="images/o.png" alt="">
+         </a>
+    </div>
+</div>
+<script type="" src="js/poplar-min.js"></script>
+<script>
+    $("#leftH5s").Float({'floatRight' : 1, 'topSide' : 120, 'side':0});
+    window.onload = function() {
+    // 阻止双击放大
+    var lastTouchEnd = 0;
+      document.addEventListener('touchstart', function(event) {
+          if (event.touches.length > 1) {
+              event.preventDefault();
+          }
+      });
+      document.addEventListener('touchend', function(event) {
+          var now = (new Date()).getTime();
+          if (now - lastTouchEnd <= 300) {
+              event.preventDefault();
+          }
+          lastTouchEnd = now;
+      }, false);
+
+    // 阻止双指放大
+      document.addEventListener('gesturestart', function(event) {
+          event.preventDefault();
+      });
+   }
+</script>
+</body>
+</html>

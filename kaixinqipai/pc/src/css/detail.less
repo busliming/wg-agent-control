@@ -1,0 +1,610 @@
+::-webkit-scrollbar 
+{ 
+    width:5px; 
+    height:1px; 
+   background-color:#45185d; 
+} 
+   
+/*定义滚动条轨道 内阴影+圆角*/ 
+::-webkit-scrollbar-track 
+{ 
+    -webkit-box-shadow: inset 0 0 6px rgba(1,30,62,0.3); 
+    border-radius: 10px; 
+    background-color:#45185d;  
+} 
+/*定义滑块 内阴影+圆角*/ 
+::-webkit-scrollbar-thumb 
+{ 
+    border-radius: 10px; 
+    -webkit-box-shadow: inset 0 0 6px rgba(1,30,62,0.3); 
+    background-color:#7c39b9; 
+}	
+@width12:1200px;
+header{
+	background:url(../img/menu_bg.png) no-repeat;
+	height: 192px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: -1px;
+    z-index: 999999;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+	 center{
+	 	    max-width:1200px;
+			margin:0 auto;
+			img{
+				width:auto;
+				margin: 10px 0;
+			}
+		}
+ 
+}
+.content{
+	background:url(../img/content_bg.jpg);
+	background-position: center;
+	    background-repeat: no-repeat;
+}
+.center{ //top轮播图
+   padding-top:106px;
+   max-height: 500px;
+    overflow: hidden;
+   #bannerH5{
+   	display: none;
+   }
+}
+.QR_code{ //二维码
+   .ming{
+   	   .intermediate{
+   	   	   background:url(../img/qrcode_bg.png) no-repeat;
+   	   	   max-width:@width12;
+   	   	   height:@width12*0.3375;
+   	   	   margin:0 auto;
+   	   	   background-position: center;
+           padding:40px 0;
+           position: relative;
+           #qrcodes{
+           	    width: 18%;
+			    left: 59%;
+			    top: 31%;
+			    height:100%;
+			    position: absolute;
+			    canvas{
+			    	width: 90%;
+				    padding: 5%;
+				    height:40%;
+				    background: #ece3e3;
+			    }
+           }
+   	   }
+   }
+}
+.download{
+	display: none;
+}
+.bannert{  //轮播图
+	.top_title{
+		     img:first-child{
+		     	display:block;
+		     }
+		     img:last-child{
+		     	display:none;
+		     }
+	   }
+	 .ming{
+	 	 max-width:calc(@width12 + 15.5%);
+	 	 overflow: hidden;
+	 	 margin: 0 auto;
+	 	.swiper-banert{
+	 		position: relative;
+	 		z-index:0;
+		 	.swiper-slide{
+		 		.slide_box{
+		 			padding:2% 10%;
+		 		}
+		 	}
+		 	.swiper-button-prev{
+		 		background:url(../img/letft.png) no-repeat;
+		 		width: calc(@width12*.06);
+			    height: calc(@width12*.1);
+			    background-size: 100%;
+		 	}
+		 	.swiper-button-next{
+		 		background:url(../img/right.png) no-repeat;
+		 		width: calc(@width12*.06);
+			    height: calc(@width12*.1);
+			    background-size: 100%;
+		 	}
+	 	}
+	 }
+}
+.gamelist{  //游戏列表
+   .top_title{
+	     img:first-child{
+	     	display:block;
+	     }
+	     img:last-child{
+	     	display:none;
+	     }
+   }
+  .mings{
+  	 .game_box{
+  	 	max-width:@width12;
+  	 	margin:0 auto;
+  	 	overflow: hidden;
+  	 	li{
+  	 		width:calc(90% / 3);
+  	 		float:left;
+  	 		margin-left:3.33%;
+  	 	}
+  	 }
+  }
+}
+footer{
+  .center_top{
+     background:url(../img/center_top.png) no-repeat;
+     height:111px;
+     background-position: center 0;
+  	.box{
+         width:1200px;
+         color:#848484;
+         overflow: hidden;
+         >div{
+         	display: inline-block;
+         	margin:0 20px;
+         	line-height:66px;
+         	>h1{
+         		display: inline-block;
+         		color:#292929;
+         		font-size:40px;
+         		vertical-align: middle;
+         		margin-right:15px;
+         	}
+         	span{
+         		    font-size: 12px;
+         	}
+         }
+  	}
+  }
+  .mailbox{
+  	background: #1d1919;
+	  	 span{
+  	     	color:#ffffff;
+  	     }
+	  	a{
+	  		display: inline-block;
+		    width: 100px;
+		    margin-top: 12px;
+		    margin-right: 10px;
+		    cursor: pointer;
+		    color:#0597e6;
+		        text-align: left;
+		    text-decoration :underline;
+	  	}
+  }
+  .center_bottom{
+  	background:#1d1919;
+  	text-align: center;
+  	color: #e6d2a0;
+  	font-size:14px;
+  	padding:15px 0;
+  }
+}
+.fix{
+	position:fixed;
+	right:8%;
+	top:50%;
+	z-index:999999999;
+	.contact{
+		background:url(../img/images31.png) no-repeat;
+		width:140px;
+		height: 427px;
+		display: block;
+		z-index: 999999;
+		background-size: 100%;
+		position:relative;
+		.serviceUrl{
+			display: block;
+			width:100%;
+			height:15%;
+			position:absolute;
+			top:30%;
+		}
+		#qrcode{
+         	width: 76%;
+		    left: 50%;
+		    margin-left: -38%;
+		    top:196px;
+		    height:100%;
+		    position: absolute;
+		   canvas{
+                 width: 90%;
+			     padding: 5%;
+			     background:#ece3e3;
+			     height:23%;
+		   }
+		}
+		#fixios{
+			position: absolute;
+		    top: 313px;
+		    text-align: center;
+		    display: block;
+		    width: 100%;
+		    color: #fff;
+		    font-size:14px;
+		    cursor: pointer;
+		}
+		#fixandroid{
+			position: absolute;
+		    top: 348px;
+		    text-align: center;
+		    display: block;
+		    width: 100%;
+		    color: #fff;
+		    font-size:14px;
+		    cursor: pointer;
+		}
+		.shutdown{
+			position: absolute;
+			right: 0;
+   			top: 118px;
+   			cursor: pointer;
+		}
+	}
+}
+.Mobile{
+	display:none;
+}
+
+@media screen and (max-width:1280px) {
+@width12:1024px;
+    header{
+	 height:160px;
+	    center{
+	 	    max-width:@width12;
+	 	    img{
+	 	    	width: 175px;
+	 	    }
+		}
+	}
+	.center{ //top轮播图
+	   padding-top: 88px;
+	}
+	.QR_code{
+	   .ming{
+	   	padding:1% 0 2%;
+	   	   .intermediate{
+	   	   	   max-width:@width12;
+	   	   	   height:@width12*0.37;
+	   	   	   margin:0 auto;
+	   	   	   background-position: center;
+	           padding: 0;
+	           background-size: 100%;
+	           #qrcodes{
+	           	    width: 17.5%;
+				    left: 59%;
+				    top: 30%;
+				    canvas{
+				    	width: 90%;
+					    padding: 5%;
+					    background: #ece3e3;
+					    height:42.5%;
+				    }
+	           }
+	   	   }
+	   }
+	}
+	.bannert{  //轮播图
+		 .ming{
+		 	 max-width:calc(@width12 + 20%);
+		 	.swiper-banert{
+			 	.swiper-button-prev{
+			 		background:url(../img/letft.png) no-repeat;
+			 		width: calc(@width12*.06);
+				    height: calc(@width12*.1);
+				    background-size: 100%;
+			 	}
+			 	.swiper-button-next{
+			 		background:url(../img/right.png) no-repeat;
+			 		width: calc(@width12*.06);
+				    height: calc(@width12*.1);
+				    background-size: 100%;
+			 	}
+		 	}
+		 }
+	}
+	.gamelist{  //游戏列表
+	  .mings{
+	  	padding:0 5%;
+	  	 .game_box{
+	  	 	max-width:@width12;
+	  	 	margin:0 auto;
+	  	 	overflow: hidden;
+	  	 	li{
+	  	 		width:calc(100% / 3);
+	  	 		float:left;
+	  	 		margin:0;
+	  	 	}
+	  	 }
+	  }
+	}
+	.fix{
+        right: 2%;
+    	top: 50%;
+    	.contact{
+    		width: 120px;
+		    height:366px;
+		    #qrcode{
+			    top: 167px;
+		    }
+		    #fixios{
+		    	top:266px;
+		    	    font-size: 12px;
+		    }
+		    #fixandroid{
+		    	top:298px;
+		    	    font-size: 12px; 
+		    }
+		   .shutdown{
+	   			top: 100px;
+			}
+    	}
+	}
+
+}
+@media screen and (max-width:1024px) {
+ @width12:800px;
+    header{
+	 height:130px;
+	    center{
+	 	    max-width:@width12;
+	 	    img{
+	 	    	width: 135px;
+	 	    }
+		}
+ 
+	}
+	.center{ //top轮播图
+	   padding-top:72px;
+	}
+	.QR_code{
+	   .ming{
+	   	padding:1% 0 2%;
+	   	   .intermediate{
+	   	   	   max-width:@width12;
+	   	   	   height:@width12*0.37;
+	   	   	   margin:0 auto;
+	   	   	   background-position: center;
+	           padding: 0;
+	           background-size: 100%;
+	   	   }
+	   }
+	}
+	.gamelist{  //游戏列表
+	  .mings{
+	  	padding:0 5%;
+	  	 .game_box{
+	  	 	max-width:@width12;
+	  	 	margin:0 auto;
+	  	 	overflow: hidden;
+	  	 	li{
+	  	 		width:calc(100% / 2);
+	  	 		float:left;
+	  	 		margin:0;
+	  	 	}
+	  	 }
+	  }
+	}
+	.bannert{  //轮播图
+		 .ming{
+		 	 max-width:calc(@width12 + 20%);
+		 	.swiper-banert{
+			 	.swiper-button-prev{
+			 		background:url(../img/letft.png) no-repeat;
+			 		width: calc(@width12*.06);
+				    height: calc(@width12*.1);
+				    background-size: 100%;
+			 	}
+			 	.swiper-button-next{
+			 		background:url(../img/right.png) no-repeat;
+			 		width: calc(@width12*.06);
+				    height: calc(@width12*.1);
+				    background-size: 100%;
+			 	}
+		 	}
+		 }
+	}
+	.fix{
+        right: 0%;
+    	top: 50%;
+    	.contact{
+    		width: 120px;
+		    height:366px;
+		    #qrcode{
+			    top: 167px;
+		    }
+		    #fixios{
+		    	top:266px;
+		    	    font-size: 12px;
+		    }
+		    #fixandroid{
+		    	top:298px;
+		    	    font-size: 12px; 
+		    }
+    	}
+	}
+	
+}
+
+@media screen and (max-width:750px) {
+   @width12:100%;
+   header{
+	 height:1.8rem;
+	    center{
+	 	    max-width:@width12;
+	 	    img{
+	 	    width: 1.8rem;
+	 	    }
+		}
+ 
+	}
+	.center{ //top轮播图
+	       padding-top: .98rem;
+	       #bannerH5{
+	       	display: block;
+	       }
+	       #bannerpc{
+	       	display: none;
+	       }
+	}
+	.QR_code{
+      display: none;
+	}
+	.download{
+		display: block;
+		.phone{
+			width: 90%;
+		    margin: 0 auto;
+		    overflow: hidden;
+		    padding: .28rem 0;
+		    position: relative;
+			a{
+				display: block;
+				float:left;
+				width:100%;
+			}
+			.androiddow{
+				float:right;
+			}
+			#downloaddt{
+				width:100%;
+				margin: .8rem 0 0 0%;
+			}
+			.Credit{
+				position: absolute;
+			    text-align: center;
+			    width: 50%;
+			    font-size: 0.34rem;
+			    color: #fff;
+			}
+		}
+	}
+	.bannert{
+		margin-top:-4px;
+		.top_title{
+		     img:first-child{
+		     	display:none;
+		     }
+		     img:last-child{
+		     	display:block;
+		     }
+	   }
+		.ming{
+		 	.swiper-banert{
+			 	.swiper-button-prev{
+			 		background:url(../img/letft.png) no-repeat;
+			 		width: 0.5rem;
+				    height: .6rem;
+				    background-size: contain;
+				    top: 50%;
+				    left: 0.1rem;
+			 	}
+			 	.swiper-button-next{
+			 		background:url(../img/right.png) no-repeat;
+			 		width: 0.5rem;
+				    height: .6rem;
+				    background-size: contain;
+				    top: 50%;
+				    right:0.1rem;
+			 	}
+		 	}
+		 }
+	}
+	.gamelist{  //游戏列表
+		.top_title{
+		     img:first-child{
+		     	display:none;
+		     }
+		     img:last-child{
+		     	display:block;
+		     }
+	   }
+	  .mings{
+	  	 .game_box{
+	  	 	max-width:96%;
+	  	 	margin:0 auto;
+	  	 	overflow: hidden;
+	  	 	padding: 0.1rem 0;
+	  	 	li{
+	  	 		width:calc(100% / 2);
+	  	 		float:left;
+	  	 		margin:0;
+	  	 	}
+	  	 	li:nth-child(odd){
+             		-webkit-animation: slideLeftReturn 1.5s ease-in-out;
+			        animation: slideLeftReturn 1.5s ease-in-out;
+			        opacity:1;
+	  	 	}
+	  	 	li:nth-child(even){
+			      	-webkit-animation: slideRightReturn 1.5s ease-in-out;
+			        animation: slideRightReturn 1.5s ease-in-out;
+			        opacity:1;
+	       }
+	  	 }
+	  }
+	}
+	footer{
+		  padding-bottom: 1.35rem; 
+		  .center_top{
+		     background:url(../img/h5/center_top.png) no-repeat;
+		     height: 0.8rem;
+		     background-position: center 0;
+		     background-size: cover;
+		  }
+		  .center_bottom{
+		  	display:none;
+	 	  }
+	 	  .mailbox{
+			display:none;
+		}
+	}
+    .fix{
+		position:fixed;
+		right:0%;
+		top:28%;
+		z-index:999999999;
+		.contact{
+			background:url(../img/h5/images31.png) no-repeat;
+			    width: 1.5rem;
+			    height: 1rem;
+			    display: block;
+			    z-index: 999999;
+			    background-size: 100%;
+			    position: relative;
+			 .serviceUrl{
+			 	height:100%;
+			 	top:0;
+			 }   
+			#qrcode,#fixios,#fixandroid,.shutdown{
+              display: none;
+
+			}
+		}
+	}
+	.Mobile{
+		display: block;
+		position: fixed;
+		bottom:0;
+		width:100%;
+		#Mobile_don{
+			background:url(../img/h5/feix_bottom.jpg) no-repeat;
+			width: 100%;
+		        height: 1.38rem;
+		    display: block;
+		    background-size: cover;
+    		background-position: bottom;
+
+		}
+	}
+}

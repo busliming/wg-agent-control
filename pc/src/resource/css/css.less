@@ -1,0 +1,167 @@
+//自定义
+.left {
+    float: left;
+    text-align: left;
+    margin: 0 5px;
+}
+.right {
+    float: right;
+    text-align: right;
+    margin: 0 5px;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body {
+    // @base-url: "";    
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;   
+}
+//element UI
+.el-row, .el-container{
+    width: 100%;
+}
+.el-row, .el-container{
+    width: 100%;
+}
+.el-input, .el-select, .el-date-editor.el-input, .el-date-editor.el-input__inner{
+    width: 100%
+}
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+line-height: 260px;
+}
+.el-container:nth-child(7) .el-aside {
+line-height: 320px;
+}
+.el-header, .el-footer {
+    background-color: #F3F7FB;
+    color: #333;
+    // text-align: center;
+    line-height: 60px;
+}  
+.el-header {border-bottom: solid 0.01em #666666}
+
+.el-main {   
+    color: #333;
+    // text-align: center;
+    line-height: 20px;
+}
+.el-container:nth-child(5) .el-aside, .el-container:nth-child(6) .el-aside {
+    line-height: 20px;
+}  
+.el-container:nth-child(7) .el-aside {
+    line-height: 320px;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both
+}
+.el-dropdown-link {
+    cursor: pointer;
+    color: #409EFF;
+}
+.el-icon-arrow-down {
+    font-size: 12px;
+}
+.backgrounds(@top,@left){
+     background: url('../images/all.png') no-repeat;
+     background-position: @top @left;
+};
+.fololeft(@i){
+    float:left;
+    margin-left:@i;
+};
+.foloright(){
+    float:right;
+}
+// 公用组件分页样式
+#pages_box {width:1200px;margin:0 auto; text-align: center;    padding: 10px 0;}  
+#pages_box .btn-prev,#pages_box .el-pager li,#pages_box .btn-next{
+    background:url(../images/all.png) no-repeat;
+    background-position: -222px -116px;
+    height: 30px;
+    color: #fdf6dc;
+}
+#pages_box .el-pagination.is-background .el-pager li:not(.disabled).active{
+    background: #ebbf3a;
+}
+#pages_box .el-pagination.is-background .btn-prev:disabled,#pages_box .el-pagination.is-background .btn-next:disabled{
+    color:#86878a;
+}
+#pages_box .el-pagination .el-select .el-input .el-input__inner,#pages_box .el-pagination__editor.el-input .el-input__inner{
+    background:#89681b;
+    border-color:#89681b;
+    color: #fdf6dc;
+}
+#pages_box .el-pagination__jump{color: #fdf6dc;}
+
+
+//pagination elementUI
+.custom-pagination{
+    margin-top: 30px; text-align: center;
+    .pagination span{color:#604a19; font-weight: 600}
+    .el-pagination.is-background .el-pager li, .el-pagination .el-input__inner,
+    .el-pagination.is-background .btn-next,
+    .el-pagination.is-background .btn-prev{
+      background: url(../images/userProfile/ysdi.png);
+      background-size: 100% 100%; border: none;
+      width: 30px; height: 26px; color: #ffffff; text-align: center;
+    }
+    .el-pagination.is-background .el-pager li:not(.disabled).active{
+      background: url(../images/userProfile/lysdi.png);
+      background-size: 100% 100%;
+    }
+    .el-select-dropdown__item.selected, .el-pagination.is-background .el-pager li:not(.disabled):hover{color: #e7ca0c}
+}
+//elementUI dropdown
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{background:rgb(194,160,101)}
+.el-dropdown-menu__item{color:#583202 }
+.el-select-dropdown__list {background:#89681b; border-color:#89681b; color: #fdf6dc;}
+.el-select-dropdown__item{background:#89681b; height: 30px; color: #fdf6dc;}
+//customized select
+.select-form {
+    display: flex; position: relative;
+    .dropdown-arrow{
+        background: url(../images/userProfile/xianiu.png) no-repeat;
+        width: 15px; height: 9px; position: absolute; top: 10px; right: 30px;        
+    }
+    select{
+        color:inherit;
+        width: 226px; height: 29px; padding-left: 11px; margin-right: 20px;
+        border: none; background: url(../images/userProfile/lxxk.png) no-repeat;
+        outline: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
+}
+
+
+//表格
+.el-table, .el-table thead, .el-table__empty-text{
+    color: #604a19;
+}
+.el-table--border th {border-bottom: #553f10 1px solid}
+.el-table th, .el-table tr, .el-table thead.is-group th{
+    background-color: #dfd1ae;  
+}  
+.el-table--border {border:#553f10 2px solid}
+.el-table td, .el-table th.is-leaf{
+    border: #553f10 1px solid;
+    border-top: none; border-left: none;
+    text-align: center
+}
+.el-table__empty-block {
+    background-color: #dfd1ae; 
+}
+.el-table::before {background: inherit}

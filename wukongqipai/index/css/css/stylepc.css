@@ -1,0 +1,490 @@
+*{ margin:0px; padding:0px; font-weight:normal;}
+body{ font:12px "Microsoft YaHei","YouYuan","SimSun"; background:#fff; color:#333; min-width:320px; margin:0px auto;}
+div{ margin:0px auto;}
+ul,ol,li{ list-style:none;}
+img{ border:none;}
+a{ text-decoration:none;}
+a:link,a:visited{ color:#b0b0b0;}
+a:hover{ color:#f60;}
+*:focus{outline:none; border: 0;}
+header{
+    width: 100%;
+    background-size: 100% 100%;
+}
+/*headerBox{*/
+    /*position: relative;*/
+/*}*/
+.headerBox .top{
+    width: 100%;
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*left: 0;*/
+    /*z-index: 99;*/
+    /*right: 0;*/
+    text-align: center;
+    background: url("../images/logo_bg.png") no-repeat top center;
+    background-size: 100% 100%;
+    padding: 0.2% 0px;
+}
+.headerBox .top img{
+   width: 11%;
+    height: 127px;
+}
+.botBox{
+    width: 100%;
+    overflow: visible;
+    position: relative;
+}
+.botBox img{
+    width: 100%;
+    vertical-align: middle;
+}
+.botBox .swiper-button-next{
+    background-image: url("../images/rightJ.png") !important;
+}
+.botBox .swiper-button-prev{
+    background-image: url("../images/leftJ.png") !important;
+}
+.centerP .centerPT{
+    display: none;
+}
+
+/*pc二维码*/
+.mianNavPc{
+    display: none;
+    width: 1137px;
+    height: 456px;
+    background: url("../images/miannavbg.png") no-repeat left top;
+}
+.centerP{
+
+    width: 417px;
+    height: 268px;
+    background: url("../images/codebgpc.png") no-repeat top left;
+    padding-top: 62px;
+    float: right;
+    margin-top: 118px;
+    margin-right: 90px;
+}
+.centerP span{
+    display: block;
+    width: 180px;
+    height: 177px;
+    background: #fff;
+    text-align: center;
+    padding-top: 4px;
+    margin-left: 23px;
+}
+.centerP strong canvas{
+    display: block;
+    width:  170px;
+    height: 172px;
+    margin: 0px auto;
+
+}
+.centerPB{
+    width: 100%;
+    display: none;
+    margin-top: 5%;
+}
+.centerPB p{
+    width: 100%;
+    overflow: hidden;
+}
+.centerPB p a{
+    display: inline-block;
+    color: #fff;
+    float: left;
+    width: 49%;
+    margin-left: 1%;
+}
+.centerPB p a img{
+    width: 100%;
+}
+.centerPB span{
+    display: block;
+    width: 95%;
+    margin: 0px auto 0px 5%;
+
+}
+.centerPB span a{
+    color: #fff;
+    font-size: 18px;
+}
+.centerPB strong{
+    display: block;
+    width: 90%;
+    margin: 1% auto 5% auto;
+}
+.centerPB strong img{
+    width: 100%;
+}
+
+
+.centerP img{
+    width: 100%;
+}
+.rightP{
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.rightP img{
+    width: 80%;
+}
+.main{
+    width: 100%;
+    overflow: hidden;
+
+}
+.main .mainTile{
+    width: 100%;
+    text-align: center;
+    padding: 1% 0px;
+}
+
+.mainTilePc{
+    display: none;
+}
+
+/*banner swiper*/
+
+.banner{
+    width: 1200px;
+    background: url("../images/bannerBg.png") no-repeat bottom center;
+    background-size: 100% 100%;
+    margin-top: 2%;
+
+}
+.banner img{
+    width: 1000px;
+}
+
+.banner .swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.banner .swiper-button-next{
+    background-image: url("../images/rightJ.png") !important;
+}
+.banner .swiper-button-prev{
+    background-image: url("../images/leftJ.png") !important;
+}
+
+/*.banner .swiper-pagination{*/
+    /*background: url("../images/pagebg.png") no-repeat center !important;*/
+/*}*/
+.bannerBom{
+    padding: 2% 0px;
+    width: 100%;
+}
+.bannerBom img{
+    width: 100%;
+}
+.mainFooter{
+    padding: 2% 0px;
+    overflow: hidden;
+    background: url("../images/gamebg.png") no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.mainFooter .game1{
+    margin-top: 2%;
+    float: left;
+}
+.mainFooter .game1 img{
+    width: 100%;
+}
+.footer{
+    width: 100%;
+
+}
+.footer .footerT{
+    width: 100%;
+    background: url("../images/footer.jpg") no-repeat top center;
+    background-size: 100% 100%;
+    padding: 2% 0px;
+}
+.footer p{
+    padding: 0px 2%;
+}
+.footer .footerT p{
+    color: #c64444;
+    text-align: center;
+}
+.footer .footerB{
+    display: none;
+    padding: 2% 0px;
+    background: #1a0b11;
+}
+
+/*底部技术支持*/
+.footer .Technical{
+    display: block;
+    width: 1200px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.footer .Technical em{
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.footer .Technical a em{
+    color: #078fda;
+    border-bottom: 1px solid #078fda;
+    padding: 0px 5px;
+}
+
+
+.footer .footerB p{
+    text-align: center;
+    color: #fff;
+}
+.footer i{
+    font-style: normal;
+}
+
+/*PC右边浮窗*/
+.leftFix{
+    width: 170px;
+    height: 516px;
+    position: fixed;
+    right: 0px;
+    top:25%;
+    display: none;
+    z-index: 9;
+}
+.leftFix p{
+    width: 155px;
+    height: 240px;
+}
+.leftFixB{
+    width: 170px;
+    height: 336px;
+    background: url("../images/left_fbg.png") no-repeat top center;
+    text-align: center;
+    padding-top: 180px;
+}
+
+.leftFixB span{
+    display: block;
+
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 28px;
+}
+
+.leftFixB span a{
+    color: #fff;
+}
+
+
+.leftFixB span img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.closeBox{
+    position: absolute;
+    top: 120px;
+    right: 5px;
+    text-align: right;
+    cursor: pointer;
+}
+
+
+.codeBox{
+    height: 160px;
+
+}
+
+.codeBox .Androids{
+    width: 102px;
+    height: 102px;
+    background: url("../images/codeimgbg.png") no-repeat top left;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 4px;
+}
+
+.codeBox .Androids strong{
+    display: block;
+    width: 86px;
+    height: 86px;
+    background: #fff;
+    text-align: center;
+    margin: 0px auto;
+    padding: 4px;
+
+}
+.codeBox .Androids canvas{
+    width: 88px;
+    height: 88px;
+    margin: 0px auto;
+}
+
+.codeBox dd{
+    margin: 14px auto 5px auto;
+    width: 105px;
+    height: 31px;
+    text-align: center;
+}
+/*h5在线客服*/
+.leftH5{
+    display: none;
+    width: 21%;
+    position: fixed;
+    padding: 1% 0px;
+    top: 30%;
+    right: 0px;
+    z-index: 9;
+}
+.leftH5 img{
+    width: 100%;
+
+}
+.downloadH5{
+    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+}
+.downloadH5 img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+
+/*安装页面*/
+
+.installMain{
+    width: 100%;
+    position: relative;
+
+}
+
+.goIndex{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    z-index: 9;
+}
+.goIndex img{
+    width: 15%;
+}
+.installImg{
+    width: 100%;
+    position: relative;
+}
+.installImg img{
+    width: 100%;
+}
+
+.installImg .mobil{
+    display: block;
+    width: 40%;
+    height: 7%;
+    position: absolute;
+    top: 69%;
+    left: 30%;
+}
+
+.installImg .xqjc{
+    display: block;
+    width: 38%;
+    height: 4%;
+    position: absolute;
+    bottom: 19%;
+    left: 30%;
+
+
+}
+    .main{
+        background: url("../images/indexbg.jpg") no-repeat top center;
+        background-size: 100% 100%;
+    }
+    .main .mainTile img{
+        width: 19%;
+    }
+    .swiper-containerSS{
+        display: block;
+    }
+    .mainTilePc{
+        display: block;
+    }
+    .mianNavPc{
+        display: block;
+    }
+
+    .main .mainTile img{
+        width: 13%;
+    }
+    .mainFooter{
+        width: 70%;
+    }
+    .mainFooter .game1{
+        width: 30%;
+        margin-left: 2%;
+    }
+    .footer .footerT p{
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .footer .footerB{
+        display: block;
+    }
+    .footer .footerB p{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .leftFix{
+        display: block;
+    }
+    .leftH5{
+        display: none;
+    }
+
+
+    .banner .swiper-button-prev,.banner .swiper-button-next{
+        width: 57px !important;
+        height: 121px !important;
+        background-size: 100% 100% !important;
+        top:32% !important;
+    }
+
+    .main .mainTile{
+        background: url("../images/titleBg.jpg") no-repeat top center;
+        background-size: 100% 100%;
+    }

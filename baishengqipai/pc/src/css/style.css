@@ -1,0 +1,699 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:16px;
+  vertical-align:baseline;
+  background:transparent;
+}
+html,body{
+  height: 100%;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+h1,h2,h3,h4,h5,h6,em,i {
+  font-weight: 100;
+  font-style: normal
+}
+ul,ol,li {
+  list-style-type: none
+}
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0
+}
+a:hover {
+  text-decoration: none;
+}
+
+.swiper-pagination .swiper-pagination-bullet{
+   background: #F7881F;
+   width: 15px;
+   height: 15px;
+   margin: 0 8px !important;
+   box-shadow: 0px 0px 10px #f7881f;
+   border:1px solid #6B4600;
+   opacity: .5;
+}
+#codeImgpc canvas{
+  width: 120px;
+  height: 120px;
+}
+@media screen and (min-width: 761px) and (max-width: 2600px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper .phone {
+    display: none;
+  }
+  .wrapper .pc {
+    display: block;
+  }
+  .wrapper .bar {
+    width: 100%;
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;*/
+  }
+  .wrapper .banner-top {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .wrapper > img {
+    vertical-align: bottom;
+    width: 100%;
+  }
+  .wrapper .centerDn {
+    position: relative;
+  }
+  .wrapper .centerDn .down.pc {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 200px);
+    text-align: center;
+  }
+  .wrapper .centerDn .down.pc>img {
+    display: inline-block;
+    width: 100%;
+  }
+  .wrapper .centerDn .down.pc .pvc {
+    display: inline-block;
+    background: #fff;
+    height: 90px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 142px;
+    bottom: 25px;
+  }
+  .wrapper .main-content .content_s {
+    text-align: center;
+  }
+  .wrapper .main-content .content_s .topMain {
+    /*background: url(../images/top-bg.jpg) no-repeat;*/
+    background-size: 100% 100%;
+    /*height: 600px;*/
+  }
+  .wrapper .main-content .content_s .topMain .titleBar,.wrapper .main-content .content_s .befTopMain .titleBar {
+    display: inline-block;
+    margin-top: 30px;
+    /*width: 1200px;*/
+    height: 67px;
+    position: relative;
+    text-align: center;
+  }
+  .wrapper .main-content .content_s .topMain .titleBar img.pc {
+    margin-top: 22px;
+    display: inline-block;
+  }
+  .wrapper .main-content .content_s .topMain .banner {
+    /*padding-top: 50px;*/
+    max-width: 1200px;
+    width: 100%;
+    display: inline-block;
+  }
+  .wrapper .main-content .content_s .topMain .banner .swiper-slide img{
+    width:80%;
+  }
+  .wrapper .main-content .content_s .topMain .banner .swiper-button-prev {
+    background: url(../images/arrow-left.png) center left no-repeat;
+    width: 70px;
+    height: 92px;
+  }
+  .wrapper .main-content .content_s .topMain .banner .swiper-button-prev i {
+    display: none;
+  }
+  .wrapper .main-content .content_s .topMain .banner .swiper-button-next {
+    background: url(../images/arrow-right.png) center right no-repeat;
+    width: 70px;
+    height: 92px;
+  }
+  .wrapper .main-content .content_s .topMain .banner .swiper-button-next i {
+    display: none;
+  }
+  .wrapper .main-content .bottomMain {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    /*height: 1060px;*/
+    /*background: url(../images/bottom-bg.jpg) no-repeat;*/
+    background-size: 100% 100%;
+  }
+  .wrapper .main-content .bottomMain .titleBar {
+    display: inline-block;
+    margin-top: 30px;
+    /*width: 1200px;*/
+    height: 67px;
+    position: relative;
+    text-align: center;
+    /*background: url(../images/title-bg.png) no-repeat;*/
+  }
+  .wrapper .main-content .bottomMain .titleBar img.pc {
+    margin-top: 22px;
+    display: inline-block;
+  }
+  .wrapper .main-content .bottomMain .main-center {
+    max-width: 1200px;
+    display: inline-block;
+    padding-top: 30px;
+  }
+  .wrapper .main-content .bottomMain .main-center .item-list {
+    width: 50%;
+    height: 235px;
+    position: relative;
+    float: left;
+    margin: 10px 0;
+  }
+  .item-list img{
+    width: 96%;
+  }
+  .wrapper .main-content .bottomMain .footer .text p {
+    color: #e6d2a0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .wrapper .main-content .floatLoad {
+    height: 506px;
+    width: 142px;
+    /*position: fixed;*/
+    position: absolute;
+    /*transition: top .9s;*/
+    top: 36%;
+    right: 20px;
+    background: url(../images/left-float.png) no-repeat;
+    z-index: 99;
+  }
+  .wrapper .main-content .floatLoad .close {
+    display: inline-block;
+    width: 62px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+    cursor: pointer;
+  }
+  .wrapper .main-content .floatLoad .bntbox {
+    position: absolute;
+    top: 43%;
+    left: 1%;
+  }
+  .wrapper .main-content .floatLoad .bntbox div {
+    line-height: unset;
+  }
+  .wrapper .main-content .floatLoad .bntbox a {
+    font-size: 16px;
+    color: #945A06;
+    position: relative;
+    top: 18px;
+  }
+  .wrapper .main-content .floatLoad .bntbox a.chatPc {
+    width: 139px;
+    height: 83px;
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: -100px;
+  }
+  .wrapper .main-content .floatLoad .bntbox .pvc {
+    background: #fff;
+    border: 2px solid #fff;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+  }
+  .wrapper .main-content .floatLoad .bntbox .scan {
+    width: 80%;
+    position: absolute;
+    left: 14px;
+    bottom: -82px;
+  }
+  .d-btn{
+    margin: 10px 0;
+    cursor: pointer;
+  }
+   .content_s{
+      background: url(../images/backgrund-image.jpg) no-repeat;
+      background-size: 100% 100%;
+    }
+    .footer{
+        background: #1b0c13;
+        margin-top: -20px;
+        height: 60px;
+        color: #AF9F7E;
+        text-align: center;
+        padding: 20px 0;
+        height: 100%;
+    }
+    .footer p{
+      margin: 0;
+    }
+}
+@media screen and (min-width: 260px) and (max-width: 760px) {
+   .mailbox {
+    display: none;
+  }
+  .chat.phone{
+    text-align: right;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper .phone {
+    display: block;
+  }
+  .wrapper .pc {
+    display: none;
+  }
+  .wrapper .bar {
+    width: 100%;
+    /*position: absolute;*/
+    /*top: 0;
+    left: 0;*/
+    z-index: 8;
+  }
+  .wrapper img.phone {
+    vertical-align: bottom;
+    width: 100%;
+  }
+  .wrapper .download {
+    height: 57px;
+    text-align: center;
+    background: url(../images/h5/foot.png) no-repeat;
+  }
+  .wrapper .download button {
+    width: 135px;
+    height: 57px;
+    line-height: 57px;
+    border: 0;
+    padding: 0;
+  }
+  .wrapper .download .bt1 {
+    /*background: url(../images/h5/ios-d.png) center center no-repeat;*/
+    /*background-size: 100%;*/
+  }
+  .wrapper .download .bt2 {
+    background: url(../images/h5/adr-d.png) center center no-repeat;
+    background-size: 100%;
+  }
+  .wrapper .download a {
+    font-size: 14px;
+    text-decoration: underline;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .wrapper .main-content .content_s {
+    text-align: center;
+    /*padding-bottom: 184px;*/
+    background: #000;
+  }
+  .wrapper .main-content .content_s .topMain {
+    background-size: 100% 100%;
+    height: 166px;
+  }
+  .wrapper .main-content .content_s .topMain .titleBar {
+    display: inline-block;
+    margin-top: 4px;
+    width: 100%;
+    height: 24px;
+    position: relative;
+    background-size: 100%;
+    text-align: center;
+  }
+  .wrapper .main-content .content_s .topMain .titleBar img.phone {
+    margin-top: 5px;
+    width: 50px;
+    vertical-align: top;
+    display: inline-block;
+  }
+  .wrapper .main-content .content_s .topMain .banner {
+    max-width: 1200px;
+    width: 100%;
+    display: inline-block;
+  }
+  .wrapper .main-content .content_s .topMain .banner img {
+    width: 75%;
+  }
+  .wrapper .main-content .content_s .topMain .banner .swiper-slide img{
+    width:80%;
+  }
+  .wrapper .main-content .content_s .topMain .banner .swiper-button-prev {
+    background: url(../images/h5/left.png) center left no-repeat;
+    background-size: 100% 100%;
+    width: 23px;
+    height: 31px;
+  }
+  .wrapper .main-content .content_s .topMain .banner .swiper-button-prev i {
+    display: none;
+  }
+  .wrapper .main-content .content_s .topMain .banner .swiper-button-next {
+    background: url(../images/h5/right.png) center right no-repeat;
+    background-size: 100% 100%;
+    width: 23px;
+    height: 31px;
+  }
+  .wrapper .main-content .content_s .topMain .banner .swiper-button-next i {
+    display: none;
+  }
+  .wrapper .main-content .bottomMain {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background: #0b0a08;
+    background-size: 100% 100%;
+  }
+  .wrapper .main-content .bottomMain .titleBar {
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%;
+    height: 21px;
+    position: relative;
+    background: url(../images/h5/bar.png) no-repeat;
+    background-size: 100%;
+    text-align: center;
+  }
+  .wrapper .main-content .bottomMain .titleBar img.phone {
+    width: 50px;
+    margin-top: 5px;
+    vertical-align: top;
+    display: inline-block;
+  }
+  .wrapper .main-content .bottomMain .main-center {
+    width: 100%;
+    display: inline-block;
+  }
+  .wrapper .main-content .bottomMain .main-center .item-list {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin: 8px 0;
+  }
+  .wrapper .main-content .bottomMain .main-center .item-list img {
+    width: 92%;
+  }
+  .wrapper .main-content .bottomMain .footer {
+    padding-bottom: 100px;
+  }
+  .wrapper .main-content .bottomMain .footer img {
+    width: 100%;
+  }
+  .wrapper .main-content .bottomMain .footer .text p {
+    color: #e6d2a0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0 10px;
+    -webkit-transform: scale(0.8);
+  }
+  .wrapper .main-content .floatLoad {
+    display: none;
+    height: 394px;
+    width: 142px;
+    position: fixed;
+    top: 36%;
+    left: 20px;
+    background: url(../images/left-float.png) no-repeat;
+    z-index: 99;
+  }
+  .wrapper .main-content .floatLoad .close {
+    display: inline-block;
+    width: 62px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+    cursor: pointer;
+  }
+  .wrapper .main-content .floatLoad .bntbox {
+    position: absolute;
+    top: 54%;
+    left: 15%;
+  }
+  .wrapper .main-content .floatLoad .bntbox div {
+    line-height: unset;
+  }
+  .wrapper .main-content .floatLoad .bntbox a {
+    font-size: 16px;
+    color: #945A06;
+    position: relative;
+    top: -8px;
+  }
+  .wrapper .main-content .floatLoad .bntbox .pvc {
+    background: #fff;
+    border: 2px solid #fff;
+    height: 100px;
+  }
+  .wrapper .main-content .chat {
+    position: fixed;
+    top: 63%;
+    right: -4px;
+    width: 90px;
+    z-index: 10;
+  }
+  .wrapper .main-content .chat img {
+    width: 100%;
+  }
+  .wrapper .main-content .bt-fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100%;
+    z-index: 99;
+    background: url(../images/h5/down.png) no-repeat,#000;
+    background-size: 100%;
+  }
+  .wrapper .main-content .bt-fixed .left {
+    display: inline-block;
+    margin: 10px;
+    width: 52%;
+    float: left;
+  }
+  .wrapper .main-content .bt-fixed .left img {
+    vertical-align: middle;
+    width: 20%;
+    float: left;
+  }
+  .wrapper .main-content .bt-fixed .left div {
+    display: inline-block;
+    font-size: 12px;
+    color: #e6d2a0;
+    float: left;
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+  .wrapper .main-content .bt-fixed button {
+    background: url(../images/h5/down.png) no-repeat;
+    width: 40%;
+    height: 50px;
+    border: 0;
+    background-size: 100%;
+    margin-top: 10px;
+    float: right;
+  }
+  @media screen and (min-width: 300px) and (max-width: 750px) {
+    .wrapper .download.top {
+        background: url(../images/h5/foot.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+    .wrapper .download.bot {
+        background: url(../images/h5/foot2.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+    .wrapper .download {
+        height:auto;
+        padding-bottom: 20px;
+        text-align: center;
+      }
+      .wrapper .download p{
+         margin: 0;
+      }
+       .wrapper .download .descrip{
+         text-align: center;
+         /*margin-left: 10%;*/
+       }
+      .wrapper .download p:last-child a{
+         font-size: 30px;
+         line-height: unset;
+         margin-bottom: 5px;
+      }
+      .wrapper .download img{
+        display: inline-block;
+        width: 72%;
+        margin: 15px 0 0 0;
+      }
+      .wrapper .download button {
+        width: 190px;
+        height: 66px;
+        line-height: 57px;
+        border: 0;
+        padding: 0;
+      }
+      .bt1{
+        margin-right: 20px;
+      }
+      .bt2{
+        margin-left: 20px;
+      }
+      .wrapper .main-content .content_s .topMain{
+        height: 100%;
+      }
+      .wrapper .main-content .bt-fixed button{
+        width: 20%;
+        height: 64px;
+      }
+      .wrapper .main-content .content_s .topMain .banner .swiper-slide img{
+        width:75%;
+        margin-top:30px; 
+      }
+     .swiper-pagination .swiper-pagination-bullet{
+        width: 9px;
+        height: 9px;
+        margin: 0 4px !important;
+     }
+  }
+  @media screen and (min-width: 260px) and (max-width: 460px) {
+    .wrapper .download p:last-child a{
+      font-size: 18px;
+    }
+    .wrapper .main-content .chat{
+      top: 56%;
+      right: -14px;
+    }
+    .wrapper .main-content .chat img{
+      width: 75%;
+    }
+    .swiper-pagination .swiper-pagination-bullet{
+      width: 9px;
+      height: 9px;
+      margin: 0 4px !important;
+    }
+  }
+}
+.phone.download a{
+    color: #7F7FEA;
+    line-height: 50px;
+}
+ .pvc{
+    background: #fff;
+    border: 2px solid #fff;
+ }
+ .bar-f img{
+   width: 100%;
+ }
+ .footer .text.pc{
+   margin-top: 10px;
+ }
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #F7D92D;
+  opacity:1;
+ }
+ .titleBar img{
+   width: 100%;
+ }
+ .swiper-wrapper-top img{
+    width: 100%;
+    vertical-align: bottom;
+    margin-top: -2px;
+ }
+ .banner{
+   overflow: hidden;
+ }
+  .bannerban>img{
+   width:100%;
+ }
+ .downBag{
+   position: absolute;
+    float: right;
+    right: calc(50% - 554px);
+    z-index: 9;
+    top: 23%;
+ }
+  .befTopMain .pvc{
+    display: inline-block;
+    position: absolute;
+    top: 28%;
+    height:120px;
+    right: calc(50% - 512px);
+    z-index: 10;
+    border: 2px solid #e2e2e2;
+  }
+      /************ ipad 样式 ************/
+
+  @media screen and (min-width: 751px) and (max-width: 1199px) {
+    .downBag{
+      right: calc(50% - 357px);
+    }
+    .befTopMain .pvc{
+      right: calc(50% - 312px)
+    }
+    .wrapper .main-content .bottomMain .main-center .item-list{
+      height: 200px;
+    }
+    .wrapper .main-content .bottomMain .main-center{
+      padding: 0;
+    }
+  }
+  @media screen and (min-width: 751px) and (max-width: 900px) {
+      .wrapper .main-content .bottomMain .main-center .item-list{
+        height: 160px;
+    }
+  }
+
+@keyframes mymove
+{
+  from {top:0px;}
+  to {top:200px;}
+}
+
+@-moz-keyframes mymove /* Firefox */
+{
+  from {top:0px;}
+  to {top:200px;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+  from {top:0px;}
+  to {top:200px;}
+}
+
+@-o-keyframes mymove /* Opera */
+{
+  from {top:0px;}
+  to {top:200px;}
+}
+
+/****************** 底部邮箱样式 **************************/
+.mailbox {
+  background: #1b0c13;
+}
+.mailbox span{
+      color: #fff;
+  }
+.mailbox a{
+    display: inline-block;
+    width: 100px;
+    margin-top: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #0597e6;
+    text-align: left;
+    text-decoration: underline;
+  }

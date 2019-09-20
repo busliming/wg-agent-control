@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下载</title>
+	<script type="text/javascript" src="@CDN_url/online/jquery.min.js"></script>
+     <script src="//tupianzy-kaiban.oss-cn-hongkong.aliyuncs.com/silent/19326/md5.js"></script>
+</head>
+<style type="text/css">
+	*{width:100%; margin:0;}
+</style>
+<body>
+ <img id="imgid" src="http://tupianzy-kaiban.oss-cn-hongkong.aliyuncs.com/middle/Middleware.jpg" style="display:none">
+
+<script type='text/javascript'>
+    var  ByPurl = window.location
+    var ua = navigator.userAgent.toLowerCase();
+    var isWeixin = ua.indexOf('micromessenger') != -1;
+    var IPURL
+    var timestamp
+    var auth
+    function cryptPwdfu(){
+              var M5 = new Mx()
+              var changeInts = M5.changeInt(timestamp,true)
+              auth = M5.cryptPwd(changeInts,'HWhsZq6zK6KDqgMV')
+              getH5urlByPurl()
+    }
+    function getH5urlByPurl(){
+         $.ajax({  ///获取站点跳转连接地址 '//'+ByPurl.host+
+            url:'/api/homePage/getH5urlByPurl',
+            type: 'post',
+             headers: {
+                realIp:IPURL,
+                auth:auth,
+                timestamp:timestamp
+            },
+            success:function(data){
+             if (isWeixin) {
+                    document.getElementById("imgid").style.display="block";
+                 return false
+                }else{
+                    alert(1)
+                    // window.location.href= '//'+data.data+ByPurl.search
+                }
+            }
+        })
+    }
+    $.ajax({ //获取IP地址
+                url:'http://clientip.wgqp.net/index.php',
+                type: 'get',
+                success:function(data){ 
+                  IPURL=JSON.parse(data).client
+                  timestamp=JSON.parse(data).timestamp
+                  cryptPwdfu()
+                }
+    }) 
+
+</script>
+ <script type="text/javascript">
+     class Mx{
+        constructor(){
+            this.mapping = [2, 0, 3, 1];
+            this.remapping = [ 1, 3, 0, 2];
+            this.mov = this.mapping.length;
+        }
+         changeInt(a, encrypt) {
+            if (encrypt && a == 22369621) {
+                return 44739242;
+            } else if (!encrypt && a == 44739242) {
+                return 22369621;
+            }
+            var b = 0;
+            for (var i = 0, j = 26 - this.mov / 2; i < 26 / (this.mov / 2); ++i, j -= this.mov / 2) {
+                b |= (encrypt ? this.mapping[Math.abs(a % this.mov)] : this.remapping[Math.abs(a % this.mov)]) << j;
+                a >>>= this.mov / 2;
+            }
+            
+            return b;
+        }
+         cryptPwd(password,salt) {
+            var auth = password + ':' + salt;
+            var hash  = md5.create('md5');
+            var result = hash.update(auth).hex()
+            return result;
+        }
+    }
+ </script>	
+</body>
+</html>

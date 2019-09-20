@@ -1,0 +1,233 @@
+﻿a{text-decoration:none;}
+body{
+  max-width: 640px;
+  margin:0 auto;
+  position:relative;
+  background:#2c084f;
+  overflow-x: hidden;
+}
+.ban{
+  text-align:center;
+  padding:15px 0px;
+}
+.ban a{display:block;}
+.ban img{
+  display:block;
+  margin:0 auto;
+}
+.list {
+  width:616px;
+  margin:0 auto;
+}
+.list li{
+  float:left;
+  width:154px;
+  height:207px;
+  
+}
+.list li a{
+  display:block;
+  text-align:center;
+}
+.xia{
+  padding:30px 0px;
+  padding-left:36px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.yel{color:#fffa00;}
+.dianxia{
+  color:#fff;
+  font-size:22px;
+  line-height:50px;
+}
+.rw1{font-size:44px;
+line-height:44px;
+color:#fffa00;}
+.rw1 em{
+  color:#fff;
+  background:#5d0ea7;
+  font-size:22px;
+  padding:10px;
+  border-top-left-radius:30px;
+  border-bottom-left-radius:30px;
+}
+.rw2{
+  font-size:36px;
+  line-height:50px;
+  color:#fff;
+}
+.rw2 em {
+  color:#fffa00;
+  font-size:50px;
+}
+.anniu {text-align:center;}
+.ping{
+  width:580px;
+  margin:0 auto;
+}
+.pit{
+  color:#ffcc00;
+  font-size:30px;
+  line-height:50px;
+  padding-left:26px;
+}
+
+.fen{
+  height:156px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom:2px solid #3f0a6e;
+}
+.man{
+  color:#fff;
+  width:190px;
+  text-align:center;font-size:24px;
+  line-height:30px;
+}
+.man em{
+  color:#ffcc00;
+  font-size:90px;
+  line-height:100px;
+}
+
+.psu{
+  text-align:right;
+  color:#fff;
+  line-height:30px;
+  font-size:22px;
+}
+.xie{
+  height:168px;
+  border-bottom:2px solid #490c7e;
+}
+.xiexin{
+  height:84px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.xiexin span{
+  color:#fff;
+  font-size:22px;
+}
+.wux{padding-right:47px;}
+.shuxin{
+  height:60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.dianping{
+  display:block;
+  width:109px;
+  height:58px;
+  font-size:24px;
+  background:#bf0006;
+  border-radius: 8px;
+  color:#fff;
+  text-align:center;
+  line-height:58px;
+}
+.shuxin input{
+  height:54px;
+  border:2px solid #540c93;
+  padding-left:15px;
+  width:418px;
+  color:#fff;
+  font-size:24px;
+  background:#1e0238;
+  border-radius: 10px;
+  outline:none;
+}
+.same {
+  height:180px;
+  padding-top:20px;
+  border-bottom:2px solid #490c7e;
+}
+.sat{
+  padding:0 10px;
+  height:48px;
+  background:#371664;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color:#fff;
+  
+}
+.sat span{
+  font-size:24px;
+}
+.pinnei{
+  font-size:18px;
+  line-height:30px;
+  color:#fff;
+  
+}
+.pinren{
+  color:#fff;
+  font-size:22px;
+  line-height:30px;
+  padding-top:10px;
+}
+.foot{
+  height:168px;
+  background:#411a73;
+  margin-top:20px;
+ text-align:center;
+}
+.ft{
+  padding-top:15px;
+}
+.cop{
+  text-align:center;
+  color:#fff;
+  font-size:20px;
+}
+.buzhou{
+  padding:20px 0px;
+  text-align:center;
+}
+.buzhou img{display:block;
+
+margin:0 auto;}

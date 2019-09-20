@@ -1,0 +1,92 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:16px;
+  vertical-align:baseline;
+  background:transparent;
+}
+html,body{
+  height: 100%;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+h1,h2,h3,h4,h5,h6,em,i {
+  font-weight: 100;
+  font-style: normal
+}
+ul,ol,li {
+  list-style-type: none
+}
+img{width:100%;}
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0
+}
+a:hover {
+  text-decoration: none;
+}
+.FhH5_box{
+  position:relative;
+}
+#FhH5{
+  max-width:640px;
+  margin:0 auto;
+}
+.FhH5_box .mohe_down{
+  position: fixed;
+  height:100%;
+  width:100%;
+}
+#leftH5s{
+  display: inline-block;
+}
+#leftH5s img{
+   width:100px;
+   float: right;
+}
+
+.bnt_img{
+   position: absolute;
+     left: 30%;
+    top: 12.5%;
+    width: 40%;
+    -webkit-animation: move_rw  1s linear infinite;
+    animation: move_rw  1s linear infinite;
+}
+
+@media screen and (max-width:640px) {
+  #leftH5s img{
+   width:50%;
+ }
+.bnt_img{
+   position: absolute;
+    left: 20%;
+    top: 12.5%;
+    width:60%;
+    -webkit-animation: move_rw  1s linear infinite;
+    animation: move_rw  1s linear infinite;
+}
+}
+
+
+@keyframes move_rw{
+  0% {
+        transform: scale(1) 
+    }
+   100% {
+        transform: scale(1.3)
+    }
+}

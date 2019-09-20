@@ -1,0 +1,401 @@
+* {
+	margin:0;
+	padding:0
+}
+li,ul {
+	list-style:none
+}
+html {
+	font-size:14px;
+	overflow-x:hidden;
+	height:100%
+}
+body {
+	color:#fff;
+	font:42px/2.6 \5fae\8f6f\96c5\9ed1,\5b8b\4f53,arial
+}
+button,input,select {
+	outline:0;
+	font:12px/1.6 \5fae\8f6f\96c5\9ed1,\5b8b\4f53,arial
+}
+table {
+	border-collapse:collapse
+}
+a {
+	text-decoration:none
+}
+a img {
+	border:none
+}
+.fl {
+	float:left
+}
+.fr {
+	float:right
+}
+.cl:after,.cl:before {
+	content:"";
+	display:table
+}
+.cl:after {
+	clear:both
+}
+.mt10 {
+	margin-top:10px
+}
+.mt20 {
+	margin-top:20px
+}
+.mt30 {
+	margin-top:30px
+}
+.mt40 {
+	margin-top:40px
+}
+.mt50 {
+	margin-top:50px
+}
+.mt80 {
+	margin-top:80px
+}
+.ml30 {
+	margin-left:30px
+}
+.ml20 {
+	margin-left:20px
+}
+.w750 {
+	width:750px;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+	min-height:100%;
+	padding-top:21px;
+	background:url(../img/ia_100000026.jpg)
+}
+.header .more {
+	position:absolute;
+	right:35px;
+	top:40px
+}
+.header {
+	position:relative;
+	box-sizing:border-box;
+	padding-top:.15rem;
+	background-size:100% auto
+}
+.banner {
+	width:700px;
+	overflow:hidden;
+	margin:0 auto;
+	height:300px
+}
+.header .btn {
+	display:block;
+	width:450px;
+	margin:.5rem auto 0
+}
+.banner .swiper-container {
+	width:100%;
+	height:100%
+}
+.banner .swiper-slide {
+	text-align:center;
+	font-size:18px;
+	background:#none;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	-webkit-justify-content:center;
+	justify-content:center;
+	height:3.3rem!important;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	-webkit-align-items:center;
+	align-items:center
+}
+.gameList li a p {
+	font-size:.24rem;
+	color:#fff;
+	line-height:.38rem
+}
+.downIntro {
+	box-sizing:border-box;
+	margin-top:.35rem;
+	position:relative;
+	margin-bottom:.35rem;
+	overflow-x:hidden
+}
+.downIntro .notice {
+	position:absolute;
+	right:0;
+	top:0;
+	display:block;
+	width:1.96rem;
+	height:.44rem;
+	line-height:.44rem;
+	border-radius:.44rem 0 0 .44rem;
+	color:#fff;
+	background:#cd4d00;
+	font-size:.24rem;
+	text-indent:.26rem
+}
+.downIntro .activeBtn img {
+	margin-left:80px
+}
+.downIntro .don {
+	margin:0 auto;
+	width:576px
+}
+.downIntro .don0 {
+	margin:0 auto;
+	width:600px
+}
+.box {
+	width:750px
+}
+.all {
+	height:auto;
+	margin:0 auto;
+	overflow:hidden
+}
+.top-img {
+	width:687px;
+	height:auto;
+	font-size:0;
+	position:relative;
+	margin:0 auto;
+	overflow:hidden
+}
+.activeimg {
+	height:345px;
+	position:relative
+}
+.top-img .activeimg img {
+	width:687px;
+	height:345px
+}
+.header .top-img .activeimg img {
+	width:687px;
+	height:254px
+}
+.header .top-img .activeimg {
+	height:275px;
+	position:relative
+}
+.bot-img {
+	margin-top:20px;
+	height:176px;
+	margin-bottom:10px
+}
+.bot-img ul {
+	float:left;
+	width:100%;
+	height:100px
+}
+.bot-img ul li {
+	width:168px;
+	margin-left:12px;
+	margin-right:8px;
+	float:left;
+	cursor:pointer;
+	font-size:0
+}
+
+.bot-img ul li img {
+	width:100%
+}
+.bot-img ul li:last-child {
+	margin-right:0
+}
+.btns>img {
+	width:692px;
+	height:32px;
+	margin:30px auto 0
+}
+.game_img {
+	margin:8px 15px
+}
+.game_img>img:first-child {
+	margin-right:8px
+}
+.banners .swiper-slide {
+	height:3rem!important
+}
+.banners .swiper-wrapper {
+	height:3.8rem!important
+}
+.game {
+	margin-bottom:2.3rem
+}
+.text {
+	color:#fff;
+	margin:0 12px
+}
+.downIntro>img {
+	position:relative
+}
+.game img {
+	width:100%
+}
+.game {
+	width:100%;
+	margin:0 auto;
+	display:inline-block
+}
+.game ul li {
+	float:left;
+	display:block
+}
+.game .u0 li {
+	width:180px;
+	height:180px;
+	margin:20px 24px 0 36px
+}
+.game .u1 li {
+	width:200px;
+	height:200px;
+	margin:20px 30px
+}
+.f_h {
+	height:160px;
+	display:block
+}
+.footer {
+	position:fixed;
+	bottom:0;
+	z-index:100
+}
+.load_img>img {
+	position:absolute;
+	right:13px;
+	bottom:6px
+}
+:-moz-placeholder {
+	color:#fff;
+	opacity:1
+}
+::-moz-placeholder {
+	color:#fff;
+	opacity:1
+}
+input:-ms-input-placeholder {
+	color:#fff;
+	opacity:1
+}
+input::-webkit-input-placeholder {
+	color:#fff;
+	opacity:1
+}
+
+#qrcode{
+	position: absolute;
+	background: #fff;
+	top: 50%;
+	left: 50%;
+	 -moz-transform: translate(-50%, -50%);  /*向上平移 自身的50%*/
+     -webkit-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     -o-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+}
+#qrcode canvas{
+	width: 13rem;
+	padding: 10px;
+}
+
+#andBtn{
+	display: none;
+}
+
+@media screen and (max-width:750px) {
+   .tac{
+   	display: none;
+	 }
+	 #andBtn{
+		display: block;
+	}
+}
+
+/*adv*/
+.adv{
+	width: 90%;
+	margin: 0 auto;
+}
+.adv img{
+	width: 100%;
+}
+
+
+.tada {
+	-webkit-animation-name: tada;
+	animation-name: tada;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes tada {
+0% {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+10%, 20% {
+	-webkit-transform: scale(0.9) rotate(-3deg);
+	transform: scale(0.9) rotate(-3deg);
+}
+
+30%, 50%, 70%, 90% {
+	-webkit-transform: scale(1.1) rotate(3deg);
+	transform: scale(1.1) rotate(3deg);
+}
+
+40%, 60%, 80% {
+	-webkit-transform: scale(1.1) rotate(-3deg);
+	transform: scale(1.1) rotate(-3deg);
+}
+
+100% {
+	-webkit-transform: scale(1) rotate(0);
+	transform: scale(1) rotate(0);
+}
+}
+
+@keyframes tada {
+0% {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+10%, 20% {
+	-webkit-transform: scale(0.9) rotate(-3deg);
+	-ms-transform: scale(0.9) rotate(-3deg);
+	transform: scale(0.9) rotate(-3deg);
+}
+
+30%, 50%, 70%, 90% {
+	-webkit-transform: scale(1.1) rotate(3deg);
+	-ms-transform: scale(1.1) rotate(3deg);
+	transform: scale(1.1) rotate(3deg);
+}
+
+40%, 60%, 80% {
+	-webkit-transform: scale(1.1) rotate(-3deg);
+	-ms-transform: scale(1.1) rotate(-3deg);
+	transform: scale(1.1) rotate(-3deg);
+}
+
+100% {
+	-webkit-transform: scale(1) rotate(0);
+	-ms-transform: scale(1) rotate(0);
+	transform: scale(1) rotate(0);
+}
+}

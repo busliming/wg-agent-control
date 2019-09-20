@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=640,target-densitydpi=320,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/m.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/bitbug_favicon.ico" />
+    <title>全网最火 公平竞技</title>
+    <script type="text/javascript" charset="UTF-8" src="//res.cdn.openinstall.io/openinstall.js"></script>
+    <script src="js/59382186_popular.js"></script>
+    <script src="js/qrcode.min.js"></script>
+
+<body>
+
+    <div class="Mobile_Phone" style="position: relative;">
+        <div class="qr_box">
+            <div id="qrcode" style="width:180px; height:180px; margin-top:15px;"></div>
+            <span>扫描下载</span>
+        </div>
+        <img src="img/bg.jpg">
+        <a class="download_activ mohe_down">
+            <img src="img/APP.png">
+        </a>
+    </div>
+
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: window.location.href,
+            width: 200,
+            height: 200,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+        console.log(window.location.href)
+
+        window.onload = function () {
+            // 阻止双击放大
+            var lastTouchEnd = 0;
+            document.addEventListener('touchstart', function (event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            });
+            document.addEventListener('touchend', function (event) {
+                var now = (new Date()).getTime();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+
+            // 阻止双指放大
+            document.addEventListener('gesturestart', function (event) {
+                event.preventDefault();
+            });
+        }
+    </script>
+</body>
+
+</html>

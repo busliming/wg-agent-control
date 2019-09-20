@@ -1,0 +1,230 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+  background-color: #45185d;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(1, 30, 62, 0.3);
+  border-radius: 10px;
+  background-color: #45185d;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(1, 30, 62, 0.3);
+  background-color: #7c39b9;
+}
+header {
+  background: url(../img/header.png) no-repeat;
+  position: fixed;
+  background-size: 100% auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+header .pc {
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  min-width: 150px;
+}
+header .mb {
+  display: none;
+}
+.content_box img {
+  margin-top: -4px;
+}
+.content_box .pc {
+  display: block;
+}
+.content_box .mb {
+  display: none;
+}
+.content_box .banner_top {
+  background: url(../img/banner_02.jpg) no-repeat;
+  min-height: 300px;
+  margin-top: -4px;
+  background-size: cover;
+  background-position: center;
+}
+.content_box .banner_top .downlactv {
+  display: none;
+}
+.content_box .banner_top .content {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 10%;
+  padding-bottom: 20px;
+}
+.content_box .banner_top .content .swiper-container {
+  margin: 0 10px!important;
+  box-sizing: border-box !important;
+  background: url(../img/swiper_bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+.content_box .banner_top .content .swiper-container .swiper-wrapper {
+  padding: 10px 0;
+}
+.content_box .banner_top .content .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+.content_box .mailbox {
+  background: #292f47;
+  text-align: center;
+  margin-top: -4px;
+  padding-bottom: 10px;
+}
+.content_box .mailbox span {
+  color: #ffffff;
+}
+.content_box .mailbox a {
+  display: inline-block;
+  width: 100px;
+  margin-top: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #0597e6;
+  text-align: left;
+  text-decoration: underline;
+}
+.flow {
+  background: url(../img/flow.png) no-repeat;
+  width: 190px;
+  height: 462px;
+  margin-right: 10px;
+}
+.flow #serviceUrl {
+  width: 100%;
+  height: 75px;
+  display: block;
+}
+.flow #qrcodes {
+  position: absolute;
+  left: 25%;
+  top: 90px;
+}
+.flow #qrcodes canvas {
+  width: 96%;
+  padding: 5%;
+  background: #ece3e3;
+}
+.flow #fixios {
+  background: url(../img/ios.png) no-repeat;
+  height: 41px;
+  width: 129px;
+  display: block;
+  position: absolute;
+  left: 34px;
+  top: 225px;
+}
+.flow #fixandroid {
+  background: url(../img/android.png) no-repeat;
+  height: 41px;
+  width: 129px;
+  display: block;
+  position: absolute;
+  left: 34px;
+  top: 280px;
+}
+.flow .top {
+  position: absolute;
+  height: 35px;
+  width: 100%;
+  bottom: 17px;
+  cursor: pointer;
+}
+.flow .shutdown {
+  position: absolute;
+  right: -7px;
+  cursor: pointer;
+  top: -10px;
+}
+@media screen and (max-width: 1100px) {
+  .content_box .banner_top .content {
+    width: 800px;
+    padding-top: 12%;
+  }
+  .flow {
+    width: 160px;
+    height: 400px;
+    background-size: contain;
+  }
+  .flow #serviceUrl {
+    height: 70px;
+  }
+  .flow #qrcodes {
+    top: 75px;
+  }
+  .flow #fixios {
+    height: 34px;
+    width: 128px;
+    left: 30px;
+    top: 196px;
+    background-size: contain;
+  }
+  .flow #fixandroid {
+    height: 34px;
+    width: 128px;
+    left: 30px;
+    top: 247px;
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .content_box .banner_top .content {
+    width: 700px;
+    padding-top: 15%;
+  }
+}
+@media screen and (max-width: 750px) {
+  header .pc {
+    display: none;
+  }
+  header .mb {
+    display: block;
+  }
+  .content_box .pc {
+    display: none;
+  }
+  .content_box .mb {
+    display: block;
+  }
+  .content_box .banner_top {
+    height: 5rem;
+    min-height: 0;
+    position: relative;
+  }
+  .content_box .banner_top .downlactv {
+    position: absolute;
+    width: 4rem;
+    top: -10px;
+    left: 50%;
+    margin-left: -2rem;
+    display: block;
+  }
+  .content_box .banner_top .content {
+    width: 100%;
+    padding-top: 20%;
+  }
+  .content_box .mailbox {
+    display: none;
+  }
+  .flow {
+    background: url(../img/h5/server@1xx.png) no-repeat;
+    width: 65px;
+    height: 65px;
+    margin-right: 0;
+  }
+  .flow #qrcodes,
+  .flow #fixios,
+  .flow #fixandroid,
+  .flow .shutdown,
+  .flow .top {
+    display: none;
+  }
+}

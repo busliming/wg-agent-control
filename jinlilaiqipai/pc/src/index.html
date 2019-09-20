@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>金利来棋牌</title>
+</head>
+<style>
+    body{
+       text-align: center;
+    }
+    h5,#COM{
+        font-size:34px;
+        margin:130px 0 0;
+        display: inline-block;
+    }
+    a{
+        font-size:30px;
+        font-weight: 700;
+        text-decoration: none;
+        margin-top: 40px;
+        display: inline-block;
+    }
+</style>
+<body>
+   <div><h5 id="hostname"></h5><h5 id="COM" style="color:red;">com</h5></div>
+   <a id="Jump">请点击继续访问</a>
+<script type="text/javascript">
+   var htpss = window.location
+   var hostname = document.getElementById("hostname")
+   var Jump = document.getElementById("Jump")
+   var COM = document.getElementById("COM")
+   hostname.innerHTML=htpss.hostname.substring(0,10)
+   Jump.href= 'ditail.html' + htpss.search
+   var condata=["com","vip","net","cc","me"]
+   var data=0
+   function Fun1() {
+         if(data>= condata.length){
+            data=0
+            COM.innerHTML=condata[data]
+         }else{
+            COM.innerHTML=condata[data]
+            data++
+         }
+     }
+    setInterval(Fun1,1500);
+
+    
+</script>
+</body>
+</html>

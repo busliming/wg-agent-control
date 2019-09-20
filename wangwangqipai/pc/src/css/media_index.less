@@ -1,0 +1,258 @@
+.download_img_1{
+  display:none;
+}
+#bannerh5{
+  display: none;
+}
+#bannerpc{
+  display: block;
+}
+@media screen and (max-width: 1105px) {
+  body {
+    padding-bottom:70px;
+    background: #061131;
+  }
+  .header {
+    height: 50px;
+    // background: url(../images/logo@0.5x.png) rgba(17, 26, 62, 0.5) no-repeat
+    //center;
+  }
+  .banner-pc {
+    display: none;
+  }
+  .banner-mobile {
+    display: block;
+  }
+  .main {
+    padding-bottom: 45px;
+    background: url(../images/bg@2x.jpg) #061131 no-repeat bottom center;
+    .title {
+      width: 100%;
+      height: 49px;
+      padding-top: 15px;
+      background-size: 100% 100%;
+      .title_bg {
+        width: 123px;
+        height: 22px;
+        &.bg-1 {
+          background: url(../images/title_1@0.5x.png) no-repeat center;
+        }
+        &.bg-2 {
+          background: url(../images/title_2@0.5x.png) no-repeat center;
+        }
+        &.bg-3 {
+          background: url(../images/title_3@0.5x.png) no-repeat center;
+        }
+      }
+    }
+    .code {
+      display: none;
+    }
+    .btn-box {
+      width: 100%;
+      padding: 40px 0;
+      background: url(../images/bg_download@0.5x.png) no-repeat center;
+      background-size: auto 100%;
+      text-align: center;
+      display: block;
+      .dw-btn {
+        a {
+          width: 60%;
+          display: inline-block;
+          text-align: center;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      p {
+        padding: 10px 0;
+        font-size:36px;
+        a {
+          color: #fff;
+        }
+      }
+      .game-btn {
+        width: 60%;
+        display: inline-block;
+      }
+    }
+    .carousel {
+      .carousel-box {
+        margin-top: 20px;
+        .swiper-wrapper {
+          .swiper-slide {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .hot-game {
+      margin-top: 20px;
+      .game-list {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        padding: 0 10%;
+        background: none;
+        ul li {
+          width: 48%;
+          height: auto;
+          margin-bottom: 10px;
+          &:nth-child(2n-1) {
+            margin-right: 4%;
+          }
+          .game-bg {
+            height: auto;
+          }
+          .game-title {
+            margin-top: 0;
+            font-size: 16px;
+            p {
+              line-height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 10px 10%;
+    font-size: 12px;
+    p ,.mailbox{
+      display: none;
+    }
+
+  }
+  .server {
+    & > a {
+      display: block;
+    }
+   .service, .shutdown{
+      display: none;
+    }
+  }
+  .download_img {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width:100%;
+    display: block;
+  }
+}
+
+// @media screen and (min-width: 751px) and (max-width: 1105px) {
+//   .banner-pc {
+//     display: none;
+//   }
+//   .banner-mobile {
+//     display: block;
+//   }
+// }
+
+@media screen and (min-width: 460px) and (max-width: 1105px) {
+  #bannerh5{
+    display: none;
+  }
+  #bannerpc{
+    display: block;
+  }
+  body {
+    padding-top: 97px;
+    padding-bottom: 200px;
+    background: #061131;
+  }
+  .header {
+    height: 97px;
+    padding: 10px 0;
+    .logo {
+      width: 275px;
+      height: 83px;
+      background: url(../images/logo.png) no-repeat;
+      background-size: cover;
+    }
+  }
+  .main {
+    .title {
+      height: 97px;
+      padding-top: 30px;
+      background-image: url(../images/bg_title@2x.png);
+      .title_bg {
+        width: 245px;
+        height: 44px;
+        &.bg-1 {
+          background: url(../images/title_1@1x.png) no-repeat center;
+        }
+        &.bg-2 {
+          background: url(../images/title_2@1x.png) no-repeat center;
+        }
+        &.bg-3 {
+          background: url(../images/title_3@1x.png) no-repeat center;
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 30px 10%;
+  }
+
+  .download_img_2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  #bannerh5{
+    display: block;
+  }
+  #bannerpc{
+    display: none;
+  }
+  body {
+    padding-top: 50px;
+  }
+  .header {
+    height: 50px;
+    padding: 5px 0;
+    background-image: url(../images/header_bg@2x.png);
+    .logo {
+     width: 140px;
+    height: 42px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: cover;
+    }
+  }
+  .main{
+        padding-bottom: 50px;
+  }
+  .server {
+    width: 65px;
+    height: 65px;
+    top: 250px;
+    & > a {
+      background: url(../images/server@2x.png) no-repeat;
+      background-size: 100% auto;
+    }
+    .service,.shutdown{
+      display: none;
+    }
+
+  }
+  .download_img_1 {
+    display: block;
+  }
+  .main .btn-box{
+    padding:12px 0;
+    p{
+       padding:18px 0;
+       a {
+    font-size:18px;
+      
+    }
+    }
+  }
+  .swiper-button-prev.swiper-button-white,.swiper-button-next{
+    display: none;
+  }
+}

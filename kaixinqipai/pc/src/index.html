@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="aplus-waiting" content="MAN">
+  <meta name="renderer" content=webkit>
+  <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+	<meta charset="UTF-8">
+	<title>开心棋牌</title>
+	<link rel="shortcut icon" type="image/x-icon"  href="img/bitbug_favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link  rel="stylesheet" type="text/css" href="css/detail.css">
+	<!-- <link  rel="stylesheet" type="text/css" href="css/swiper.custom.min.css"> -->
+	<script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script> 
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/float-min.js"></script>
+	<script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+	<script type="text/javascript" src="js/md5-min.js"></script>
+    <script type="" src="@CDN_url/online/20190430/public-min.js"></script>    
+	<script type="" src="@CDN_url/online/20190430/poplar-min.js"></script>
+</head>
+<body>
+	<main>
+		<header>
+			<center>
+				<img src="img/logo.png">
+			</center>
+		</header>
+		<article class="center">
+			<img id="bannerpc" src="img/banner.png">
+			<img id="bannerH5" src="img/banner1.png">
+			<!--  <div class="swiper-container swiper-top">
+			 	  <div class="swiper-wrapper" id="swiper-wrap">
+			     </div>
+			     <div class="swiper-pagination"></div>
+			 </div> -->
+		</article>
+		<div class="content">
+				<div class="QR_code" style="margin-top: -4px;">
+					 <div class="top_title">
+					 	<img src="img/qr_code.png">
+					 </div>
+					 <div class="ming">
+					 	  <div class="intermediate">
+					 	  	  <div id="qrcodes"></div>
+					 	  </div>
+					 </div>
+				</div>
+				<div class="download" style="margin-top: -4px;">
+					<div class="phone" style="padding-bottom: 0.8rem;">
+						<!-- <a class="iosdow slideLeftReturn"  onclick="$public.h5ios()">
+							<img src="img/h5/ios.png">
+						</a>
+						<a class="androiddow slideRightReturn" onclick="$public.h5android()">
+							<img src="img/h5/android.png">
+						</a> -->
+						<a class="slideLeftReturn mohe_down">
+                            <img src="img/h5/ios-button.png"> 
+                         </a>
+						<a id="downloaddt" class="puffIn" target="_blank" style="display: none;">
+							<img src="img/h5/download.png">
+						</a>
+						<a class="Credit" id="shouxin" style="bottom: 0.25rem;" href="installatio.html">iOS如何授信？</a>
+					</div>
+				</div>
+				<!-- <div class="bannert">
+					 <div class="top_title">
+					 	 <img src="img/game_code.png">
+					 	 <img src="img/h5/game_code.png">
+					 </div>
+					 <div class="ming">
+					 	  <div class="swiper-container swiper-banert">
+						 	  <div class="swiper-wrapper">
+							        <div class="swiper-slide">
+							        	 <div class="slide_box">
+							        	    <img src="img/game1_banner.png">
+							       		 </div>
+							        </div>
+
+							        <div class="swiper-slide">
+							        	<div class="slide_box">
+							        	    <img src="img/game2_banner.png">
+							       		 </div>
+							        </div>
+							        <div class="swiper-slide">
+							        	<div class="slide_box">
+							        	    <img src="img/game3_banner.png">
+							       		 </div>
+							        </div>
+						     </div>
+						     <div class="swiper-pagination"></div>
+						     <div class="swiper-button-prev swiper-button-prevs"></div>
+   							 <div class="swiper-button-next swiper-button-nexts"></div>
+						  </div>
+					 </div>
+				</div> -->
+				<div class="gamelist">
+                      <div class="top_title">
+					 	 <img src="img/images7.png">
+					 	 <img src="img/h5/images7.png">
+					 </div>
+					 <div class="mings">
+					 	 <ul class="game_box" id="actives">
+					 	 	 <li>
+					 	 	 	<img src="img/game_list_1.png">
+					 	 	 </li>
+					 	 	 <li>
+					 	 	 	<img src="img/game_list_2.png">
+					 	 	 </li>
+					 	 	 <li>
+					 	 	 	<img src="img/game_list_3.png">
+					 	 	 </li>
+					 	 	 <li>
+					 	 	 	<img src="img/game_list_4.png">
+					 	 	 </li>
+					 	 	 <li>
+					 	 	 	<img src="img/game_list_5.png">
+					 	 	 </li>
+					 	 	 <li>
+					 	 	 	<img src="img/game_list_6.png">
+					 	 	 </li>
+					 	 </ul>
+					 </div>
+				</div>
+		</div>		
+        <footer>
+        	<center class="center_top">
+        	</center>
+        	<!-- <center class="mailbox">
+        		   <span>技术支持:</span>
+        		   <a onclick="openMailbox()" target="_blank">WG平台</a>
+        	</center> -->
+        	<center class="center_bottom">
+        		开心棋牌持有菲律宾政府PAGCOR (Philippine Amusement and Gaming Corporation)颁发的离岸博彩许可并受其监督<br/>Copyight © 开心棋牌<span id="location_hef"></span> Reserved
+        	</center>
+        </footer>
+        <div class="fix">
+        	 <div class="contact">
+        	 	 <a class="serviceUrl" id="serviceUrl" target="_blank"></a>
+        	 	 <div id="qrcode"></div>
+        	 	 <a id="fixios"  onclick="$public.pcios()">ios下载</a>
+        	 	 <a id="fixandroid"  onclick="$public.h5android()">android下载</a>
+        	 	 <a class="shutdown" onclick="shut_down()"><img src="img/button_Close.png"></a>	  
+        	 </div>
+        </div>
+        <div class="Mobile">
+        	<a id="Mobile_don" class="mohe_down"></a>
+        </div>
+    </main> 
+	<script type="" src="js/index-min.js"></script>    
+<script type='text/javascript'>
+
+$(".fix").Float({'floatRight' : 1, 'topSide' : 300, 'side':0});    
+
+var ua = navigator.userAgent;
+    var isiOS = ua.indexOf('iPhone') > -1
+    if(isiOS){
+         document.getElementById("shouxin").style.display="block";
+    }else{
+         document.getElementById("shouxin").style.display="none";
+    }   
+</script>		
+</body>
+</html>

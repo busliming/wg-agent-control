@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>百胜棋牌</title>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/float-min.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js" ></script>
+    <script type="text/javascript" src="js/md5-min.js"></script>
+    <script type="text/javascript" src="@CDN_url/online/20190430/public-min.js"></script>
+    <script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script>
+    <script type="" src="@CDN_url/online/20190430/poplar-min.js"></script>   
+    
+</head>
+<body>
+    <div class="wrapper">
+      <div class="mainShow">
+        <img class="bar pc" src="images/logo.png" alt="">
+        <img class="bar phone" src="images/h5/logo.png" alt="">
+        <div class="bannerban" style="margin-top: -2px;">
+            <img id="bannerpc" src="images/banner.png">
+            <img id="bannerH5" src="images/h5/banner.jpg">
+        </div>
+        <div class="phone download top" style="margin-top: -5px;">
+            <p>
+              <img class="bt1 mohe_down" src="images/h5/download_app.png"/>
+              <!--<img class="bt2" src="images/h5/adr-d.png" onclick="$public.h5android('android_new')"/>-->
+            </p>
+            <p id="shouxin" class="descrip"><a href="installindex.html">iOS如何授信？</a></p>
+        </div>
+        <div class="phone download bot" style="display: none;">
+            <p style="text-align:center">
+              <a class="goGame" href="" target="_banck"><img src="images/h5/game-button.png" style="width:72%"/></a>
+            </p>
+        </div>
+        <div class="main-content" style="margin-top:-4px;">
+            <div class="content_s">
+                 <div class="content_box">
+                      <div class="pc befTopMain">
+                          <div class="titleBar">
+                             <img src="images/title-qr-code.png"/>
+                          </div>
+                          <div class="banner" style="position:relative;margin-top: 30px;">
+                              <img src="images/qr-code-default-bg.png"/>
+                              <img class="downBag" src="images/qr-code-bg.png"/>
+                              <div class="pvc">
+                                <div id="codeImgpc"></div> 
+                              </div>
+                        </div>
+                      </div>
+                      <div class="bottomMain">
+                          <div class="titleBar">
+                             <img src="images/title-hotgame.png"/>
+                          </div>
+                        <div class="main-center">
+                          <div class="item-list" page="home">
+                            <img class="left" src="images/hotgame-fish.png"/>
+                          </div>
+                          <div class="item-list">
+                            <img class="left" src="images/hotgame-30second.png"/>
+                          </div>
+                          <div class="item-list">
+                            <img class="left" src="images/hotgame-fried-golden-flower.png"/>
+                          </div>
+                          <div class="item-list">
+                            <img class="left" src="images/hotgame-21oclock.png"/>
+                          </div>
+                          <div class="item-list">
+                            <img class="left" src="images/hotgame-BMW.png"/>
+                          </div>
+                          <div class="item-list">
+                            <img class="left" src="images/hotgame-hundreds-of-cattle.png"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bar-f">
+                        <img class="left pc" src="images/foot-bar.png"/>
+                        <img class="left phone" src="images/h5/foot-til.png"/>
+                      </div>
+                      <div class="floatLoad pc">
+                          <div class="bntbox">
+                             <div class="leftewm">
+                                  <a href="" class="chatPc" target="_banck" ></a>
+                                 <div class="pvc">
+                                     <div id="codeImg"></div>
+                                 </div>
+                                 <a class="d-btn" id="androidClick" onclick="$public.h5android('android_new')"><img src="images/sider-and-button.png"/></a>
+                                 <a class="d-btn" id="iosClick" onclick="$public.pcios('pcios_new')"><img src="images/sider-ios-button.png"/></a>
+                                 <img class="scan" src="images/scan.png"/>
+                             </div>
+                          </div>
+                          <span class="close"></span>
+                      </div>
+                      <a class="chat phone" href="" target="_banck" >
+                        <img class="right" src="images/h5/chat.png"/>
+                      </a>
+                 </div>
+            </div>
+            <div class="footer">
+              <div class="text pc">
+                <p>百胜棋牌持有菲律宾政府PAGCOR (Philippine Amusement and Gaming Corporation)颁发的离岸博彩许可并受其监督</p>
+                <p>Copyight © 百胜棋牌 <span id="location_hef"> wangzhe100.com </span>&nbsp;Reserved</p>
+              </div>
+            </div>
+            <div class="phone bt-fixed mohe_down">
+              <!--<img onclick="fastDown()" style="width:100%" src="images/h5/down.png"/>-->
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="js/index-min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.wrapper .main-content .bt-fixed').css('height',window.innerWidth / 750 * 156);
+    window.innerWidth <= 750 && $('.wrapper .main-content .content_s').css('padding-bottom', $('.phone.bt-fixed').height() + 20);
+  });
+  function openMailbox(){
+    window.open("mail.html?mai="+$public.consultMailbox);
+  }
+  var ua = navigator.userAgent;
+    var isiOS = ua.indexOf('iPhone') > -1
+    if(isiOS){
+         document.getElementById("shouxin").style.display="block";
+    }else{
+         document.getElementById("shouxin").style.display="none";
+    }
+
+    window.onload = function() {
+    // 阻止双击放大
+    var lastTouchEnd = 0;
+      document.addEventListener('touchstart', function(event) {
+          if (event.touches.length > 1) {
+              event.preventDefault();
+          }
+      });
+      document.addEventListener('touchend', function(event) {
+          var now = (new Date()).getTime();
+          if (now - lastTouchEnd <= 300) {
+              event.preventDefault();
+          }
+          lastTouchEnd = now;
+      }, false);
+
+    // 阻止双指放大
+      document.addEventListener('gesturestart', function(event) {
+          event.preventDefault();
+      });
+   }
+</script>
+</html>

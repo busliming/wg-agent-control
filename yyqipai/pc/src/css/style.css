@@ -1,0 +1,463 @@
+
+/************通用样式************/
+
+body{
+    margin: 0;
+}
+*:focus{outline:none; border: 0;}
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+#bannerh5{
+  display: none;
+}
+.top{
+  /*position: absolute;*/
+  width: 100%;
+  text-align: center;
+  top: 0;
+  background: url(../images/logo.jpg) no-repeat;
+  height: 100px;
+  z-index: 1550;
+  position: fixed;
+      background-size: cover;
+    background-position: top center;
+}
+canvas{
+  width: 100%;
+}
+.chat.phone{
+      text-align: right;
+      max-width: 130px;
+      width: calc(100% / 750 * 130);
+}
+.phone {
+  display: none;
+}
+.top-banner .top img.pc{
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: -1px;
+  width: auto;
+  height: 100px;
+}
+.wrapper .top-banner{
+  position: relative;
+  padding-top: 100px;
+}
+.top-banner img{
+  vertical-align: bottom;
+  width: 100%;
+}
+.wrapper .main-content .content_s .content_box{
+  background: url(../images/bottom-bg.jpg) center bottom no-repeat;
+  background-size: 100% 100%;
+}
+.befTopMain,.topMain,.bottomMain{
+  background:url(../images/light.png) no-repeat;
+  background-size: contain;
+    background-position: top center;
+}
+.wrapper .main-content .content_s .topMain,.wrapper .main-content .bottomMain {
+  position: relative;
+}
+.wrapper .titleBar,.wrapper .titleBar {
+  display: block;
+  height: 67px;
+  position: relative;
+  text-align: center;
+}
+.wrapper .titleBar img.pc{
+  margin-top: 22px;
+  display: inline-block;
+  width: 12%;
+}
+.wrapper .main-content .content_s .topMain img.pc.light,.wrapper .main-content .content_s .bottomMain img.pc.light {
+  width: 100%;
+  position: absolute;
+}
+.wrapper .main-content .content_s .topMain .banner {
+  padding-top: 4%;
+  display: inline-block;
+}
+.wrapper .main-content .bottomMain .titleBar {
+  height: 67px;
+  position: relative;
+  text-align: center;
+}
+.wrapper .main-content .bottomMain .main-center {
+  max-width: 1200px;
+  display: inline-block;
+  padding-top: 30px;
+}
+.wrapper .main-content .bottomMain .main-center .item-list {
+  width: 33%;
+  position: relative;
+  float: left;
+}
+.wrapper .main-content .bottomMain .main-center .item-list>img{
+  width: 100%;
+}
+.wrapper .main-content .footer .text p {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+.wrapper .main-content .floatLoad {
+  height:520px;
+  width: 172px;
+  position: absolute;
+  top: 36%;
+  right: 20px;
+  background: url(../images/fixedR.png) no-repeat;
+  z-index: 99;
+}
+.wrapper .main-content .floatLoad .bntbox {
+  background-size:100% 100%; 
+  position: absolute;
+  top: 48%;
+  left: 16%;
+}
+.wrapper .main-content .floatLoad .chat {
+  position: absolute;
+  top: 186px;
+  left: 20px;
+  color: #fff;
+}
+.wrapper .main-content .floatLoad .chat img{
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.wrapper .main-content .floatLoad .dbt{
+  position: absolute;
+  left: 27px;
+}
+.wrapper .main-content .floatLoad .bntbox div {
+  width: 100px;
+  height: 100px;
+  background: url(../images/qrcodBorder.png) no-repeat;
+  background-size:100% 100%; 
+  line-height: unset;
+}
+
+.wrapper .main-content .floatLoad .shutdown{
+    position: absolute;
+    right: 5px;
+    top: 150px;
+    cursor: pointer;
+}
+
+.wrapper .main-content .floatLoad .bntbox .pvc {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+}
+.wrapper .downPic{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.wrapper .downPic .pvc{
+  display: inline-block;
+  position: absolute;
+  top: 46%;
+  left: 8%;
+  z-index: 17;
+  width: 15%;
+  height: 34%;
+}
+.phone.bt-fixed{
+  background: url(../images/phone-btfixed.png) no-repeat,#251017;
+  background-size: 100%;
+  background-position: bottom;
+}
+.wrapper .downPic img{
+  width: 100%;
+}
+.light{
+  position: absolute;
+}
+.swiper-pagination-bullet{
+  width: 15px;
+  height: 15px;
+  background: #F975E2;
+  margin: 0 8px!important;
+}
+
+.phone.download a{
+    color: #fff;
+    /*line-height: 50px;*/
+    font-weight: bold;
+    text-decoration: none;
+}
+ .pvc{
+    background: #fff;
+    border: 2px solid #fff;
+ }
+ .footer .bar-f{
+   margin-bottom: -4px;
+ }
+ .footer .bar-f img{
+   background: #311833;
+   /*padding-bottom: 10px;*/
+   width: 100%;
+ }
+ .footer .text.pc{
+   padding: 20px 0;
+   background: #1B0C13;
+ }
+ .main-center>div{
+   cursor: pointer;
+ }
+ img.dbt{
+   cursor: pointer;
+ }
+
+@media screen and (max-width:1360px) {
+     .top{
+      height:90px;
+     }
+     .top-banner .top img.pc{
+      height: 90px;
+     }
+     .wrapper .top-banner{
+      padding-top: 90px;
+     }
+}
+
+@media screen and (max-width:1180px) {
+     .top{
+      height:80px;
+     }
+     .top-banner .top img.pc{
+      height: 80px;
+     }
+     .wrapper .top-banner{
+      padding-top: 80px;
+     }
+}
+
+@media screen and (max-width:800px) {
+     .top{
+      height:70px;
+     }
+     .top-banner .top img.pc{
+      height: 70px;
+     }
+     .wrapper .top-banner{
+      padding-top: 70px;
+     }
+     #bannerpc{
+        display: none;
+     }
+     #bannerh5{
+       display: block;
+     }
+}
+
+/************ ipad 样式 ************/
+
+@media screen and (min-width: 751px) and (max-width: 1199px) {
+  .wrapper .downPic{
+    width: 732px;
+  }
+  .wrapper .downPic .pvc{
+    left: 8%;
+    top: 44%;
+  }
+  .wrapper .main-content .footer .text p{
+    font-size:13px;
+  }
+  .top-banner .top img.pc{
+   
+  }
+}
+
+/************ 手机通用样式 ************/
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+     .mailbox {
+        display: none;
+    }
+    .top{
+      height:3rem;
+    }
+    .top-banner .top img.pc{
+     height: 3rem;
+    }
+    .wrapper .top-banner{
+            padding-top: 2.57rem;
+    }
+    .floatLoad.pc,.befTopMain,.text.pc,.wrapper .pc.light,.bar-f img.pc{
+        display: none;
+    }
+    .phone{
+      display: block;
+    }
+    .phone img{
+      width: 100%;
+    }
+    .chat.phone img{
+      width: 100%;
+    }
+    .content_s{
+      padding-bottom:20%;
+    }
+    .wrapper .main-content .bottomMain .main-center .item-list{
+      width: 50%;
+    }
+    .wrapper .main-content .content_s .content_box{
+      background: #311833;
+    }
+    .phone.download{
+      display: block;
+      background: #311833;
+      position: relative;
+      padding-bottom:24px;
+    }
+    .wrapper .download p.bot.goto {
+       text-align: center;
+       margin: 0;
+    }
+     .footer .bar-f{
+       margin: 0;
+     }
+    .wrapper .download .bot img{
+       display: inline-block;
+       margin: 0;
+       width: 60%;
+    }
+    .phone.bt-fixed{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 12;
+    }
+    .phone.bt-fixed img{
+      vertical-align: bottom;
+    }
+    .wrapper .titleBar, .wrapper .titleBar,.wrapper .main-content .bottomMain .titleBar{
+      height: 67px;
+    }
+    .wrapper .main-content .bottomMain .main-center{
+      padding: 10px;
+    }
+    .wrapper .download .phone.light,.phone.light{
+      display: inline-block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+    }
+    .top-banner .top img{
+      width: 100%;
+      /*display: inline-block;*/
+      /*margin-top: 3px;*/
+      vertical-align: bottom;
+      margin-bottom:-1px;
+    }
+    .chat.phone{
+      display: inline-block;
+      /*position: fixed;*/
+      position: absolute;
+      top: 46%;
+      right: -28px;
+      z-index: 10;
+      text-align: right;
+    }
+      .wrapper .download p{
+         margin: 0;
+      }
+      .wrapper .download img{
+        display: inline-block;
+        width: 60%;
+        margin: 15px 0 0 0;
+      }
+      .bt1{
+        margin-right: 20px;
+      }
+      .wrapper .titleBar img.pc{
+        margin-top: 10px;
+        width: 35%;
+      }
+
+      /************ plus 手机样式 ************/
+
+      @media screen and (min-width: 400px) and (max-width: 500px) {
+        .chat.phone img{
+          width:100%;
+        }
+        .chat.phone{
+          top: 26%;
+          right: -46px;
+        }
+        .swiper-pagination-bullet{
+          width: 9px;
+          height: 9px;
+        }
+        .wrapper .titleBar, .wrapper .titleBar,.wrapper .main-content .bottomMain .titleBar{
+          height: 40px;
+        }
+        .switch-item{
+          width: 25px;
+          height: 4px;
+          margin: 0 5px;
+        }
+      }
+
+      /************ 普通手机样式 ************/
+
+      @media screen and (min-width: 300px) and (max-width: 499px) {
+        .chat.phone img{
+          width:100%;
+        }
+        .chat.phone{
+          top: 32%;
+          right: -60px;
+        }
+        .swiper-pagination-bullet{
+          width: 9px;
+          height: 9px;
+        }
+        .wrapper .titleBar, .wrapper .titleBar,.wrapper .main-content .bottomMain .titleBar{
+          height: 40px;
+        }
+       .switch-item{
+          width: 25px;
+          height: 4px;
+          margin: 0 5px;
+        }
+      }
+}
+
+
+
+/************ 通用样式添加 ************/
+
+ 
+/****************** 底部邮箱样式 **************************/
+.mailbox {
+  background: #1b0c13;
+}
+.mailbox span{
+      color: #fff;
+  }
+.mailbox a{
+    display: inline-block;
+    width: 100px;
+    margin-top: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #0597e6;
+    text-align: left;
+    text-decoration: underline;
+  }

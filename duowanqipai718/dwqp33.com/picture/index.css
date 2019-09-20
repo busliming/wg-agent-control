@@ -1,0 +1,215 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:16px;
+  vertical-align:baseline;
+  background:transparent;
+}
+html,body{
+  height: 100%;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+h1,h2,h3,h4,h5,h6,em,i {
+  font-weight: 100;
+  font-style: normal
+}
+ul,ol,li {
+  list-style-type: none
+}
+img{width:100%;}
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0
+}
+a:hover {
+  text-decoration: none;
+}
+
+.content{
+	min-width:320px;max-width:720px; height:auto; margin:0 auto;  position:relative; background:#0e0901
+}
+#btn_download,#btn_download1,#btn_download2{
+	position:absolute;
+}
+#btn_download{
+	width: 28%;
+	top:25.5%;
+	left:35.5%;
+}
+#btn_download1{
+	width: 33%;
+	top:-20px;
+	left:55.5%;
+}
+#btn_download2{
+	width: 37%;
+	top:54%;
+	left:32.5%;
+}
+.banner {
+    height: 9.45rem;
+    width: 100%;
+}
+.banner img{
+	display: block;
+}
+.appDown {
+  width: 100%;
+  text-align: center;
+  padding: 0 0.3rem;
+  box-sizing: border-box;
+ 
+}
+
+.appDown button {
+  width: 100%;
+  height: 0.89rem;
+  background-image: linear-gradient(0deg, #24c500 0%, #5ddf00 100%), linear-gradient(#ffffff, #ffffff);
+  background-blend-mode: normal, normal;
+  border-radius: 0.5rem;
+  border: none;
+  color: #fff;
+  font-size: 0.48rem;
+  margin-top: 0.4rem;
+}
+.wechat_area{
+	padding-bottom:5px;
+	padding-top:5px;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	background-color:black;
+	opacity:0.9;
+}
+.wechat_area p{
+	line-height:36px;;
+	color:yellow;
+	font-size:12px;
+	text-align:center;
+}
+.wechat_area img{
+	width:30%;
+}
+.footer{
+	z-index:999999;
+	position:absolute;
+	left:9%;
+	bottom:8px;;
+	font-size:14px;
+	color:#9E6A38;
+}
+.wechat_area p{
+	color:yellow;
+	font-size:24px;
+	text-align:center;
+}
+.wechat_area img{
+	width:30%;
+}
+#txtVal{
+	color:red;
+	font-size:22px;
+}
+.content .index_download{
+	width:100%;
+	position:relative;
+}
+.title_content{
+	position:absolute;
+	font-weight:bold;
+	left:21%;
+	top:3.5%;
+	z-index:99997;
+	font-size:28px;
+	letter-spacing:0.3em;
+	color:white;
+}
+.wechat_content{
+	color:#ff3131;
+	font-size:24px;
+	position:absolute;
+	font-weight:bold;
+	left:13.5%;
+	top:13%;
+	z-index:99998
+}
+.wechat_code{
+	width:37%;
+	position:absolute;
+	left:51%;
+	top:0;
+	z-index:99999;
+}
+#addDwonBox {
+  width: 100%;
+  min-height: 3.34rem;
+  background: rgba(255, 255, 255, 0.77);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#addDwonBox  .text{
+	flex: 1;
+	display: flex;
+  align-items: center;
+  margin-left: 0.6rem;
+}
+#addDwonBox img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+#addDwonBox .cont {
+  margin-left: 0.4rem;
+}
+
+#addDwonBox p strong {
+  display: block;
+  color: #282828;
+  font-size: 20px;
+}
+
+#addDwonBox p span {
+  display: block;
+  font-size: 0.3rem;
+  color: #4a4a4a;
+}
+#addDwonBox  .button{
+	margin-right: 0.2rem;
+}
+#addDwonBox  .button a{
+}
+#addDwonBox button {
+	display: block;
+  width: 6.11rem;
+  height: 2.6rem;
+  background-color: #43c117;
+  border-radius: 0.08rem;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+}
+@media screen and (max-width:720px){
+	.title_content{font-size:14px;}
+	.wechat_content{font-size:14px;}
+}

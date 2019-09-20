@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>91棋牌</title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/carousel.css"> -->
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+    <script src="js/float-min.js"></script>
+    <script type="text/javascript" src="js/md5-min.js"></script>
+    <script type="text/javascript" src="@CDN_url/online/20190430/public-min.js"></script>
+    <script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script>
+    <script type="" src="@CDN_url/online/20190430/poplar-min.js"></script>  
+</head>
+<body>
+    <div class="Mobile">
+      <a id="Mobile_don"  class="mohe_down"></a>
+    </div>
+    <div class="wrapper">
+      <div class="mainShow">
+              <div class="top-banner">
+                  <div class="top">
+                    <img class="pc" src="./img/logo.png"/>
+                    <img class="phone" src="./img/h5/logo@2x.png"/>
+                  </div>
+                  <div class="swiper-container" style="max-height:500px;">
+                      <img src="img/banner.jpg">
+                  </div>
+                  <a class="chat phone" href="" target="_banck" >
+                      <img class="right" src="./img/phone-chat.png"/>
+                  </a>
+              </div>
+        </div>
+        <div class="main-content">
+            <div class="content_s">
+                 <div class="content_box">
+                      <div class="befTopMain">
+                          <div class="titleBar">
+                             <img class="pc" src="./img/Sweepcode.png"/>
+                             <img class="phone" src="./img/h5/Sweepcode@2x.png"/>
+                          </div>
+                          <div class="downPic">
+                              <img class="pc" src="./img/beforeDown.png"/>
+                              <div class="pvc">
+                                <div id="qrcodes"></div>
+                              </div>
+                          </div>
+                          <div class="download_active">
+                             <div class="phone_s" style="    padding-bottom: .4rem;">
+                                <!-- <a class="iosdow slideLeftReturn" onclick="$public.h5ios()">
+                                  <img src="img/h5/IOS@2x.png">
+                                </a>
+                                <a class="androiddow slideRightReturn" onclick="$public.h5android()">
+                                  <img src="img/h5/Android@2x.png">
+                                </a> -->
+                                <a class="slideLeftReturn mohe_down">
+                                  <img src="img/h5/ios-button.png">
+                                </a>
+                                <a id="downloaddt" class="puffIn" target="_blank" style="display: none;">
+                                  <img src="img/h5/star@2x.png">
+                                </a>
+                                <a class="Credit" id="shouxin" href="installindex.html" style="    bottom: 0;">ios如何授信？</a>
+                              </div>
+                          </div>
+                      </div>
+                     <!--  <div class="topMain">
+                          <div class="titleBar">
+                             <img class="pc" src="./img/top-text.png"/>
+                             <img class="phone" src="./img/h5/characteristic@2x.png"/>
+                          </div>
+                          <div class = "caroursel poster-main">
+                                  <ul class = "poster-list" id="poster-list">
+                                    <li class = "poster-item"><img src="img/banner1.png"></li>
+                                    <li class = "poster-item"><img src="img/banner2.png"></li>
+                                    <li class = "poster-item"><img src="img/banner3.png"></li>
+                                  </ul>
+                                  <div class = "poster-btn poster-prev-btn"></div>
+                                  <div class = "poster-btn poster-next-btn"></div>
+                            </div>
+                      </div> -->
+                      <div class="bottomMain">
+                          <div class="titleBar">
+                             <img class="pc" src="./img/hotText.png"/>
+                             <img class="phone" src="./img/h5/popular@2x.png"/>
+                          </div>
+                        <div class="main-center">
+                          <div href="" class="item-list" page="home">
+                            <img class="left" src="./img/game_1.png"/>
+                          </div>
+                          <div href="" class="item-list" page="home">
+                            <img class="left" src="./img/game_2.png"/>
+                          </div>
+                          <div href="" class="item-list">
+                            <img class="left" src="./img/game_3.png"/>
+                          </div>
+                          <div href="" class="item-list">
+                            <img class="left" src="./img/game_4.png"/>
+                          </div>
+                          <div href="" class="item-list">
+                            <img class="left" src="./img/game_5.png"/>
+                          </div>
+                          <div href="" class="item-list">
+                            <img class="left" src="./img/game_6.png"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="floatLoad pc">
+                          <a class="chat" id="serviceUrl" target="_banck"><img src="./img/chat.png"/></a>
+                          <div class="bntbox">
+                             <div class="leftewm">
+                                 <div class="pvc">
+                                     <div id="qrcode"></div>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="title"><img class="dbt" src="./img/fixedRT.png"/></div>
+                          <a  id="iosClick" onclick="$public.pcios()"><img  style="bottom:68px" src="./img/ios.png"/></a>
+                          <a  id="androidClick"  onclick="$public.h5android()"><img  style="bottom:28px" src="./img/adr.png"/></a>
+                          <a class="shutdown" onclick="shut_down()"><img src="img/button_Close.png"></a>
+                      </div>
+                 </div>
+                <div class="footer">
+                  <div class="bar-f">
+                    <img class="left pc" src="./img/bottomBar.png"/>
+                    <img class="left phone" src="./img/h5/battom_frame@2x.jpg"/>
+                  </div>
+                 <!--  <center class="mailbox">
+                       <span>技术支持:</span>
+                       <a onclick="openMailbox()" target="_blank">WG平台</a>
+                  </center> -->
+                  <div class="text pc">
+                    <p>91棋牌持有菲律宾政府PAGCOR (Philippine Amusement and Gaming Corporation)颁发的离岸博彩许可并受其监督</p>
+                    <p>Copyight © 91棋牌 <span id="location_hef"></span>Reserved</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div> 
+    </div>
+</body>
+<script src="js/index-min.js"></script>
+<script type="text/javascript">
+   // Caroursel.init($('.caroursel'))
+   $(".floatLoad.pc").Float({'floatRight' : 1, 'topSide' : 300, 'side':0});
+   function openMailbox(){
+      window.open("mail.html?mai="+$public.consultMailbox)
+    }
+    function shut_down(){
+      $('.floatLoad.pc').addClass('swashOut').fadeOut(1600)
+    }
+
+    var ua = navigator.userAgent;
+    var isiOS = ua.indexOf('iPhone') > -1
+    if(isiOS){
+         document.getElementById("shouxin").style.display="block";
+    }else{
+         document.getElementById("shouxin").style.display="none";
+    }
+</script>
+</html>

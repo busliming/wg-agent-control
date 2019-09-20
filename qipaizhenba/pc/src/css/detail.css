@@ -1,0 +1,533 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+  background-color: #11439e;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(1, 30, 62, 0.3);
+  border-radius: 10px;
+  background-color: #11439e;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(1, 30, 62, 0.3);
+  background-color: #3b6bc3;
+}
+#bannerh5 {
+  display: none;
+}
+header {
+  background: url(../images/topbg.jpg) no-repeat;
+  height: 120px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+header center {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 110px;
+}
+header center img {
+  width: 35%;
+  margin: 5px 0;
+}
+.center {
+  padding-top: 120px;
+  max-height: 500px;
+  overflow: hidden;
+}
+.segmentation {
+  background: url(../images/repeat.png);
+  height: 25px;
+  position: relative;
+  z-index: 1;
+}
+.download {
+  background: url(../images/bg.jpg);
+  background-position: 0 0;
+  margin-top: -17px;
+}
+.download .dowload_box {
+  width: 1200px;
+  background: url(../images/title2.png) no-repeat, url(../images/app.png) no-repeat;
+  min-height: 400px;
+  margin: 0 auto;
+  background-position: center 25px,center 95px;
+  position: relative;
+}
+.download .dowload_box #qrcodes {
+  position: absolute;
+  top: 45.5%;
+  left: 80%;
+  width: 13%;
+  height: 61%;
+}
+.download .dowload_box #qrcodes canvas {
+  width: 90%;
+  padding: 5%;
+  background: #ece3e3;
+  height: 57%;
+}
+.download .download_active {
+  display: none;
+}
+.download .Characteristic {
+  width: 100%;
+  background: url(../images/title3.png) no-repeat;
+  min-height: 500px;
+  margin: 0 auto;
+  padding-top: 80px;
+  background-position: center 10px;
+  position: relative;
+}
+.download .Characteristic .swiper-container-mid {
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: url(../images/diban.png) no-repeat;
+  background-position: 0px bottom;
+  padding-bottom: 30px;
+}
+.download .Characteristic .swiper-container-mid .swiper-wrapper .swiper-slide img {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+.download .Characteristic .bnt_box {
+  width: 100%;
+  background: url(../images/pic4.png) no-repeat;
+  height: 99px;
+  margin: 20px 0;
+  text-align: center;
+}
+.download .Characteristic .bnt_box a {
+  width: 130px;
+  display: inline-block;
+  margin: 15px 45px 0 50px;
+  cursor: pointer;
+}
+.gamelist {
+  position: relative;
+  z-index: 9999;
+  background: url(../images/title1.png) no-repeat, url(../images/footbg.png) no-repeat;
+  background-position: center 10px,0 218px;
+  background-size: auto,100%;
+}
+.gamelist .game_box {
+  min-height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1200px;
+  padding-top: 80px;
+}
+.gamelist .game_box li {
+  width: calc(99%/2);
+  text-align: center;
+  padding: 10px 0%;
+}
+.gamelist .game_box li img {
+  width: 100%;
+}
+.gamelist .game_box li:nth-child(odd) {
+  float: left;
+}
+.gamelist .game_box li:nth-child(even) {
+  float: right;
+}
+footer .center_top {
+  background: #3d4cc9;
+  border-top: solid 1px #645e77;
+}
+footer .center_top .box {
+  width: 1200px;
+  color: #fff;
+  overflow: hidden;
+}
+footer .center_top .box > div {
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 66px;
+}
+footer .center_top .box > div > h1 {
+  display: inline-block;
+  color: #fff;
+  font-size: 40px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+footer .center_top .box > div span {
+  font-size: 14px;
+}
+footer .center_top .box > img {
+  display: none;
+}
+footer .center_bottom {
+  background: #2c39ab;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 0;
+}
+footer .mailbox {
+  background: #2c39ab;
+}
+footer .mailbox span {
+  color: #ffffff;
+}
+footer .mailbox a {
+  display: inline-block;
+  width: 100px;
+  margin-top: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #0597e6;
+  text-align: left;
+  text-decoration: underline;
+}
+.fix {
+  position: fixed;
+  right: 1%;
+  top: 50%;
+  z-index: 999999999;
+}
+.fix .contact {
+  background: url(../images/right_sider.png) no-repeat;
+  width: 170px;
+  height: 500px;
+  display: block;
+  z-index: 999999;
+  background-size: 100%;
+  position: relative;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.fix .contact #qrcode {
+  width: 66%;
+  left: 50%;
+  margin-left: -35%;
+  top: 46.5%;
+  height: 40%;
+  position: absolute;
+}
+.fix .contact #qrcode canvas {
+  width: 90%;
+  padding: 5%;
+  height: 50%;
+  background: #ece3e3;
+}
+.fix .contact #serviceUrl {
+  height: 45%;
+  display: block;
+  width: 100%;
+}
+.fix .contact #fixios {
+  position: absolute;
+  top: 355px;
+  height: 32px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  background: url(../images/ios_button.png) no-repeat;
+  background-position: 20px;
+}
+.fix .contact #fixandroid {
+  position: absolute;
+  top: 393px;
+  height: 31px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  background: url(../images/android_button.png) no-repeat;
+  background-position: 20px;
+}
+.fix .shutdown {
+  position: absolute;
+  right: 32px;
+  top: 35px;
+  z-index: 9999999;
+  cursor: pointer;
+}
+.botton_mb,
+.Mobile {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  header {
+    height: 100px;
+  }
+  header center img {
+    width: 30%;
+    margin: 4px 0;
+  }
+  .center {
+    padding-top: 100px;
+  }
+  .download .dowload_box {
+    width: 1000px;
+    min-height: 410px;
+    background-position: center 10px,center 100px;
+    background-size: contain;
+  }
+  .download .dowload_box #qrcodes {
+    top: 44%;
+    left: 83.5%;
+    width: 15%;
+    height: 56%;
+  }
+  .download .Characteristic {
+    width: 100%;
+    background-size: 1000px;
+    padding-top: 60px;
+  }
+  .download .Characteristic .swiper-container-mid {
+    width: 1000px;
+  }
+  .download .Characteristic .bnt_box {
+    background-size: cover;
+    background-position: center;
+  }
+  .download .Characteristic .bnt_box a {
+    width: 110px;
+    margin: 15px 28px 0 35px;
+  }
+  .gamelist {
+    background-size: 1000px,100%;
+    background-position: center 10px,0 bottom;
+  }
+  .gamelist .game_box {
+    width: 1000px;
+  }
+  .gamelist .game_box li {
+    padding: 0px 3%;
+    height: 270px;
+  }
+  .fix .contact {
+    width: 150px;
+    height: 460px;
+  }
+  .fix .contact #qrcode {
+    height: 40%;
+  }
+  .fix .contact #fixios {
+    background-size: 108px;
+    top: 315px;
+  }
+  .fix .contact #fixandroid {
+    top: 346px;
+    background-size: 108px;
+  }
+  .fix .shutdown {
+    right: 30px;
+    top: 31px;
+  }
+  footer .center_top .box {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    height: 85px;
+  }
+  header center img {
+    width: 30%;
+    margin: 4px 0;
+  }
+  .center {
+    padding-top: 80px;
+  }
+  .download .dowload_box {
+    width: 90%;
+    min-height: 410px;
+    background-position: center 10px,center 100px;
+    background-size: contain;
+  }
+  .download .dowload_box #qrcodes {
+    top: 42%;
+    left: 83.5%;
+    width: 15%;
+    height: 49%;
+  }
+  .download .Characteristic {
+    width: 100%;
+    background-size: 90%;
+    padding-top: 60px;
+  }
+  .download .Characteristic .swiper-container-mid {
+    width: 90%;
+  }
+  .download .Characteristic .bnt_box {
+    background-size: cover;
+    background-position: center;
+  }
+  .download .Characteristic .bnt_box a {
+    width: 110px;
+    margin: 15px 28px 0 35px;
+  }
+  .gamelist {
+    background-size: 90%,100%;
+    background-position: center 10px,0 bottom;
+  }
+  .gamelist .game_box {
+    width: 90%;
+  }
+  .gamelist .game_box li {
+    padding: 0px 3%;
+    height: 230px;
+  }
+  .fix .contact {
+    width: 150px;
+    height: 460px;
+  }
+  .fix .contact #qrcode {
+    height: 40%;
+  }
+  .fix .contact #fixios {
+    background-size: 108px;
+    top: 315px;
+  }
+  .fix .contact #fixandroid {
+    top: 346px;
+    background-size: 108px;
+  }
+  footer .center_top .box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #bannerh5 {
+    display: block;
+  }
+  #bannerpc {
+    display: none;
+  }
+  header {
+    background: url(../images/h5/topbg@2x.jpg) no-repeat;
+    height: 1.2rem;
+  }
+  header center {
+    margin: 0 auto;
+  }
+  header center img {
+    margin: 0.05rem 0;
+    width: 4.5rem;
+  }
+  .center {
+    padding-top: 1.2rem;
+  }
+  .segmentation {
+    display: none;
+  }
+  .download {
+    background: 0 none;
+  }
+  .download .Characteristic {
+    background: url(../images/h5/title-one@2x.png) no-repeat;
+    padding-top: 0.6rem;
+    min-height: auto;
+    background-size: 90%;
+    background-position: top;
+  }
+  .download .Characteristic .swiper-container-mid {
+    background-position: 0 1.6rem;
+    background-size: contain;
+  }
+  .download .Characteristic .bnt_box {
+    display: none;
+  }
+  .download .dowload_box {
+    display: none;
+  }
+  .download .download_active {
+    display: block;
+    background: #4d58d8;
+  }
+  .download .download_active .phone {
+    padding: 30px 0 10px;
+  }
+  .download .download_active .phone a {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  .download .download_active .phone .Credit {
+    color: #fff;
+    font-size: 0.28rem;
+    line-height: 0.68rem;
+    text-align: left;
+  }
+  .gamelist {
+    background: url(../images/h5/title-two@2x.png) no-repeat, url(../images/footbg.png) no-repeat;
+    background-size: 90%,100%;
+    background-position: top,0 bottom;
+  }
+  .gamelist .game_box {
+    min-height: auto;
+    padding-top: 0.6rem;
+    width: 98%;
+  }
+  .gamelist .game_box li {
+    height: 3.6rem;
+    width: 98%;
+    padding: 0 1%;
+  }
+  .fix .contact {
+    background: url(../images/h5/contactus-sidebar@2x.png) no-repeat;
+    width: 85px;
+    height: 80px;
+    display: block;
+    background-size: 100%;
+    margin-right: 0;
+  }
+  .fix .contact #qrcode,
+  .fix .contact #fixios,
+  .fix .contact #fixandroid {
+    display: none;
+  }
+  .fix .contact #serviceUrl {
+    height: 1.4rem;
+  }
+  .fix .shutdown {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  .botton_mb {
+    display: block;
+    padding-bottom: 1.4rem;
+  }
+  .botton_mb img {
+    width: 96%;
+    display: block;
+    margin: 10px auto;
+  }
+  .Mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .Mobile #Mobile_don {
+    display: block;
+    background: url(../images/h5/foot-suspension@2x.png) no-repeat;
+    width: 100%;
+    height: 1.4rem;
+    background-size: 100%;
+    background-position: bottom;
+  }
+}

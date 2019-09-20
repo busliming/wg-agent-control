@@ -1,0 +1,235 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:16px;
+  vertical-align:baseline;
+  background:transparent;
+}
+html,body{
+  height: 100%;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+h1,h2,h3,h4,h5,h6,em,i {
+  font-weight: 100;
+  font-style: normal
+}
+ul,ol,li {
+  list-style-type: none
+}
+img{width:100%;}
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0
+}
+a:hover {
+  text-decoration: none;
+}
+
+.slideLeftReturn {    //从左到右边
+  -webkit-animation: slideLeftReturn 1.5s ease-in-out;
+          animation: slideLeftReturn 1.5s ease-in-out;
+}
+@-webkit-keyframes slideLeftReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@keyframes slideLeftReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  }
+}
+
+.slideRightReturn {   //从右到左边 
+  -webkit-animation: slideRightReturn 1.5s ease-in-out;
+          animation: slideRightReturn 1.5s ease-in-out;
+}
+@-webkit-keyframes slideRightReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@keyframes slideRightReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.slideUpReturn {   //从上到下
+  -webkit-animation: slideUpReturn 1.5s ease-in-out;
+          animation: slideUpReturn 1.5s ease-in-out;
+}
+@-webkit-keyframes slideUpReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+@keyframes slideUpReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+/***特殊轮播样式***/
+html,body,.container {
+        width: 100%;
+        margin:0;
+        padding:0;
+      }
+      
+      .container > header {
+        padding: 20px 30px 10px 30px;
+        margin-bottom: 40px;
+        position: relative;
+        display: block;
+        text-align: center;
+      }
+      
+      .container > header h1 {
+        font-family: "BebasNeueRegular", Arial, sans-serif;
+        font-size: 35px;
+        position: relative;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: rgba(101,141,114,0.9);
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+        padding: 0px 0px 5px 0px;
+      }
+      
+      .dg-container {
+        width: 100%;
+        height: 80px;
+        overflow: hidden;
+        position: relative;
+        margin:0;
+        padding:0;
+      }
+.item-wrapper{
+	width: 42%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+
+}
+.item-wrapper a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+	overflow: hidden;
+}
+.item-wrapper a.dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.item-wrapper a img{
+	width: 100%;
+	height: 100%;
+  border:0;
+	display: block;
+}
+.item-wrapper a div{
+	font-style: italic;
+	text-align: center;
+	line-height: 50px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+	color: #333;
+	font-size: 16px;
+	width: 100%;
+	bottom: -55px;
+	display: none;
+	position: absolute;
+}
+.item-wrapper a.dg-center div{
+	display: block;
+}

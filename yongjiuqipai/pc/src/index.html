@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="aplus-waiting" content="MAN">
+	<meta name="renderer" content=webkit>
+	<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+	<meta charset="UTF-8">
+	<title>永久棋牌</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/bitbug_favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/detail.css">
+	<script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script>
+	<!-- <link  rel="stylesheet" type="text/css" href="css/swiper.custom.min.css"> -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/float-min.js"></script>
+	<script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+	<script type="text/javascript" src="js/md5-min.js"></script>
+	<script type="text/javascript" src="@CDN_url/online/20190430/public-min.js"></script>
+	<script type="" src="@CDN_url/online/20190430/poplar-min.js"></script>
+</head>
+
+<body>
+	<main style="overflow: hidden;">
+		<header>
+			<center>
+				<img src="img/logo.png">
+			</center>
+		</header>
+		<article class="center">
+			<img id="bannerpc" src="img/banner.jpg">
+			<img id="bannerh5" src="img/banner@2x.png">
+			<!-- <div class="swiper-container swiper-top">
+			 	  <div class="swiper-wrapper" id="swiper-wrap">
+			     </div>
+			     <div class="swiper-pagination"></div>
+			 </div> -->
+		</article>
+		<div class="download">
+			<div class="dowload_box">
+				<div id="qrcodes"></div>
+			</div>
+			<div class="download_active">
+				<div class="phone" style="padding-bottom: 0.8rem;">
+					<a class="slideLeftReturn mohe_down">
+						<img src="img/h5/ios-button.png">
+					</a>
+					<a id="downloaddt" class="puffIn" target="_blank" style="display: none;">
+						<img src="img/enter-game-button@2x.png">
+					</a>
+					<a id="shouxin" style="bottom:0.2rem;" class="Credit" href="installatio.html">iOS如何授信？</a>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="bannert"> 
+			<div class="banner_box">
+			    	<div class = "caroursel poster-main">
+						<ul class = "poster-list" id="poster-list">
+							<li class = "poster-item"><img src="img/1.png"></li>
+							<li class = "poster-item"><img src="img/2.png"></li>
+							<li class = "poster-item"><img src="img/3.png"></li>
+						</ul>
+						<div class = "poster-btn poster-prev-btn"></div>
+						<div class = "poster-btn poster-next-btn"></div>
+					</div>
+			</div>
+		</div> -->
+		<div class="gamelist">
+			<ul class="game_box" id="actives">
+				<li class="pc"><img src="img/game1.png"></li>
+				<li class="pc"><img src="img/game2.png"></li>
+				<li class="pc"><img src="img/game3.png"></li>
+				<li class="pc"><img src="img/game4.png"></li>
+				<li class="pc"><img src="img/game5.png"></li>
+				<li class="pc"><img src="img/game6.png"></li>
+			</ul>
+		</div>
+		<footer>
+			<center class="center_top">
+				<div class="box">
+					<div>
+						<h1>01</h1><span>适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活</span>
+					</div>
+					<div>
+						<h1>02</h1><span>抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当</span>
+					</div>
+					<img src="img/h5/footer-description@2x.png">
+				</div>
+			</center>
+			<!-- <center class="mailbox">
+        		   <span>技术支持:</span>
+        		   <a onclick="openMailbox()" target="_blank">WG平台</a>
+        	</center> -->
+			<center class="center_bottom">
+				永久棋牌持有菲律宾政府PAGCOR (Philippine Amusement and Gaming Corporation)颁发的离岸博彩许可并受其监督 <br /> Copyight © 永久棋牌<span
+					id="location_hef"></span> Reserved
+			</center>
+		</footer>
+		<div class="fix">
+			<div class="contact">
+				<a class="serviceUrl" id="serviceUrl" target="_blank"></a>
+				<div id="qrcode"></div>
+				<a id="fixios" onclick="$public.pcios()"></a>
+				<a id="fixandroid" onclick="$public.h5android()"></a>
+			</div>
+			<a class="shutdown" onclick="shut_down()"><img src="img/shutdown.png"></a>
+		</div>
+		<div class="Mobile">
+			<a id="Mobile_don" class="mohe_down"></a>
+		</div>
+	</main>
+	<!-- <script type="text/javascript" src="js/jquery.carousel.js"></script> -->
+
+	<script type="text/javascript" src="js/index-min.js"></script>
+	<script type='text/javascript'>
+		// Caroursel.init($('.caroursel'))
+		$(".fix").Float({
+			'floatRight': 1,
+			'topSide': 300,
+			'side': 0
+		});
+
+		var ua = navigator.userAgent;
+		var isiOS = ua.indexOf('iPhone') > -1
+		if (isiOS) {
+			document.getElementById("shouxin").style.display = "block";
+		} else {
+			document.getElementById("shouxin").style.display = "none";
+		}
+	</script>
+</body>
+
+</html>

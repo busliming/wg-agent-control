@@ -1,0 +1,675 @@
+::-webkit-scrollbar { 
+    width:5px; 
+    height:1px; 
+   background-color:#45185d; 
+} 
+/*定义滚动条轨道 内阴影+圆角*/ 
+::-webkit-scrollbar-track{ 
+    -webkit-box-shadow: inset 0 0 6px rgba(1,30,62,0.3); 
+    border-radius: 10px; 
+    background-color:#45185d;  
+} 
+/*定义滑块 内阴影+圆角*/ 
+::-webkit-scrollbar-thumb { 
+    border-radius: 10px; 
+    -webkit-box-shadow: inset 0 0 6px rgba(1,30,62,0.3); 
+    background-color:#7c39b9; 
+}
+
+/***********无需适配css************/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,button{margin:0;padding:0;border:0;}
+body{background:#040d1c;color:#333;font-family: Verdana, Arial, Helvetica, sans-serif;} 
+ul,ol{list-style-type:none;} 
+select,input,img,select{vertical-align:middle;} 
+img{display: block;margin: 0 auto;}
+a,button{outline: none; text-decoration:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;} 
+
+/*************header**************/
+header{
+    position: relative;
+    background: url('../img/background-top.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .bannerTop{
+        max-height: 500px;
+        overflow: hidden;
+        margin-top: 10px;
+        position: relative;
+        #bannerH5{
+             display:none;
+        }
+    }
+}
+
+#h5title{
+    display: none;
+}
+.h5logo{
+    width: 100%;
+    height: 94px;
+    z-index: 9;
+    align-items:center;
+    background: url('../img/logo-bg.png') no-repeat;
+    background-size:cover;
+    background-position: center center;
+    img{
+        width: 214px;
+        padding-top: 10px;
+    }
+}
+/*************section**************/
+.contentbg{
+    width: 100%;
+    background: url('../img/background.jpg') top center no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    position: relative;
+    .satin{
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        top: 10%;
+    }
+    .contentTop{
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 151px;
+        background: url('../img/gameList.png') no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+    }
+    .contentmbg{
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #22335e;
+        .title1{
+            position: relative;
+            width: 100%;
+            background-size: cover;
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px 0;
+            img{
+                width: 59%;
+            }
+        }
+        
+    }
+    
+}
+.bannerCode{
+    position: relative;
+    background: url('../img/codeBg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 850px;
+    max-height: 850px;
+    .codeleft{
+        position: absolute;
+        width: 57.3%;
+        height: 100%;
+        background: url('../img/codeLeft.png') no-repeat;
+        background-size: 80% auto;
+        background-position: 82% 46%;
+        z-index: 3;
+    }
+    .pcDownloadbox{
+        position: absolute;
+        width: 43.6%;
+        height: 100%;
+        right: 0;
+        background: url('../img/codeRight.png') no-repeat;
+        background-size: 60% auto;
+        background-position: left 68%;
+        z-index: 3;
+        .codeBox{
+            width: 37%;
+            left: 11%;
+            top: 34%;
+            position: absolute;
+            #codeImgpc{
+                position: relative;
+                width: 100%;
+                height: 193px;
+                canvas{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border: 6px solid #b49170;
+                    background: #b49170;
+                }
+            }
+        }
+    }
+}
+/*轮播样式ʽ*/
+.poster-main{position: relative; margin:0 auto;}
+.poster-main a,.poster-main img{display:block;}
+.poster-main .poster-list{
+    margin:0 auto;
+    position: relative;
+    height:500px;
+}
+.poster-main .poster-list .poster-item{position: absolute;left: 0;top: 0;}
+
+.poster-main .poster-btn{
+    position: absolute;
+    top:0;
+    text-align: center;
+    line-height: 14px;
+    color: #ffffff;
+    z-index: 10;
+}
+.poster-main .poster-next-btn,.poster-main .poster-prev-btn{
+    width: 20% !important;
+    height: 100%;
+}
+.poster-main .poster-prev-btn{
+    right: 0;
+}
+.poster-main .poster-next-btn{
+    left: 0;
+}	
+.swiper-slide img{
+    width: 100%;
+}
+.bannert{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    .banner_box{
+        background: url('../img/bannerBottom.png') no-repeat;
+        background-position: center 90%;
+        background-size: contain;
+        .caroursel{
+            width: 100% !important;
+        }
+    }
+}
+.gameList{
+    width: 100%;
+    max-width: 1200px;
+    ul{
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-bottom: 20px;
+        li{
+            width: 40%;
+            float: left;
+            margin-left: 6.6%;
+            margin-top: 2%;
+        }
+    }
+}
+.footer{
+    width: 100%; 
+    background: #38405d;
+    .footerp{
+        max-height: 120px;
+        max-width: 1200px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+
+    .footerB{
+        width: 100%;
+        background: #212639; 
+        p{
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            padding: 6px 10px 20px 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+    .mailbox{
+        font-style: italic;
+        background: #212639;
+        span{
+            color:#ffffff;
+            font-size: 18px;
+        }
+        a{
+            display: inline-block;
+            font-size: 18px;
+            width: 100px;
+            margin-top: 12px;
+            margin-right: 10px;
+            cursor: pointer;
+            color:#0597e6;
+            text-align: left;
+            text-decoration :underline;
+        }
+    }
+    
+}
+.serviceBox{
+    position: fixed;
+    width: 184px;
+    height: 488px;
+    right: 30px;
+    top: 25%;
+    z-index: 999;
+    padding: 0 20px;
+    .serviceBg{
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        background: url('../img/contact-bg.png') no-repeat;
+        background-size: 100% auto;
+        background-position: 100%;
+        .kefuBox{
+            position: absolute;
+            width: 100%;
+            height:180px;
+            left: 0;
+            top: 0;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }    
+        #codeImg{
+            position: absolute;
+            width: 64%;
+            left: 18%;
+            top: 40%;
+            height: 117px;
+            canvas{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .codeButton{
+            position: absolute;
+            bottom: 17%;
+            left: 10%;
+            width: 80%;
+            a{
+                display: block;
+                margin-bottom:5px;
+            }
+        }
+    }
+    .shutdown{
+        width: 74%;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+    }
+}
+.mobileH5,.h5title{
+    display:none;
+}
+@media screen and(max-width: 1920px) {/*<=1920的设备屏幕*/ 
+    .gameList{
+        max-width: 1200px;
+    }
+    #banner2{
+        width: 90%;
+    }
+
+}  
+@media screen and(max-width: 1680px) {/*<=1680的设备屏幕*/
+    .gameList{
+        max-width: 1200px;
+    }
+    .gameList{
+        ul{
+            width: 90%;
+        }
+    }
+    #banner2{
+        width: 80%;
+    }
+    .contentbg .satin{
+        top:12%;
+    }
+    .bannerTop .swiper-button-next{
+        width: 80px;
+        height: 80px;
+    }
+    .bannerTop .swiper-button-prev{
+        width: 80px;
+        height: 80px;
+    }
+}  
+@media screen and(max-width: 1500px) {/*<=1440的设备屏幕*/ 
+    .serviceBox{
+        .serviceBg{
+            #codeImg{
+                height:inherit;
+                canvas{
+                    height: auto;
+                }
+            }
+        }
+    }
+    .bannerCode{
+        .pcDownloadbox {
+            .codeBox{
+                #codeImgpc{
+                    canvas{
+                        height: auto;
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 1440px) {/*<=1440的设备屏幕*/ 
+    .gameList{
+        max-width: 1200px;
+    }
+    #banner2{
+        width: 70%;
+    }
+    .contentbg .satin{
+        top:16%;
+    }
+    .bannerTop .swiper-button-next{
+        width: 70px;
+        height: 70px;
+    }
+    .bannerTop .swiper-button-prev{
+        width: 70px;
+        height: 70px;
+    }
+    .gameList ul li{
+        width: 34%;
+        margin: 1% 8%;
+    }
+    .footer .footerp{
+        max-height: 100px;
+        padding: 24px 0;
+    }
+} 
+@media screen and(max-width: 1366px) {/*<=1366的设备屏幕*/ 
+    .gameList{
+        max-width: 1180px;
+    }
+    #banner2{
+        width: 70%;
+    }
+    .contentbg .satin{
+        top:17%;
+    }
+    .bannerTop .swiper-button-next{
+        width: 70px;
+        height: 70px;
+    }
+    .bannerTop .swiper-button-prev{
+        width: 70px;
+        height: 70px;
+    }
+
+} 
+@media screen and(max-width: 1280px) {/*<=1280的设备屏幕*/
+    #banner2{
+        width: 70%;
+    }
+    .contentbg .satin{
+        display: none;
+    }
+    .bannerCode .pcDownloadbox .codeBox{
+        top: 36%;
+    }
+    .serviceBox {
+        width: 180px;
+        .serviceBg{
+            #codeImg{
+                top: 40%;
+            }
+            .codeButton{
+                bottom: 17.5%;
+            }
+        }
+    }
+    .footer .footerp{
+        max-height: 100px;
+        padding: 22px 0;
+    }
+    .footer .footerp{
+        max-height: 100px;
+        padding: 22px 0;
+        p{
+            font-size: 22px;
+        }
+    }
+    .serviceBox{
+        .shutdown{
+                margin-top: -6px
+            }
+    }
+} 
+@media screen and(max-width: 1100px) {/*<=1100的设备屏幕*/
+    #banner2{
+        width: 70%;
+    }
+    .bannerCode .pcDownloadbox .codeBox{
+        top: 37%;
+    }
+    .bannerMiddle .swiper-button-next{
+        width: 70px;
+        height: 70px;
+    }
+    .bannerMiddle .swiper-button-prev{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media screen and(max-width: 1024px){/*<=1024的设备屏幕*/
+    #banner2{
+        width: 70%;
+    }
+    .bannerMiddle .swiper-button-next{
+        width: 70px;
+        height: 70px;
+    }
+    .bannerMiddle .swiper-button-prev{
+        width: 70px;
+        height: 70px;
+    }
+    .footer .footerp{
+        max-height: 80px;
+        padding: 18px 0;
+        p{
+            font-size: 20px;
+        }
+    }
+} 
+@media screen and(max-width: 750px){/*iphonex xs*/
+    .serviceBox{
+        .shutdown{
+                display: none;
+            }
+    }
+    
+    .bannerCode,.codeButton{
+        display: none;
+    }
+    header .bannerTop{
+        max-height: 3.56rem;
+        overflow: hidden;
+        #bannerpc{
+            display: none;
+        }
+        #bannerH5{
+            display: block;
+        }
+    }
+    .gameList{
+        margin: 0 auto;
+        width: 100%;
+        ul{
+            width: 94%;
+            li{
+                width: 44%;
+                margin: 2% 3%;
+            }
+        }
+    }
+    .contentbg{
+        padding-top: 0.11rem;
+        .contentTop{
+            width: 100%;
+            height: 1.38rem;
+            background: url('../img/h5/gameList@2x.png') no-repeat;
+            background-size: 100%;
+            background-position: bottom;
+        }
+        .contentmbg{
+            margin: 0 0.11rem;
+            background: #22335e;
+            #pctitle{
+                display: none;
+            }
+            .title1,.title2{
+                height: 1rem;
+                display: -webkit-flex;  
+                display: flex;	
+                align-items: center;
+                padding: 0.01rem 0;
+                img{
+                    width: 6rem;
+                }
+            }
+        }
+    }
+    .serviceBox{
+        left: inherit;
+        right: 0;
+        top: 45%;
+        width: 1.75rem;
+        height: 1.75rem;
+        padding: 0;
+        z-index: 999;
+        .serviceBg{
+            width: 100%;
+            height: 100%;
+            display: block; 
+            background: url('../img/h5/kefu@2x.png') no-repeat;
+            background-size: 100%;
+            background-position: right top;
+            #codeImg{
+                display: none;
+            }      
+            .kefuBox{
+                top:0;
+                width: 1.75rem;
+                height: 1.8rem;
+            }
+        }
+    }
+    .footer{
+        width: 97%;
+        height: 0.65rem;
+        margin: 0.1rem auto 0 auto;
+        background: url(../img/h5/description-font@2x.png) no-repeat;
+        background-size: 100%;
+        padding-bottom: 1.3rem;
+        .footerp,.footerB{
+            display: none;
+        }
+        .mailbox{
+            display: none;
+        }
+    } 
+    .mobileH5{
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        bottom: 0;
+        display:block;
+        #mobile{
+            display:block;
+            width: 100%;
+            height: 1.63rem;
+            background: url(../img/h5/download@2x.png) no-repeat;
+            background-position: bottom;
+            background-size: 100%;
+        }
+    }
+    .h5logo{
+        display: -webkit-flex;  
+        display: flex;	
+        width: 100%;
+        height: 0.82rem;
+        z-index: 9;
+        align-items:center;
+        background: url('../img/h5/logo-bg@2x.png') no-repeat;
+        background-size: cover;
+        background-position: center;
+        img{
+            width: 1.8rem;
+            padding: inherit;
+        }
+    }
+    .h5title{
+        display: block;
+        .downloadbox{
+            display: -webkit-flex;  
+            display: flex;
+            justify-content:space-between;
+            margin: 0 auto;
+            a{
+                width: 100%;
+                margin: 0 auto;
+                opacity: 1;
+                display: block;
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            .iosButton{
+                background: url(../img/h5/ios@2x.png) no-repeat;
+                background-size: 100%;   
+            }
+            .iosButton{
+                -webkit-animation: slideLeftReturn 1s ease-in-out;
+                animation: slideLeftReturn 1s ease-in-out;
+                opacity:1;
+            }
+            .androidButton{
+                background: url(../img/h5/android@2x.png) no-repeat;
+                background-size: 100%;
+            }
+            .androidButton{
+                -webkit-animation: slideRightReturn 1s ease-in-out;
+                animation: slideRightReturn 1s ease-in-out;
+                opacity:1;
+            }		
+        }
+        .shouxinBox{
+            display:flex;
+            width: 100%;
+            margin: 0 auto;
+            .shouxin{
+                display: block;
+                font-size: 16px;
+                color: #fff;
+                width: 100%;
+                margin-left: 20px;
+            }
+        }
+        .jinrugame{
+            height: 1.61rem;
+            img{
+                width: 97.8%;
+                margin: 0 auto;
+            }
+        }
+    } 
+
+} 
+

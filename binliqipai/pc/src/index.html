@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>宾利棋牌</title>
+    <link href="img/bitbug_favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detail.css">
+<!--     <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+<!--     <script src="js/swiper.custom.min.js"></script> -->
+    <script type="text/javascript" src="js/md5-min.js"></script>
+    <script type="" src="@CDN_url/online/20190430/public-min.js"></script>
+    <script src="js/float-min.js"></script>
+    <script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script> 
+    <script type="" src="//tupianzy-shenzhen.oss-cn-shenzhen.aliyuncs.com/online/20190623/poplar-min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="h5logo">
+            <img src="img/h5/logo@3x.png">
+        </div>
+        <div class="bannerTop">
+             <img id="bannerpc" src="img/banner.jpg">
+             <img id="bannerH5" src="img/h5/banner@2x.jpg"> 
+        </div>
+    </header>
+    <section class="contentbg">
+        <div class="content">
+            <div class="title1" id="h5title">
+                <img src="img/h5/saoma@2x.png">
+            </div>
+            <div class="title1" id="pctitle">
+                <img src="img/title0.png">
+            </div>
+            <div class="h5title" style="    padding-bottom: 0.3rem;">
+                <div class="downloadbox">
+                    <a class="iosButton mohe_down" id="ios">
+                        <img src="img/h5/download_app.png">
+                    </a>
+                </div>
+                <div style="display:flex;width: 5rem;justify-content:space-between;margin: 0 auto;">
+                    <a class="shouxin" id="shouxin" href="installatio.html">iOS如何授信？</a>
+                </div>
+
+                <div class="jinrugame" style="display: none;">
+                    <a style="display:block;" id="downloaddt">
+                        <img src="img/h5/jinru@2x.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="bannerCode">
+                <img src="img/codeBg.png">
+                <div class="pcDownloadbox">
+                    <div class="codeBox">
+                        <div id="codeImgpc">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="title1">
+            <img src="img/title1.png">
+        </div>
+        <div class="bannerMiddle" id="bannerMiddle">
+            <div class="swiper-container" id="banner2">
+                <div class="swiper-wrapper" id="swiper2">
+                    <div class="swiper-slide"><img src="img/game1_banner.png"></div>
+                    <div class="swiper-slide"><img src="img/game2_banner.png"></div>
+                    <div class="swiper-slide"><img src="img/game3_banner.png"></div>
+                </div>
+            </div>
+            <div class="swiper-button-prev" id="prev"></div>
+            <div class="swiper-button-next" id="next"></div>
+        </div> -->
+        <div class="title1">
+            <img src="img/title2.png">
+        </div>
+        <div class="gameList">
+            <ul>
+                <li><img src="img/game1.png"></li>
+                <li><img src="img/game2.png"></li>
+                <li><img src="img/game3.png"></li>
+                <li><img src="img/game4.png"></li>
+                <li><img src="img/game5.png"></li>
+                <li><img src="img/game6.png"></li>
+            </ul>
+        </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footerp">
+            <p>适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活 </p>
+            <p>抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当 </p>
+        </div>
+       <!--  <center class="mailbox">
+            <span>技术支持：</span>
+            <a onclick="openMailbox()" target="_blank">WG平台</a>
+        </center> -->
+        <div class="footerB">
+            <p>宾利棋牌持有菲律宾政府PAGCOR (Philippine Amusement and Gaming Corporation)颁发的离岸博彩许可并受其监督<br/>  Copyight © 宾利棋牌 <span id="location_hef">wangzhe100.com</span>
+                Reserved</p>
+        </div>
+    </div>
+
+    <!--在线客服-->
+    <div class="serviceBox floatLoad">
+        <div class="serviceBg" target="_blank">
+            <div class="kefuBox">
+                <a href="" id="serviceUrl" target="_blank"></a>
+            </div>
+            <div id="codeImg">
+            </div>
+            <div class="codeButton">
+                <a class="pciosButton" id="androidClick" onclick="$public.h5android('#android_new')"><img src="img/android.png"></a>
+                <a class="pcandroidButton" id="iosClick" onclick="$public.pcios('#pcios_new')"><img src="img/ios.png"></a>
+            </div>
+        </div>
+        <a class="shutdown" onclick="shut_down()"><img src="img/shutdown.png"></a>
+    </div>
+    <!--h5立即下载-->
+    <div class="mobileH5">
+        <a id="mobile" class="android mohe_down">
+        </a>
+    </div>
+</body>
+<script type="" src="js/index-min.js"></script>
+<script>
+    //banner轮播图初始化
+    // var myswipers = new Swiper('#banner2', {
+    //     loop: true, //是否循环
+    //     autoplay: 3000, //自动循环秒数
+    //     autoplayDisableOnInteraction: false,
+    //     nextButton: '#next',
+    //     prevButton: '#prev',
+    // });
+
+    // 右边浮窗动画效果
+    $(".floatLoad").Float({
+        'floatRight': 1,
+        'topSide': 110,
+        'side': 0
+    });
+    var ua = navigator.userAgent;
+    var isiOS = ua.indexOf('iPhone') > -1
+    if(isiOS){
+         document.getElementById("shouxin").style.display="block";
+    }else{
+         document.getElementById("shouxin").style.display="none";
+    }
+</script>
+
+</html>

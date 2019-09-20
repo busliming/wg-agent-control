@@ -1,0 +1,112 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>VIP棋牌</title>
+  <meta name="author" content="LeoYao">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=750,user-scalable=no,target-densitydpi=device-dpi">
+  <link rel="shortcut icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script type="text/javascript" charset="UTF-8" src="//res.cdn.openinstall.io/openinstall.js"></script>
+  <script src="./js/idangerous.swiper2.7.6.js"></script>
+  <script src="./js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="./js/md5-min.js"></script>
+  <script type="" src="@CDN_url/online/20190430/public-min.js"></script>
+  <script type="" src="@CDN_url/online/20190430/poplar-min.js"></script>
+  <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+</head>
+
+<body style="background:#0b011b">
+  <div class="w750">
+    <div class="header">
+      <div class="top-img">
+        <div class="activeimg1 mohe_down">
+          <img onclick="return!1" src="./img/app1.png" width="687"></div>
+      </div>
+    </div>
+    <div class="tac" style="text-align: center; position: relative;">
+      <img src="img/anbu1.png" alt="" style="width: 50rem;">
+      <div id="qrcode"></div>
+    </div>
+    <div class="downIntro">
+      <img src="./img/a03.png" alt="" style="position:relative;right:-19px">
+      <a id="andBtn" class="andBtn activeBtn mohe_down">
+        <img src="./img/don.gif" class="don"></a>
+      <a id="iosBtn" class="iosBtn activeBtn mohe_down">
+        <img src="./img/appleDown.gif" class="don"></a>
+    </div>
+    <div class="gameList">
+      <div class="box">
+        <div class="all">
+          <div class="bot-img">
+            <ul>
+              <li class="active">
+                <img src="./img/l_1.png"></li>
+              <li>
+                <img src="./img/l_2.png"></li>
+              <li>
+                <img src="./img/l_3.png"></li>
+              <li>
+                <img src="./img/l_4.png"></li>
+            </ul>
+          </div>
+          <div class="top-img">
+            <div class="activeimg" style="width:2748px;left:-687px">
+              <img src="./img/banner1.png">
+              <img src="./img/banner2.png">
+              <img src="./img/banner3.png">
+              <img src="./img/banner4.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="game">
+      <a class="btns">
+        <img src="./img/down1.png" class="right"></a>
+      <ul class="u0" style="width:90%;margin-left:5%">
+        <a class="mohe_down">
+          <img onclick="return!1" src="./img/Nbox.png"></a>
+      </ul>
+    </div>
+    <div class="main_teach" id="IOS">
+      <div class="content_teach" id="IOS_teach">
+        <img src="img/teach_01.png" />
+        <img src="img/teach_02.png" />
+        <img src="img/teach_03.png" />
+        <img src="img/teach_04.png" />
+        <img src="img/teach_05.png" />
+        <img src="img/teach_06.png" />
+        <img src="img/teach_07.png" />
+        <p>
+          <span class="span download">去信任</span>
+          <img class="mohe_down" src="img/teach_08.png" />
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div style="clear:both"></div>
+    <div class="f_h"></div>
+    <div class="footer">
+      <a class="mohe_down">
+        <img onclick="return!1" src="./img/a_56.png"></a>
+    </div>
+  </div>
+  <script>
+    var ua = navigator.userAgent,
+      isiOS = -1 < ua.indexOf("iPhone");
+      isiOS ? $("#iosBtn").show() : $("#andBtn").show()
+      isiOS ? $('#IOS').show(): $('#IOS').hide()
+
+  </script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

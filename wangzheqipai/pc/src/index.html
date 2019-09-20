@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>王者棋牌</title>
+    <link href="img/bitbug_favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="@CDN_url/online/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="js/md5-min.js"></script>
+    <script type="" src="@CDN_url/online/20190430/public-min.js"></script>
+    <script type="" src="@CDN_url/online/20190430/poplar-min.js"></script>
+    <script src="js/float-min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="h5logo">
+            <img class="h5" src="img/weblogo.png">
+            <img class="pc" src="img/weblogo.png">
+        </div>
+        <div class="bannerTop">
+            <!-- <div class="swiper-container" id="banner1">
+                <div class="swiper-wrapper" id="swiper1">
+                     <div class="swiper-slide"><img src="img/banner1.png"></div>
+                </div>
+            </div> -->
+            <img id="bannerpc" src="img/banner.jpg">
+            <img id="bannerh5" src="img/h5/banner@2x.png">
+            <div class="nationBox">
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev" id="prev1" style="z-index:9999;"><img src="img/banner-left.png"></div>
+            <div class="swiper-button-next" id="next1" style="z-index:9999;"><img src="img/banner-right.png"></div>
+        </div>
+    </header>
+    <section class="contentbg">
+        <div class="satin">
+            <img src="img/satin.png">
+        </div>
+        <div class="contentTop"></div>
+        <div class="contentmbg">
+            <div class="content">
+
+                <div class="h5title">
+                    <div class="downloadbox">
+                        <a class="iosButton mohe_down" id="ios">
+                            <img src="img/h5/ios-button.png">
+                        </a>
+                        <!--<a class="androidButton" id="android"></a>-->
+                    </div>
+                    <div class="shouxinBox">
+                        <a class="shouxin" id="shouxin" href="installatio.html">iOS如何授信？</a>
+                    </div>
+                    <div class="jinrugame" style="display: none;"><a style="display:block; height: 0.68rem;"
+                            id="downloaddt" target="_blank"></a></div>
+                </div>
+                <div class="bannerCode">
+                    <div class="codeleft"></div>
+                    <div class="pcDownloadbox">
+                        <div class="codeBox">
+                            <div id="codeImgpc">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="title1">
+                <img src="img/titleTwo.png">
+            </div>
+            <div class="bannert">
+                <div class="banner_box">
+                    <div class = "caroursel poster-main">
+                        <ul class = "poster-list" id="poster-list">
+                            <li class = "poster-item"><img src="img/pic-one.png"></li>
+                            <li class = "poster-item"><img src="img/pic-two.png"></li>
+                            <li class = "poster-item"><img src="img/pic-three.png"></li>
+                        </ul>
+                        <div class = "poster-btn poster-next-btn"></div>
+                        <div class = "poster-btn poster-prev-btn"></div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="title1">
+                <img src="img/titleThree.png">
+            </div>
+            <div class="gameList">
+                <ul>
+                    <li><img src="img/game1.png"></li>
+                    <li><img src="img/game2.png"></li>
+                    <li><img src="img/game3.png"></li>
+                    <li><img src="img/game4.png"></li>
+                    <li><img src="img/game5.png"></li>
+                    <li><img src="img/game6.png"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footerp">
+            <img src="img/bottom.png">
+        </div>
+        <!--    <center class="mailbox">
+            <span>技术支持:</span>
+            <a onclick="openMailbox()" target="_blank">WG平台</a>
+        </center> -->
+        <div class="footerB">
+            <p>王者棋牌持有菲律宾政府PAGCOR (Philippine Amusement and Gaming Corporation)颁发的离岸博彩许可并受其监督 <br />Copyight © 王者棋牌<sanp
+                    id="location_hef"> wangzhe100.com </sanp>&nbsp; Reserved</p>
+        </div>
+    </div>
+
+    <!--在线客服-->
+    <div class="serviceBox floatLoad">
+        <div class="serviceBg" target="_blank">
+            <div class="kefuBox">
+                <a href="" id="serviceUrl" target="_blank"></a>
+            </div>
+            <div id="codeImg">
+            </div>
+            <div class="codeButton">
+                <a class="pciosButton" id="androidClick" onclick="$public.h5android('android_new')"><img
+                        src="img/android.png"></a>
+                <a class="pcandroidButton" id="iosClick" onclick="$public.pcios('pcios_new')"><img
+                        src="img/ios.png"></a>
+            </div>
+            <img id="closeFloat" src="img/shutdown.png" />
+        </div>
+    </div>
+    <!--h5立即下载-->
+    <div class="mobileH5">
+        <a id="mobile" class="android mohe_down">
+            <!--<img src="img/h5/download@2x.png">-->
+        </a>
+    </div>
+</body>
+<!-- <script src="js/swiper.custom.min.js"></script> -->
+<!-- <script src="js/jquery.carousel.js"></script> -->
+<script type="text/javascript" src="js/index-min.js"></script>
+<script>
+    // //初始化caroursel轮播
+    // Caroursel.init($('.caroursel'));
+    // 右边浮窗动画效果
+    $(".floatLoad").Float({
+        'floatRight': 1,
+        'topSide': window.innerWidth > 750 ? 250 : 400 * window.innerWidth / 750,
+        'side': 0
+    });
+    $('#closeFloat').click(function () {
+        $('.floatLoad').hide("slow");
+    });
+
+    function openMailbox() {
+        window.open("mail.html?mai=" + $public.consultMailbox)
+    }
+
+
+    var ua = navigator.userAgent;
+    var isiOS = ua.indexOf('iPhone') > -1
+    if (isiOS) {
+        document.getElementById("shouxin").style.display = "block";
+    } else {
+        document.getElementById("shouxin").style.display = "none";
+    }
+</script>
+
+</html>

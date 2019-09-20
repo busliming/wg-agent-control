@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="renderer" content="webkit">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <title>棋牌争霸</title>
+  <link href="images/bitbug_favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/detail.css">
+  <script type='text/javascript' charset='UTF-8' src='//res.cdn.openinstall.io/openinstall.js'></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+  <script type="text/javascript" src="js/float-min.js"></script>
+  <script type="text/javascript" src="js/md5-min.js"></script>
+  <script type="" src="@CDN_url/online/20190430/public-min.js"></script>
+  <script type="" src="@CDN_url/online/20190430/poplar-min.js"></script>
+</head>
+
+<body style="background:#4d58d8;">
+  <header>
+    <center>
+      <img src="images/logo.png">
+    </center>
+  </header>
+  <div class="wrapper">
+    <article class="center">
+      <img id="bannerpc" src="images/banner.jpg">
+      <img id="bannerh5" src="images/h5/banner@2x.jpg">
+    </article>
+    <div class="segmentation"></div>
+    <div class="download">
+      <div class="dowload_box">
+        <div id="qrcodes"></div>
+      </div>
+      <div class="download_active">
+        <div class="phone">
+          <a class="slideLeftReturn mohe_down">
+            <img src="images/h5/download_app@2x.png">
+          </a>
+          <a id="shouxin" class="Credit" href="installatio.html">iOS如何授信？</a>
+          <div style="background: #606ef5;padding: 15px 0 5px 0px;display: none;">
+            <a id="downloaddt" class="puffIn" target="_blank">
+              <img src="images/h5/entergame-button@2x.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gamelist">
+      <ul class="game_box" id="actives">
+        <li class="pc"><img src="images/hotgame1.png"></li>
+        <li class="pc"><img src="images/hotgame2.png"></li>
+        <li class="pc"><img src="images/hotgame3.png"></li>
+        <li class="pc"><img src="images/hotgame4.png"></li>
+        <li class="pc"><img src="images/hotgame5.png"></li>
+        <li class="pc"><img src="images/hotgame6.png"></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <center class="center_top">
+      <div class="box">
+        <div>
+          <h1>01</h1><span>适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活</span>
+        </div>
+        <div>
+          <h1>02</h1><span>抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防受骗上当</span>
+        </div>
+      </div>
+    </center>
+    <!--   <center class="mailbox">
+               <span>技术支持:</span>
+               <a onclick="openMailbox()" target="_blank">WG平台</a>
+          </center> -->
+    <center class="center_bottom">
+      棋牌争霸持有菲律宾政府PAGCOR (Philippine Amusement and Gaming Corporation)颁发的离岸博彩许可并受其监督<br /> Copyight © 棋牌争霸
+      <span id="location_hef"></span> Reserved
+    </center>
+  </footer>
+  <div class="botton_mb">
+    <img src="images/h5/footer-description@2x.png">
+  </div>
+  <div class="Mobile">
+    <a id="Mobile_don" class="mohe_down"></a>
+  </div>
+  <div class="fix">
+    <div class="contact">
+      <a class="serviceUrl" id="serviceUrl" target="_blank"></a>
+      <div id="qrcode"></div>
+      <a id="fixios" onclick="$public.pcios('#pcios_new')"></a>
+      <a id="fixandroid" onclick="$public.h5android('#android_new')"></a>
+    </div>
+    <a class="shutdown" onclick="shut_down()"><img src="images/shutdown.png"></a>
+  </div>
+</body>
+<script type="" src="js/index-min.js"></script>
+<script type="text/javascript">
+  $(".fix").Float({
+    'floatRight': 1,
+    'topSide': 300,
+    'side': 0
+  });
+  var ua = navigator.userAgent;
+  var isiOS = ua.indexOf('iPhone') > -1
+  if (isiOS) {
+    document.getElementById("shouxin").style.display = "block";
+  } else {
+    document.getElementById("shouxin").style.display = "none";
+  }
+</script>
+
+</html>

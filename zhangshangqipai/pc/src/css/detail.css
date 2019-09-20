@@ -1,0 +1,624 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+  background-color: #45185d;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(1, 30, 62, 0.3);
+  border-radius: 10px;
+  background-color: #45185d;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(1, 30, 62, 0.3);
+  background-color: #7c39b9;
+}
+/*轮播样式ʽ*/
+.poster-main {
+  position: relative;
+  margin: 0 auto;
+  padding: 170px 0 0;
+}
+.poster-main a,
+.poster-main img {
+  display: block;
+}
+.poster-main .poster-list {
+  margin: 0 auto;
+  position: relative;
+  height: 530px;
+  background: url(../img/images28.png) no-repeat;
+  background-position: bottom 60px center;
+  background-size: 100%;
+}
+.poster-main .poster-list .poster-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.poster-main .poster-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: 100px !important;
+  height: 40px !important;
+  text-align: center;
+  line-height: 14px;
+  color: #ffffff;
+  background: url("../img/btn_l.png") no-repeat center;
+  z-index: 10;
+}
+.poster-main .poster-next-btn {
+  background: url("../img/btn_r.png") no-repeat center;
+}
+.poster-main .poster-prev-btn {
+  left: -8%;
+  top: 59%;
+}
+.poster-main .poster-next-btn {
+  right: -8%;
+  top: 59%;
+}
+#bannerh5 {
+  display: none;
+}
+header {
+  background: url(../img/menu_bg.png) no-repeat;
+  height: 174px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+header center {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 110px;
+}
+header center img {
+  width: 36%;
+  margin: 10px 0;
+}
+.center {
+  padding-top: 110px;
+  max-height: 500px;
+  overflow: hidden;
+}
+.download {
+  background: url(../img/download-title.jpg) no-repeat, url(../img/download_bj.jpg);
+  background-position: center 10px, 0 0;
+  margin-top: -4px;
+}
+.download .dowload_box {
+  width: 1200px;
+  background: url(../img/app-backgrund-image.png) no-repeat;
+  min-height: 500px;
+  margin: 0 auto;
+  background-position: center 100px;
+  padding-top: 100px;
+  position: relative;
+}
+.download .dowload_box #qrcodes {
+  position: absolute;
+  top: 43.5%;
+  left: 41.7%;
+  width: 13%;
+  height: 40%;
+}
+.download .dowload_box #qrcodes canvas {
+  width: 90%;
+  padding: 5%;
+  height: 57%;
+  background: #ece3e3;
+}
+.download .download_active {
+  display: none;
+}
+.bannert {
+  position: relative;
+  z-index: 9999;
+  background: url(../img/gamets.jpg) no-repeat, url(../img/baner_back.png);
+  background-position: center 10px, 0 0;
+  background-size: contain;
+}
+.bannert .banner_box {
+  background: url(../img/light.png) no-repeat, url(../img/light2.png) no-repeat;
+  background-position: 10% 40px, right 10% top 40px;
+}
+.gamelist {
+  position: relative;
+  z-index: 99;
+  background: url(../img/images7.jpg) no-repeat, url(../img/images5.jpg) no-repeat;
+  background-position: center 10px, 0 0;
+  background-size: auto,cover;
+}
+.gamelist .game_box {
+  min-height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 60.6%;
+  padding-top: 130px;
+}
+.gamelist .game_box li {
+  width: calc(88%/2);
+  float: left;
+  text-align: center;
+  padding: 10px 3%;
+}
+.gamelist .game_box li img {
+  width: 100%;
+}
+.gamelist .game_box li:nth-child(odd) {
+  text-align: right;
+  -webkit-animation: tinLeftIn 2.5s ease-in-out;
+  animation: tinLeftIn 2.5s ease-in-out;
+}
+.gamelist .game_box li:nth-child(even) {
+  text-align: left;
+  -webkit-animation: tinRightIn 2.5s ease-in-out;
+  animation: tinRightIn 2.5s ease-in-out;
+}
+footer .center_top {
+  background: #000000;
+  border-top: solid 1px #645e77;
+}
+footer .center_top .box {
+  width: 1200px;
+  color: #848484;
+  overflow: hidden;
+}
+footer .center_top .box > div {
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 66px;
+}
+footer .center_top .box > div > h1 {
+  display: inline-block;
+  color: #292929;
+  font-size: 40px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+footer .center_top .box > div span {
+  font-size: 12px;
+}
+footer .center_top .box > img {
+  display: none;
+}
+footer .center_bottom {
+  background: #0f0f0f;
+  text-align: center;
+  color: #848484;
+  font-size: 14px;
+  padding: 15px 0;
+}
+footer .mailbox {
+  background: #0f0f0f;
+}
+footer .mailbox span {
+  color: #ffffff;
+}
+footer .mailbox a {
+  display: inline-block;
+  width: 100px;
+  margin-top: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #0597e6;
+  text-align: left;
+  text-decoration: underline;
+}
+.fix {
+  position: fixed;
+  right: 1%;
+  top: 50%;
+  z-index: 999999999;
+}
+.fix .contact {
+  background: url(../img/images31.png) no-repeat;
+  width: 170px;
+  height: 386px;
+  display: block;
+  z-index: 999999;
+  background-size: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.fix .contact #serviceUrl {
+  height: 40%;
+  width: 100%;
+  display: block;
+}
+.fix .contact #qrcode {
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+  top: 161px;
+  height: 22%;
+  position: absolute;
+}
+.fix .contact #qrcode canvas {
+  width: 90%;
+  padding: 5%;
+  height: 90%;
+  background: #ece3e3;
+}
+.fix .contact #fixios {
+  position: absolute;
+  top: 258px;
+  height: 24px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.fix .contact #fixandroid {
+  position: absolute;
+  top: 293px;
+  height: 25px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.fix .shutdown {
+  display: block;
+  width: 114px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.Mobile {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  header {
+    height: 160px;
+  }
+  header center {
+    max-width: 75%;
+  }
+  header center img {
+    width: 400px;
+    margin: 10px 0 0;
+  }
+  .center {
+    max-height: 500px;
+    overflow: hidden;
+    padding-top: 99px;
+  }
+  .download {
+    background: url(../img/download-title.jpg) no-repeat, url(../img/download_bj.jpg);
+    background-position: center 10px, 0 0;
+    margin-top: -4px;
+    background-size: contain;
+  }
+  .download .dowload_box {
+    width: 1000px;
+    background: url(../img/app-backgrund-image.png) no-repeat;
+    min-height: 460px;
+    margin: 0 auto;
+    background-position: center 60px;
+    padding-top: 70px;
+    background-size: contain;
+  }
+  .download .dowload_box #qrcodes {
+    position: absolute;
+    top: 40%;
+    left: 41%;
+    width: 14%;
+    height: 40%;
+  }
+  .gamelist {
+    background-size: contain,cover;
+  }
+  .gamelist .game_box {
+    width: 75%;
+    padding-top: 95px;
+  }
+  footer .center_top .box {
+    width: 100%;
+  }
+  footer .center_top .box > div {
+    line-height: 30px;
+    padding: 10px 0;
+  }
+  footer .center_top .box > div > h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  header {
+    height: 130px;
+  }
+  header center {
+    max-width: 88%;
+  }
+  header center img {
+    width: 320px;
+    margin: 8px 0 0;
+  }
+  .center {
+    max-height: 500px;
+    overflow: hidden;
+    padding-top: 79px;
+  }
+  .gamelist {
+    background-size: contain,cover;
+  }
+  .gamelist .game_box {
+    width: 88%;
+    padding-top: 85px;
+  }
+  footer .center_top .box {
+    width: 100%;
+  }
+  footer .center_top .box > div {
+    line-height: 30px;
+    padding: 10px 0;
+  }
+  footer .center_top .box > div > h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    height: 130px;
+  }
+  header center {
+    max-width: 800px;
+  }
+  header center img {
+    width: 320px;
+    margin: 8px 0 0;
+  }
+  .center {
+    max-height: 500px;
+    overflow: hidden;
+    padding-top: 79px;
+  }
+  .download {
+    background-position: center 10px, 0 0;
+    margin-top: -4px;
+    background-size: contain;
+  }
+  .download .dowload_box {
+    width: 760px;
+    background: url(../img/app-backgrund-image.png) no-repeat;
+    min-height: 400px;
+    margin: 0 auto;
+    background-position: center center;
+    padding-top: 70px;
+    background-size: contain;
+  }
+  .download .dowload_box #qrcodes {
+    position: absolute;
+    top: 38.5%;
+    width: 14%;
+    height: 33%;
+  }
+  .gamelist {
+    background-size: contain,cover;
+  }
+  .gamelist .game_box {
+    width: 800px;
+    padding-top: 70px;
+  }
+  footer .center_top .box {
+    width: 100%;
+  }
+  footer .center_top .box > div {
+    line-height: 30px;
+    padding: 10px 0;
+  }
+  footer .center_top .box > div > h1 {
+    font-size: 30px;
+  }
+  .poster-main .poster-btn {
+    width: 100px !important;
+    height: 54% !important;
+    top: 33%;
+    right: -11%;
+  }
+  .poster-main .poster-prev-btn {
+    left: -11%;
+  }
+}
+@media screen and (max-width: 750px) {
+  header {
+    background: url(../img/m_menu_bg.png) no-repeat;
+    height: 1.5rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    overflow: hidden;
+    background-size: cover;
+  }
+  header center {
+    margin: 0 auto;
+    height: 40px;
+  }
+  header center img {
+    margin: 0.1rem 0;
+    width: 3rem;
+  }
+  .center {
+    overflow: hidden;
+    padding-top: 0.8rem;
+  }
+  .download {
+    background: none, url(../img/download_bj.png);
+    background-size: contain;
+  }
+  .download .dowload_box {
+    display: none;
+  }
+  .download .download_active {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0.3rem 0 0.2rem;
+    display: block;
+  }
+  .download .download_active .phone {
+    position: relative;
+    padding-top: 0.1rem;
+    overflow: hidden;
+  }
+  .download .download_active .Credit {
+    position: absolute;
+    bottom: 44%;
+    color: #d76b09;
+    font-size: 0.28rem;
+    text-align: left;
+  }
+  .download .download_active a {
+    display: block;
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .download .download_active .androiddow {
+    float: right;
+  }
+  .download .download_active #downloaddt {
+    width: 90%;
+    margin: 0.8rem 0 0 5%;
+  }
+  .bannert {
+    position: relative;
+    margin: -5px 0 0 0;
+    z-index: 9999;
+    background: url(../img/h5/gamefeatures-title@2x.png) no-repeat, url(../img/rep_bg.jpg);
+    background-position: center 0px, 0px 50px;
+    background-size: contain, contain;
+  }
+  .bannert .banner_box {
+    background: url(../img/M_light.png) no-repeat, url(../img/M_light2.png) no-repeat;
+    background-position: 3% 40px, right 3% top 40px;
+  }
+  .bannert .banner_box .poster-main {
+    padding: 110px 0 0px;
+  }
+  .bannert .banner_box .poster-main .poster-btn {
+    width: 50px !important;
+    height: 2rem !important;
+    background-size: 20px;
+  }
+  .bannert .banner_box .poster-main .poster-prev-btn {
+    left: -0.6rem;
+    top: 41%;
+    z-index: 999 !important;
+  }
+  .bannert .banner_box .poster-main .poster-next-btn {
+    right: -0.6rem;
+    top: 41%;
+    z-index: 999 !important;
+  }
+  .bannert .banner_box .poster-main .poster-list {
+    background-position: bottom 20px center;
+  }
+  .gamelist {
+    position: relative;
+    z-index: 99;
+    background: url(../img/h5/topgame-title@2x.png) no-repeat, #1b1436;
+    background-position: center 2px, 0 0;
+    background-size: contain, auto;
+  }
+  .gamelist .game_box {
+    min-height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 12%;
+  }
+  .gamelist .game_box li {
+    width: 94%;
+    float: left;
+    text-align: center;
+    padding: 5px 3%;
+  }
+  .gamelist .game_box li img {
+    width: 100%;
+  }
+  .fix {
+    position: fixed;
+    right: 0%;
+    top: 70%;
+    z-index: 9999;
+  }
+  .fix .contact {
+    background: url(../img/h5/images5.png) no-repeat;
+    width: 85px;
+    height: 80px;
+    display: block;
+    background-size: 100%;
+  }
+  .fix .contact #qrcode {
+    display: none;
+  }
+  .fix .contact #serviceUrl {
+    height: 1.4rem;
+  }
+  .fix .shutdown {
+    display: none;
+  }
+  footer {
+    padding-bottom: 1.2rem;
+  }
+  footer .center_bottom {
+    display: none;
+  }
+  footer .mailbox {
+    display: none;
+  }
+  footer .center_top .box > div {
+    display: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  footer .center_top .box > div h1 {
+    float: left;
+  }
+  footer .center_top .box > div span {
+    text-align: left;
+  }
+  footer .center_top .box > img {
+    display: block;
+    width: 90%;
+    margin: 0.2rem 0;
+  }
+  .Mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  .Mobile #Mobile_don {
+    display: block;
+    background: url(../img/Mobile_don.png) no-repeat;
+    width: 100%;
+    height: 1.4rem;
+    background-size: 100%;
+    background-position: bottom;
+  }
+  #bannerpc {
+    display: none;
+  }
+  #bannerh5 {
+    display: block;
+  }
+}

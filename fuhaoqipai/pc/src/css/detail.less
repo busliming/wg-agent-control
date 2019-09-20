@@ -1,0 +1,636 @@
+::-webkit-scrollbar 
+{ 
+    width:5px; 
+    height:1px; 
+   background-color:#45185d; 
+} 
+   
+/*定义滚动条轨道 内阴影+圆角*/ 
+::-webkit-scrollbar-track 
+{ 
+    -webkit-box-shadow: inset 0 0 6px rgba(1,30,62,0.3); 
+    border-radius: 10px; 
+    background-color:#45185d;  
+} 
+/*定义滑块 内阴影+圆角*/ 
+::-webkit-scrollbar-thumb 
+{ 
+    border-radius: 10px; 
+    -webkit-box-shadow: inset 0 0 6px rgba(1,30,62,0.3); 
+    background-color:#7c39b9; 
+}
+
+/*轮播样式ʽ*/
+.poster-main{position: relative; margin:0 auto; padding: 170px 0 0;}
+.poster-main a,.poster-main img{display:block;}
+.poster-main .poster-list{
+  margin:0 auto;
+ position: relative;
+ height:530px;
+ background:url(../img/images28.png) no-repeat;
+background-position: bottom 60px center;
+background-size: 100%;
+}
+.poster-main .poster-list .poster-item{position: absolute;left: 0;top: 0;}
+
+.poster-main .poster-btn{
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    width:100px !important;
+    height:40px !important;
+    text-align: center;
+    line-height: 14px;
+    color: #ffffff;
+    background:url("../img/btn_l.png") no-repeat center;
+    z-index: 10;
+}
+
+.poster-main .poster-next-btn{
+    background:url("../img/btn_r.png") no-repeat center;
+}
+.poster-main .poster-prev-btn{
+    left:-8%;
+    top: 59%;
+}
+.poster-main .poster-next-btn{
+    right:-8%;
+    top: 59%;
+}	
+@width12: 60.60%;
+header{
+	 background:url(../img/menu_bg.png) no-repeat;
+	 height:174px;
+	 position:fixed;
+	 width:100%;
+	 left: 0;
+	 top:0;
+	 z-index:999999;
+	     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+	 center{
+	 	    max-width:1200px;
+			margin:0 auto;
+			height:110px;
+			img{
+				width: 18%;
+    			margin: 10px 0;
+			}
+		}
+ 
+}
+.center{ //top轮播图
+   padding-top:110px;
+   max-height: 500px;
+   overflow: hidden;
+   #bannerH5{
+   	display: none;
+   }
+}
+.download{  //二维码推广
+    background:url(../img/download-title.jpg) no-repeat,url(../img/download_bj.jpg);
+	background-position: center 10px, 0 0; 
+	margin-top: -4px;
+	.dowload_box{
+		width:1200px;
+		background:url(../img/app-backgrund-image.png) no-repeat;
+		min-height:500px;
+		margin: 0 auto; 
+		background-position: center 100px;
+    	padding-top: 100px;
+    	position: relative;
+    	#qrcodes{
+    		    position: absolute;
+			    top: 43.5%;
+			    left: 41.7%;
+			    width: 13%;
+			    height:40%;
+			    canvas{
+			    	width: 90%;
+				    padding: 5%;
+				    height:57%;
+				    background: #ece3e3;
+			    }
+    	}
+	}
+	.download_active{
+		display: none;
+	}
+}
+.bannert{  //轮播图
+	position: relative;
+	z-index: 9999;
+	background:url(../img/gamets.jpg) no-repeat,url(../img/baner_back.png);
+	background-position: center 10px, 0 0; 
+	background-size: contain;
+	.banner_box{
+		background:url(../img/light.png) no-repeat,url(../img/light2.png) no-repeat;
+		background-position:10% 40px, right 10% top 40px;
+	}
+}
+.gamelist{  //游戏列表
+   	position: relative;
+	z-index: 99;
+	background:url(../img/images7.jpg) no-repeat,url(../img/images5.jpg) no-repeat;
+	background-position: center 10px, 0 0;  
+	background-size:auto,cover;
+	.game_box{
+       min-height:500px;
+      overflow: hidden;
+      margin:0 auto;
+      width:@width12;
+      padding-top:130px;
+      li{
+      	width:calc(88%/2);
+      	float:left;
+      	text-align: center;
+      	padding:10px 3%;
+      	img{
+      		width:100%;
+      	}
+      }
+      li:nth-child(odd){
+      	text-align:right;
+        -webkit-animation: tinLeftIn 2.5s ease-in-out;
+        animation: tinLeftIn 2.5s ease-in-out;
+      }
+       li:nth-child(even){
+      	text-align:left;
+      	-webkit-animation: tinRightIn 2.5s ease-in-out;
+        animation: tinRightIn 2.5s ease-in-out;
+      }
+	} 
+}
+footer{
+  .center_top{
+  	background:#000000;
+  	border-top:solid 1px #645e77;
+  	.box{
+         width:1200px;
+         color:#848484;
+         overflow: hidden;
+         >div{
+         	display: inline-block;
+         	margin:0 20px;
+         	line-height:66px;
+         	>h1{
+         		display: inline-block;
+         		color:#292929;
+         		font-size:40px;
+         		vertical-align: middle;
+         		margin-right:15px;
+         	}
+         	span{
+         		    font-size: 12px;
+         	}
+         }
+         >img{
+         	display: none;
+         }
+  	}
+  }
+  .center_bottom{
+  	background:#0f0f0f;
+  	text-align: center;
+  	color: #848484;
+  	font-size:14px;
+  	padding:15px 0;
+  }
+  .mailbox{
+  	background:#0f0f0f;
+  	  	 span{
+  	     	color:#ffffff;
+  	     }
+	  	a{
+	  		display: inline-block;
+		    width: 100px;
+		    margin-top: 12px;
+		    margin-right: 10px;
+		    cursor: pointer;
+		    color:#0597e6;
+		    text-align: left;
+		    text-decoration :underline;
+	  	}
+  }
+}
+.fix{
+	position:fixed;
+	right:1%;
+	top:50%;
+	z-index:999999999;
+	.contact{
+		background:url(../img/images31.png) no-repeat;
+		width: 180px;
+        height: 410px;
+		display: block;
+		z-index: 999999;
+		background-size: 100%;
+		position:relative;
+		cursor:pointer;
+		#serviceUrl{
+			height:40%;
+			width:100%;
+			display: block;
+		}
+		#qrcode{
+         	width: 50%;
+		    left: 50%;
+		    margin-left: -25%;
+		    top:172px;
+		    height:20%;
+		    position: absolute;
+		   canvas{
+                 width: 100%;
+			     padding: 5%;
+			     height:100%;
+			     background:#ece3e3;
+		   }
+		}
+		#fixios{
+			position: absolute;
+		    top: 273px;
+		    height: 27px;
+		    text-align: center;
+		    display: block;
+		    width: 100%;
+		    color: #fff;
+		    font-size: 14px;
+		    cursor: pointer;
+		}
+		#fixandroid{
+			position: absolute;
+		    top: 310px;
+		    height: 26px;
+		    text-align: center;
+		    display: block;
+		    width: 100%;
+		    color: #fff;
+		    font-size: 14px;
+		    cursor: pointer;
+		}
+	}
+	.shutdown{
+		display: block;
+	        width: 114px;
+	    margin: 0 auto;
+	    cursor: pointer;
+	}
+}
+.Mobile{
+	display:none;
+}
+
+@media screen and (max-width:1280px) {
+@width12:75%;
+	header{
+		   height:160px; 
+			center{
+	 	    max-width:@width12;
+			img{
+				width:200px;
+				margin: 10px 0 0;
+			}
+		}
+	}
+	.center{ //top轮播图
+	   max-height: 500px;
+	   overflow: hidden;
+	   padding-top: 99px;
+
+	}
+	.download{  //二维码推广
+	    background:url(../img/download-title.jpg) no-repeat,url(../img/download_bj.jpg);
+		background-position: center 10px, 0 0; 
+		margin-top: -4px;
+		background-size: contain;
+		.dowload_box{
+			width:1000px;
+			background:url(../img/app-backgrund-image.png) no-repeat;
+			min-height: 460px;
+		    margin: 0 auto;
+		    background-position: center 60px;
+		    padding-top: 70px;
+		    background-size: contain;
+		    #qrcodes{
+    		    position: absolute;
+			        top: 40%;
+				    left: 41%;
+				    width: 14%;
+				    height:40%;
+    		}
+		}
+	}
+	.gamelist{
+		.game_box{
+			width:@width12;
+			padding-top: 95px;
+		}
+		background-size:contain,cover;
+	}
+    footer .center_top  .box{
+    	width:100%;
+    	>div{
+    		line-height:30px;
+    		padding:10px 0; 
+    		>h1{
+    			font-size:30px;
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width:1100px) {
+@width12:88%;
+	header{
+		    height:130px; 
+			center{
+	 	    max-width:@width12;
+			img{
+				width: 160px;
+    			margin: 8px 0 0;
+			}
+		}
+	}
+	.center{ 
+          max-height: 500px;
+		   overflow: hidden;
+		   padding-top: 79px;
+
+	}
+	.gamelist{
+		.game_box{
+			width:@width12;
+			padding-top: 85px;
+		}
+		background-size:contain,cover;
+	}
+    footer .center_top  .box{
+    	width:100%;
+    	>div{
+    		line-height:30px;
+    		padding:10px 0; 
+    		>h1{
+    			font-size:30px;
+    		}
+    	}
+    }
+}
+
+@media screen and (max-width:1000px) {
+@width12:800px;
+	header{
+		    height:130px; 
+			center{
+	 	    max-width:@width12;
+			img{
+				width: 160px;
+    margin: 8px 0 0;
+			}
+		}
+	}
+	.center{ 
+          max-height: 500px;
+		   overflow: hidden;
+		   padding-top: 79px;
+
+	}
+	.download{  //二维码推广
+		background-position: center 10px, 0 0; 
+		margin-top: -4px;
+		background-size: contain;
+		.dowload_box{
+			width:@width12*0.95;
+			background:url(../img/app-backgrund-image.png) no-repeat;
+			min-height: 400px;
+		    margin: 0 auto;
+		    background-position: center center;
+		    padding-top: 70px;
+		    background-size: contain;
+		    #qrcodes{
+    		    position: absolute;
+			        top: 38.5%;
+			        width: 14%;
+			        height:33%;
+    		}
+		}
+	}
+	.gamelist{
+		.game_box{
+			width:@width12;
+			padding-top:70px;
+		}
+		background-size:contain,cover;
+	}
+    footer .center_top  .box{
+    	width:100%;
+    	>div{
+    		line-height:30px;
+    		padding:10px 0; 
+    		>h1{
+    			font-size:30px;
+    		}
+    	}
+    }
+    .poster-main .poster-btn{
+    	   width: 100px !important;
+		    height: 54% !important;
+		    top: 33%;
+		    right: -11%;
+    }
+    .poster-main .poster-prev-btn{
+    	left: -11%;
+    }
+}
+
+@media screen and (max-width:750px) {
+   @width12:100%;
+   header{
+	 background:url(../img/m_menu_bg.png) no-repeat;
+	 height: 1.5rem;
+	 position:fixed;
+	 width:100%;
+	 left: 0;
+	 top:0;
+	 z-index:999999;
+	  overflow: hidden;
+	  background-size: cover;
+	 center{
+			margin:0 auto;
+			height:1rem;
+			img{
+				margin: .12rem 0;
+    			    width: 1.5rem;
+			}
+		}
+    }
+    .center{ //展示图
+		   overflow: hidden;
+		   padding-top: .5rem;
+		   #bannerH5{
+		   	display: block;
+		   }
+		   #bannerpc{
+		   	display: none;
+		   }
+	}
+	.download{  //二维码推广
+		background:none,url(../img/download_bj.png);
+		    background-size: contain;
+		.dowload_box{
+          display: none;
+		}
+		.download_active{
+             width:90%;
+			margin:0 auto;
+			overflow: hidden;
+			padding: .3rem 0 0.2rem;
+			display: block;
+			.phone{
+				position:relative;
+				padding-top: 0.1rem;
+				overflow: hidden;
+			}
+			.Credit{
+				position:absolute;
+				bottom: 44%;
+				color:#d76b09;
+				font-size: 0.28rem;
+				text-align: left;
+			}
+			a{
+				display: block;
+				float:left;
+				width:90%;
+				margin-left:5%;
+			}
+			.androiddow{
+				float:right;
+			}
+			#downloaddt{
+				width:90%;
+				margin: .8rem 0 0 5%;
+			}
+		}
+	}
+	.bannert{  //轮播图
+		position: relative;
+		margin: -5px 0 0 0;
+		z-index: 9999;
+		background:url(../img/h5/gamefeatures-title@2x.png) no-repeat,url(../img/rep_bg.jpg);
+		background-position: center 0px, 0px 50px;
+		background-size: contain, contain;    
+		.banner_box{
+			background:url(../img/M_light.png) no-repeat,url(../img/M_light2.png) no-repeat;
+			    background-position: 3% 40px, right 3% top 40px;
+			.poster-main{ 
+				padding: 110px 0 0px;
+               .poster-btn{
+				    width:50px !important;
+				    height: 2rem !important; 
+				    background-size:20px;
+				}
+				.poster-prev-btn{
+					left:-0.6rem;
+					top:41%;
+					z-index:999 !important;
+				}
+				.poster-next-btn{
+					right: -0.6rem;
+					top:41%;
+					z-index:999 !important;
+				}
+				.poster-list{
+					    background-position: bottom 20px center;
+				}
+			}
+		}
+	}
+	.gamelist{  //游戏列表
+	   	position: relative;
+		z-index: 99;
+		background:url(../img/h5/topgame-title@2x.png) no-repeat,#1b1436;
+		background-position: center 2px, 0 0;  
+		background-size: contain, auto;
+		.game_box{
+	      min-height:500px;
+	      overflow: hidden;
+	      margin:0 auto;
+	      width:@width12;
+	      padding-top: 12%;
+	      li{
+	      	width:94%;
+	      	float:left;
+	      	text-align: center;
+	      	padding:5px 3%;
+	      	img{
+	      		width:100%;
+	      	}
+	      }
+		} 
+	}
+	.fix{
+		position:fixed;
+		right:0%;
+		top:70%;
+		z-index:9999;
+		.contact{
+			background:url(../img/images5.png) no-repeat;
+			width: 100px;
+   			height: 100px;
+			display: block;
+			background-size: 100%;
+			background-position-x: 10px;
+			#qrcode{
+				display: none;
+			}
+			#serviceUrl{
+				height:1rem;
+			}
+		}
+		.shutdown{
+			display: none;
+		}
+	}
+	footer{
+		padding-bottom:1.2rem;
+		.center_bottom{
+			display: none;
+		}
+		.mailbox{
+			display: none;
+		}
+		.center_top{
+           .box{
+           	    >div{
+           	    	display: none; 
+           	    	overflow: hidden;
+					text-overflow: ellipsis;
+					white-space:nowrap;
+           	    	h1{float:left;}
+           	    	span{text-align: left;}
+           	    }
+           	    >img{
+		         	display: block;
+           	    	width:90%;
+           	    	margin:0.2rem 0;
+		        }
+           }
+		}
+	}
+	.Mobile{
+	  display:block;
+	  position:fixed;
+	  bottom:0;
+	  width:100%;
+	  z-index: 9999;
+	  #Mobile_don{
+	  	display:block;
+	  	background:url(../img/Mobile_don.png) no-repeat;
+	  	width: 100%;
+	    height: 1.4rem;
+	    background-size: 100%;
+	        background-position: bottom;
+	  }
+	}
+}

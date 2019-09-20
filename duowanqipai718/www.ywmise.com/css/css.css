@@ -1,0 +1,23 @@
+/* kefu */
+.zxkf {
+    position: fixed;
+    right: 15px;
+    top: 75%;
+    width: 80px;
+    z-index: 99;
+}
+.move {
+    animation: beat 1.3s infinite;
+}
+
+@keyframes beat{
+    0% {
+            transform:none;
+    }
+    50%{
+            transform:scale(1.8);
+    }
+    100%{
+            transform:none;
+    }
+}
