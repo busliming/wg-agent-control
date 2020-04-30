@@ -16,7 +16,7 @@
     "axios": "^0.18.0",
     "bootstrap-vue": "^2.0.0-rc.11",
     "element-ui": "^2.4.7",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "qrcode.vue": "^1.6.1",
